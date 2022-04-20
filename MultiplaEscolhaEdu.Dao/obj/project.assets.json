@@ -901,7 +901,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Anderson Domingos\\.nuget\\packages\\": {},
+    "C:\\Users\\anderson.domingos\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
@@ -911,7 +911,7 @@
       "projectUniqueName": "D:\\Projetos\\multiplaescolhaedu\\MultiplaEscolhaEdu.Dao\\MultiplaEscolhaEdu.Dao.csproj",
       "projectName": "MultiplaEscolhaEdu.Dao",
       "projectPath": "D:\\Projetos\\multiplaescolhaedu\\MultiplaEscolhaEdu.Dao\\MultiplaEscolhaEdu.Dao.csproj",
-      "packagesPath": "C:\\Users\\Anderson Domingos\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\anderson.domingos\\.nuget\\packages\\",
       "outputPath": "D:\\Projetos\\multiplaescolhaedu\\MultiplaEscolhaEdu.Dao\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
@@ -919,7 +919,7 @@
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Anderson Domingos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\anderson.domingos\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
