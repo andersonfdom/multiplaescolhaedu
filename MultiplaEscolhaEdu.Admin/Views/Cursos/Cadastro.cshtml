@@ -2,7 +2,62 @@
 @{
     ViewData["Title"] = "Cadastro";
 }
+<script>
+    $(function () {
+        $('#ddlCategoria').empty();
+        var categorias = "";
+        $.ajax({
+            type: "GET",
+            url: "/Cursos/ListarCategoriaCursos",
+            dataType: "json",
+            contentType: "application/json; charset=UTF-8",
+            success: function (jsonResult) {
+                if (jsonResult.sucesso == true) {
+                    console.log(jsonResult);
+                    $(jsonResult.mensagem).each(function () {
+                        categorias += "<option value="+this.id+">"+this.descricao+"</option>"
+                    });
+                    $('#ddlCategoria').html(categorias);
+                } else {
 
+                }
+            }
+        });
+    });
+
+    function CamposValidosCategoriaCurso() {
+        $('#mensagemErro').hide();
+        if ($('#txtDescricaoCategoria').val() === '') {
+            $('#mensagemErro').show();
+            $('#mensagemErro').html("Campo obrigatório não preenchido: Descrição");
+            $('#txtDescricaoCategoria').focus();
+        } else {
+            $('#mensagemErro').hide();
+            GravarCategoriaCurso();
+        }
+    }
+
+    function GravarCategoriaCurso() {
+        $.ajax({
+            type: "POST",
+            url: "/Cursos/ListarCategoriaCursos",
+            dataType: "json",
+            contentType: "application/json; charset=UTF-8",
+            success: function (jsonResult) {
+                if (jsonResult.sucesso == true) {
+                    console.log(jsonResult);
+                    $(jsonResult.mensagem).each(function () {
+                        categorias += "<option value=" + this.id + ">" + this.descricao + "</option>"
+                    });
+                    $('#ddlCategoria').html(categorias);
+                } else {
+
+                }
+            }
+        });
+        $('#popCategoria').modal('hide');        
+    }
+</script>
 <section class="section">
     <h1 class="section-header">
         Cadastro de Cursos
@@ -38,8 +93,14 @@
                                             <table class="table" style="width: 100%">
                                                 <tr>
                                                     <td>
-                                                        <input type="button" id="btnSalvarCategoria" value="Salvar" class="btn btn-primary" onclick="$('#popCategoria').modal('hide')" />
-                                                        <input type="button" id="btnCancelarCategoria" value="Cancelar" class="btn btn-danger" onclick="$('#popCategoria').modal('hide')" />
+                                                        <div id="mensagemErro" class="alert alert-danger" style="display:none">
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <input type="button" id="btnSalvarCategoria" value="Salvar" class="btn btn-primary" onclick="CamposValidosCategoriaCurso();" />
+                                                        <input type="button" id="btnCancelarCategoria" value="Cancelar" class="btn btn-danger" onclick="$('#popCategoria').modal('hide');" />
                                                     </td>
                                                 </tr>
                                             </table>
@@ -63,16 +124,22 @@
                     <tr>
                         <th>Descrição</th>
                         <th>Valor</th>
-                        <th>Slug(Informe conforme cadastrado no site multiplaescolhaedu.com.br via WordPress)</th>
                     </tr>
                     <tr>
                         <td>
-                            <asp:HiddenField ID="hdnCursoId" runat="server" Value="0" />
+                            <input type="hidden" id="hdnCursoId" Value="0" />
                             <input type="text" id="txtDescricaoCurso" class="form-control" />
                         </td>
                         <td>
                             <input type="text" id="txtValorCurso" class="form-control moeda" />
                         </td>
+                    </tr>
+                </table>
+                <table class="table" style="width: 100%">
+                    <tr>
+                        <th>Slug(Informe conforme cadastrado no site multiplaescolhaedu.com.br via WordPress)</th>
+                    </tr>
+                    <tr>
                         <td>
                             <input type="text" id="txtSlug" class="form-control" />
                         </td>

@@ -40,7 +40,28 @@ namespace MultiplaEscolhaEdu.Dao
 
         public List<CategoriaCurso> Listar()
         {
-            return null;
+            List<CategoriaCurso> categoriaCursos = new List<CategoriaCurso>();
+
+            sql += "SELECT id as Id, descricao as Descricao from categoria_cursos;";
+
+            using (var con = CriarConexao())
+            {
+                try
+                {
+                    con.Open();
+                    categoriaCursos = con.Query<CategoriaCurso>(sql).ToList();
+                }
+                catch (Exception ex)
+                {
+                    return null;
+                }
+                finally
+                {
+                    con.Close();
+                }
+            }
+
+            return categoriaCursos;
         }
     }
 }
