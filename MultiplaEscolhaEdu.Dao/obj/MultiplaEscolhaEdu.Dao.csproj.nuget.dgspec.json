@@ -10,7 +10,7 @@
         "projectUniqueName": "D:\\Projetos\\multiplaescolhaedu\\MultiplaEscolhaEdu.Dao\\MultiplaEscolhaEdu.Dao.csproj",
         "projectName": "MultiplaEscolhaEdu.Dao",
         "projectPath": "D:\\Projetos\\multiplaescolhaedu\\MultiplaEscolhaEdu.Dao\\MultiplaEscolhaEdu.Dao.csproj",
-        "packagesPath": "C:\\Users\\Anderson Domingos\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\anderson.domingos\\.nuget\\packages\\",
         "outputPath": "D:\\Projetos\\multiplaescolhaedu\\MultiplaEscolhaEdu.Dao\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
@@ -18,7 +18,7 @@
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Anderson Domingos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\anderson.domingos\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -49,6 +49,40 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.Analyzers": {
+              "target": "Package",
+              "version": "[5.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[5.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.14, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -74,7 +108,7 @@
         "projectUniqueName": "D:\\Projetos\\multiplaescolhaedu\\MultiplaEscolhaEdu.Model\\MultiplaEscolhaEdu.Model.csproj",
         "projectName": "MultiplaEscolhaEdu.Model",
         "projectPath": "D:\\Projetos\\multiplaescolhaedu\\MultiplaEscolhaEdu.Model\\MultiplaEscolhaEdu.Model.csproj",
-        "packagesPath": "C:\\Users\\Anderson Domingos\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\anderson.domingos\\.nuget\\packages\\",
         "outputPath": "D:\\Projetos\\multiplaescolhaedu\\MultiplaEscolhaEdu.Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
@@ -82,7 +116,7 @@
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Anderson Domingos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\anderson.domingos\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -109,6 +143,40 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.Analyzers": {
+              "target": "Package",
+              "version": "[5.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[5.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.14, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

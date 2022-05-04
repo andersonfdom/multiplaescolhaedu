@@ -1,26 +1,75 @@
-﻿
-@{
+﻿@{
     ViewData["Title"] = "Cadastro";
 }
 <script>
     $(function () {
+        var id = getParameterByName("id") == null ? "0" : getParameterByName("id");
+
+        if (id !=="0") {
+            $.ajax({
+                type: "POST",
+                url: "/Alunos/CarregarDados?id="+id,
+                async: false,
+                dataType: "JSON",
+                contentType: "application/json; charset=UTF-8",
+                success: function (jsonResult) {
+                    $(jsonResult.mensagem).each(function () {
+                        document.getElementById("id").value = this.id;
+                        document.getElementById("nome").value = this.nome;
+                        document.getElementById("data_nascimento").value = this.dataNascimento;
+                        document.getElementById("rg").value = this.rg;
+                        document.getElementById("cpf").value = this.cpf;
+                        document.getElementById("whatsapp").value = this.whatsapp;
+                        document.getElementById("email").value = this.email;
+                        document.getElementById("investimento").value = this.investimento;
+                        document.getElementById("melhorDataPagamento").value = this.melhorDataPagamento;
+                        document.getElementById("cep").value = this.cep;
+                        document.getElementById("logradouro").value = this.logradouro;
+                        document.getElementById("complemento").value = this.complemento;
+                        document.getElementById("bairro").value = this.bairro;
+                        document.getElementById("cidade").value = this.cidade;
+                        document.getElementById("estado").value = this.estado;
+                    });
+                }
+            });
+        }
+
         $('#btnSalvar').click(function () {
             if (camposValidos() === true) {
-                var formData = new FormData();
-                formData.append("", document.getElementById("nome").value);
-                formData.append("", document.getElementById("data_nascimento").value);
-                formData.append("",document.getElementById("rg").value);
-                formData.append("",document.getElementById("cpf").value);
-                formData.append("",document.getElementById("whatsapp").value);
-                formData.append("",document.getElementById("email").value);
-                formData.append("",document.getElementById("investimento").value);
-                formData.append("",document.getElementById("melhor_data_pagamento").value);
-                formData.append("",document.getElementById("cep").value);
-                formData.append("",document.getElementById("logradouro").value);
-                formData.append("",document.getElementById("complemento").value);
-                formData.append("",document.getElementById("bairro").value);
-                formData.append("",document.getElementById("cidade").value);
-                formData.append("",document.getElementById("estado").value);
+                var data = new FormData();
+                data.append("Id", document.getElementById("id").value);
+                data.append("Nome", document.getElementById("nome").value);
+                data.append("Rg", document.getElementById("rg").value);
+                data.append("DataNascimento", document.getElementById("data_nascimento").value);
+                data.append("Cpf", document.getElementById("cpf").value);
+                data.append("Whatsapp", document.getElementById("whatsapp").value);
+                data.append("Email", document.getElementById("email").value);
+                data.append("Investimento", document.getElementById("investimento").value);
+                data.append("MelhorDataPagamento", document.getElementById("melhorDataPagamento").value);
+                data.append("Cep", document.getElementById("cep").value);
+                data.append("Logradouro", document.getElementById("logradouro").value);
+                data.append("Complemento", document.getElementById("complemento").value);
+                data.append("Bairro", document.getElementById("bairro").value);
+                data.append("Cidade", document.getElementById("cidade").value);
+                data.append("Estado", document.getElementById("estado").value);
+
+                $.ajax({
+                    url: "/Alunos/Gravar",
+                    data: data,
+                    processData: false,
+                    contentType: false,
+                    type: "POST",
+                    success: function (data) {
+                        if (data.mensagem === "Ok") {
+                            window.location.href = "/Alunos/Index";
+                        } else {
+                            alert(data.mensagem);
+                        }
+                    },
+                    error: function (request, status, error) {
+                        alert(request.responseText);
+                    }
+                });
             }
         });
     });
@@ -28,8 +77,7 @@
 
     function camposValidos() {
         if (document.getElementById('nome').value === '') {
-            $('#mensagemErro').show();
-            document.getElementById('mensagemErro').innerHTML = 'Campo obrigatório não preenchido: Nome ';
+            alert('Campo obrigatório não preenchido: Nome ');
             document.getElementById('nome').focus();
             window.setTimeout(function () {
                 $('#mensagemErro').hide();
@@ -39,8 +87,7 @@
         }
 
         if (document.getElementById('data_nascimento').value === '') {
-            $('#mensagemErro').show();
-            document.getElementById('mensagemErro').innerHTML = 'Campo obrigatório não preenchido: Data de Nascimento ';
+            alert('Campo obrigatório não preenchido: Data de Nascimento ');
             document.getElementById('data_nascimento').focus();
             window.setTimeout(function () {
                 $('#mensagemErro').hide();
@@ -50,8 +97,7 @@
         }
 
         if (document.getElementById('rg').value === '') {
-            $('#mensagemErro').show();
-            document.getElementById('mensagemErro').innerHTML = 'Campo obrigatório não preenchido: RG ';
+            alert('Campo obrigatório não preenchido: Rg ');
             document.getElementById('rg').focus();
             window.setTimeout(function () {
                 $('#mensagemErro').hide();
@@ -61,8 +107,7 @@
         }
 
         if (document.getElementById('cpf').value === '') {
-            $('#mensagemErro').show();
-            document.getElementById('mensagemErro').innerHTML = 'Campo obrigatório não preenchido: CPF ';
+            alert('Campo obrigatório não preenchido: Cpf ');
             document.getElementById('cpf').focus();
             window.setTimeout(function () {
                 $('#mensagemErro').hide();
@@ -72,8 +117,7 @@
         }
 
         if (document.getElementById('whatsapp').value === '') {
-            $('#mensagemErro').show();
-            document.getElementById('mensagemErro').innerHTML = 'Campo obrigatório não preenchido: WhatsApp ';
+            alert('Campo obrigatório não preenchido: WhatsApp ');
             document.getElementById('whatsapp').focus();
             window.setTimeout(function () {
                 $('#mensagemErro').hide();
@@ -83,8 +127,7 @@
         }
 
         if (document.getElementById('email').value === '') {
-            $('#mensagemErro').show();
-            document.getElementById('mensagemErro').innerHTML = 'Campo obrigatório não preenchido: E-mail ';
+            alert('Campo obrigatório não preenchido: E-mail ');
             document.getElementById('email').focus();
             window.setTimeout(function () {
                 $('#mensagemErro').hide();
@@ -94,8 +137,7 @@
         }
 
         if (document.getElementById('investimento').value === '') {
-            $('#mensagemErro').show();
-            document.getElementById('mensagemErro').innerHTML = 'Campo obrigatório não preenchido: Investimento ';
+            alert('Campo obrigatório não preenchido: Investimento ');
             document.getElementById('investimento').focus();
             window.setTimeout(function () {
                 $('#mensagemErro').hide();
@@ -104,10 +146,9 @@
             return false;
         }
 
-        if (document.getElementById('melhor_data_pagamento').value === '0' || document.getElementById('melhor_data_pagamento').value === 0) {
-            $('#mensagemErro').show();
-            document.getElementById('mensagemErro').innerHTML = 'Campo obrigatório não preenchido: Melhor data para pagamento ';
-            document.getElementById('melhor_data_pagamento').focus();
+        if (document.getElementById('melhorDataPagamento').value === '0' || document.getElementById('melhorDataPagamento').value === 0) {
+            alert('Campo obrigatório não preenchido: Melhor Data para Pagamento ');
+            document.getElementById('melhorDataPagamento').focus();
             window.setTimeout(function () {
                 $('#mensagemErro').hide();
                 document.getElementById('mensagemErro').innerHTML = "";
@@ -116,8 +157,7 @@
         }
 
         if (document.getElementById('cep').value === '') {
-            $('#mensagemErro').show();
-            document.getElementById('mensagemErro').innerHTML = 'Campo obrigatório não preenchido: Cep ';
+            alert('Campo obrigatório não preenchido: Cep ');
             document.getElementById('cep').focus();
             window.setTimeout(function () {
                 $('#mensagemErro').hide();
@@ -127,8 +167,7 @@
         }
 
         if (document.getElementById('logradouro').value === '') {
-            $('#mensagemErro').show();
-            document.getElementById('mensagemErro').innerHTML = 'Campo obrigatório não preenchido: Logradouro ';
+            alert('Campo obrigatório não preenchido: Logradouro ');
             document.getElementById('logradouro').focus();
             window.setTimeout(function () {
                 $('#mensagemErro').hide();
@@ -138,8 +177,7 @@
         }
 
         if (document.getElementById('complemento').value === '') {
-            $('#mensagemErro').show();
-            document.getElementById('mensagemErro').innerHTML = 'Campo obrigatório não preenchido: Complemento ';
+            alert('Campo obrigatório não preenchido: Complemento ');
             document.getElementById('complemento').focus();
             window.setTimeout(function () {
                 $('#mensagemErro').hide();
@@ -149,8 +187,7 @@
         }
 
         if (document.getElementById('bairro').value === '') {
-            $('#mensagemErro').show();
-            document.getElementById('mensagemErro').innerHTML = 'Campo obrigatório não preenchido: Bairro ';
+            alert('Campo obrigatório não preenchido: Bairro ');
             document.getElementById('bairro').focus();
             window.setTimeout(function () {
                 $('#mensagemErro').hide();
@@ -160,8 +197,7 @@
         }
 
         if (document.getElementById('cidade').value === '') {
-            $('#mensagemErro').show();
-            document.getElementById('mensagemErro').innerHTML = 'Campo obrigatório não preenchido: Cidade ';
+            alert('Campo obrigatório não preenchido: Cidade ');
             document.getElementById('cidade').focus();
             window.setTimeout(function () {
                 $('#mensagemErro').hide();
@@ -171,8 +207,7 @@
         }
 
         if (document.getElementById('estado').value === '') {
-            $('#mensagemErro').show();
-            document.getElementById('mensagemErro').innerHTML = 'Campo obrigatório não preenchido: Estado ';
+            alert('Campo obrigatório não preenchido: Estado ');
             document.getElementById('estado').focus();
             window.setTimeout(function () {
                 $('#mensagemErro').hide();
@@ -183,6 +218,107 @@
 
         return true;
     }
+
+    function getParameterByName(name, url = window.location.href) {
+        name = name.replace(/[\[\]]/g, '\\$&');
+        var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+            results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, ' '));
+    }
+
+    function mascaraTelefone(campo) {
+
+        if (mascaraInteiro(campo) == false) {
+            event.returnValue = false;
+        }
+        return formataCampo(campo, '(00)9 0000-0000', event);
+    }
+
+    function mascaraRg(rg) {
+        if ((rg) == false) {
+            event.returnValue = false;
+        }
+        return formataCampo(rg, '00.000.000-0', event);
+    }
+
+    function mascaraCpf(cpf) {
+        if (mascaraInteiro(cpf) == false) {
+            event.returnValue = false;
+        }
+        return formataCampo(cpf, '000.000.000-00', event);
+    }
+
+    function mascaraCep(cep) {
+        if (mascaraInteiro(cep) == false) {
+            event.returnValue = false;
+        }
+        return formataCampo(cep, '00.000-000', event);
+    }
+
+    function buscarCep(cep) {
+        cep = cep.replace('.','');
+        cep = cep.replace('/', '');
+
+        $.getJSON("https://viacep.com.br/ws/" + cep + "/json/?callback=?", function (dados) {
+
+            if (!("erro" in dados)) {
+                //Atualiza os campos com os valores da consulta.
+                $("#logradouro").val(dados.logradouro);
+                $("#bairro").val(dados.bairro);
+                $("#cidade").val(dados.localidade);
+                $("#estado").val(dados.uf);
+            } //end if.
+            else {
+                //CEP pesquisado não foi encontrado.
+                alert("CEP não encontrado.");
+                $('#cep').focus();
+            }
+        });
+    }
+
+    //formata de forma generica os campos
+    function formataCampo(campo, Mascara, evento) {
+        var boleanoMascara;
+
+        var Digitato = evento.keyCode;
+        exp = /\-|\.|\/|\(|\)| /g
+        campoSoNumeros = campo.value.toString().replace(exp, "");
+
+        var posicaoCampo = 0;
+        var NovoValorCampo = "";
+        var TamanhoMascara = campoSoNumeros.length;;
+
+        if (Digitato != 8) { // backspace 
+            for (i = 0; i <= TamanhoMascara; i++) {
+                boleanoMascara = ((Mascara.charAt(i) == "-") || (Mascara.charAt(i) == ".")
+                    || (Mascara.charAt(i) == "/"))
+                boleanoMascara = boleanoMascara || ((Mascara.charAt(i) == "(")
+                    || (Mascara.charAt(i) == ")") || (Mascara.charAt(i) == " "))
+                if (boleanoMascara) {
+                    NovoValorCampo += Mascara.charAt(i);
+                    TamanhoMascara++;
+                } else {
+                    NovoValorCampo += campoSoNumeros.charAt(posicaoCampo);
+                    posicaoCampo++;
+                }
+            }
+            campo.value = NovoValorCampo;
+            return true;
+        } else {
+            return true;
+        }
+    }
+
+    function mascaraInteiro() {
+        if (event.keyCode < 48 || event.keyCode > 57) {
+            event.returnValue = false;
+            return false;
+        }
+        return true;
+    }
+
 </script>
 <section class="section">
     <h1 class="section-header">
@@ -204,7 +340,9 @@
                         <th>Data de Nascimento</th>
                     </tr>
                     <tr>
-                        <td><input type="text" class="form-control" id="nome" maxlength="200" /></td>
+                        <td>
+                            <input type="hidden" id="id" value="0"  />
+                            <input type="text" class="form-control" id="nome" maxlength="200" /></td>
                         <td><input type="date" class="form-control" id="data_nascimento" /></td>
                     </tr>
                 </table>
@@ -214,8 +352,8 @@
                         <th>Cpf</th>
                     </tr>
                     <tr>
-                        <td><input type="text" class="form-control" id="rg" maxlength="30" /></td>
-                        <td><input type="text" class="form-control" id="cpf" maxlength="30" /></td>
+                        <td><input type="text" class="form-control" id="rg" maxlength="12" onkeypress="mascaraRg(this)"  /></td>
+                        <td><input type="text" class="form-control" id="cpf" maxlength="14" onkeypress="mascaraCpf(this)"  /></td>
                     </tr>
                 </table>
                 <table class="table" style="width: 100%">
@@ -224,8 +362,8 @@
                         <th>E-mail</th>
                     </tr>
                     <tr>
-                        <td><input type="text" class="form-control" id="whatsapp" maxlength="30" /></td>
-                        <td><input type="email" class="form-control" id="email" maxlength="200" /></td>
+                        <td><input type="text" class="form-control" id="whatsapp" maxlength="15" onkeypress="mascaraTelefone(this);"  /></td>
+                        <td><input type="email" class="form-control" id="email" maxlength="200"  /></td>
                     </tr>
                 </table>
                 <table class="table" style="width: 100%">
@@ -234,9 +372,9 @@
                         <th>Melhor data para pagamento</th>
                     </tr>
                     <tr>
-                        <td><input type="text" class="form-control" id="investimento" maxlength="200" /></td>
+                        <td><input type="text" class="form-control" id="investimento"  maxlength="200" /></td>
                         <td>
-                            <select class="form-control" id="melhor_data_pagamento">
+                            <select class="form-control" id="melhorDataPagamento" name="melhorDataPagamento">
                                 <option value="0" selected>--Selecione</option>
                                 <option value="5">05 de cada mês</option>
                                 <option value="10">10 de cada mês</option>
@@ -252,8 +390,8 @@
                         <th style="width:70%">Logradouro</th>
                     </tr>
                     <tr>
-                        <td><input type="text" class="form-control" id="cep" maxlength="30" /></td>
-                        <td><input type="text" class="form-control" id="logradouro" maxlength="200" /></td>
+                        <td><input type="text" class="form-control" id="cep" maxlength="10" onfocusout="buscarCep(this.value)" onkeypress="mascaraCep(this)"  /></td>
+                        <td><input type="text" class="form-control" id="logradouro" maxlength="200"  /></td>
                     </tr>
                 </table>
                 <table class="table" style="width: 100%">
@@ -262,8 +400,8 @@
                         <th>Bairro</th>
                     </tr>
                     <tr>
-                        <td><input type="text" class="form-control" id="complemento" maxlength="200" /></td>
-                        <td><input type="text" class="form-control" id="bairro" maxlength="200" /></td>
+                        <td><input type="text" class="form-control" id="complemento" maxlength="200"  /></td>
+                        <td><input type="text" class="form-control" id="bairro" maxlength="200"   /></td>
                     </tr>
                 </table>
                 <table class="table" style="width: 100%">
@@ -273,7 +411,7 @@
                     </tr>
                     <tr>
                         <td><input type="text" class="form-control" id="cidade" maxlength="200" /></td>
-                        <td><input type="text" class="form-control" id="estado" maxlength="200" /></td>
+                        <td><input type="text" class="form-control" id="estado" maxlength="200"  /></td>
                     </tr>
                 </table>
                 <table class="table" style="width: 100%">
