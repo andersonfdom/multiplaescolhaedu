@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "MultiplaEscolhaEdu.Dao/1.0.0": {
+        "dependencies": {
+          "MultiplaEscolhaEdu.Model": "1.0.0"
+        },
+        "runtime": {
+          "MultiplaEscolhaEdu.Dao.dll": {}
+        }
+      },
+      "MultiplaEscolhaEdu.Model/1.0.0": {
+        "runtime": {
+          "MultiplaEscolhaEdu.Model.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MultiplaEscolhaEdu.Dao/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MultiplaEscolhaEdu.Model/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

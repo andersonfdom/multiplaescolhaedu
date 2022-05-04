@@ -1,0 +1,290 @@
+﻿
+@{
+    ViewData["Title"] = "Cadastro";
+}
+<script>
+    $(function () {
+        $('#btnSalvar').click(function () {
+            if (camposValidos() === true) {
+                var formData = new FormData();
+                formData.append("", document.getElementById("nome").value);
+                formData.append("", document.getElementById("data_nascimento").value);
+                formData.append("",document.getElementById("rg").value);
+                formData.append("",document.getElementById("cpf").value);
+                formData.append("",document.getElementById("whatsapp").value);
+                formData.append("",document.getElementById("email").value);
+                formData.append("",document.getElementById("investimento").value);
+                formData.append("",document.getElementById("melhor_data_pagamento").value);
+                formData.append("",document.getElementById("cep").value);
+                formData.append("",document.getElementById("logradouro").value);
+                formData.append("",document.getElementById("complemento").value);
+                formData.append("",document.getElementById("bairro").value);
+                formData.append("",document.getElementById("cidade").value);
+                formData.append("",document.getElementById("estado").value);
+            }
+        });
+    });
+
+
+    function camposValidos() {
+        if (document.getElementById('nome').value === '') {
+            $('#mensagemErro').show();
+            document.getElementById('mensagemErro').innerHTML = 'Campo obrigatório não preenchido: Nome ';
+            document.getElementById('nome').focus();
+            window.setTimeout(function () {
+                $('#mensagemErro').hide();
+                document.getElementById('mensagemErro').innerHTML = "";
+            }, 6000);
+            return false;
+        }
+
+        if (document.getElementById('data_nascimento').value === '') {
+            $('#mensagemErro').show();
+            document.getElementById('mensagemErro').innerHTML = 'Campo obrigatório não preenchido: Data de Nascimento ';
+            document.getElementById('data_nascimento').focus();
+            window.setTimeout(function () {
+                $('#mensagemErro').hide();
+                document.getElementById('mensagemErro').innerHTML = "";
+            }, 6000);
+            return false;
+        }
+
+        if (document.getElementById('rg').value === '') {
+            $('#mensagemErro').show();
+            document.getElementById('mensagemErro').innerHTML = 'Campo obrigatório não preenchido: RG ';
+            document.getElementById('rg').focus();
+            window.setTimeout(function () {
+                $('#mensagemErro').hide();
+                document.getElementById('mensagemErro').innerHTML = "";
+            }, 6000);
+            return false;
+        }
+
+        if (document.getElementById('cpf').value === '') {
+            $('#mensagemErro').show();
+            document.getElementById('mensagemErro').innerHTML = 'Campo obrigatório não preenchido: CPF ';
+            document.getElementById('cpf').focus();
+            window.setTimeout(function () {
+                $('#mensagemErro').hide();
+                document.getElementById('mensagemErro').innerHTML = "";
+            }, 6000);
+            return false;
+        }
+
+        if (document.getElementById('whatsapp').value === '') {
+            $('#mensagemErro').show();
+            document.getElementById('mensagemErro').innerHTML = 'Campo obrigatório não preenchido: WhatsApp ';
+            document.getElementById('whatsapp').focus();
+            window.setTimeout(function () {
+                $('#mensagemErro').hide();
+                document.getElementById('mensagemErro').innerHTML = "";
+            }, 6000);
+            return false;
+        }
+
+        if (document.getElementById('email').value === '') {
+            $('#mensagemErro').show();
+            document.getElementById('mensagemErro').innerHTML = 'Campo obrigatório não preenchido: E-mail ';
+            document.getElementById('email').focus();
+            window.setTimeout(function () {
+                $('#mensagemErro').hide();
+                document.getElementById('mensagemErro').innerHTML = "";
+            }, 6000);
+            return false;
+        }
+
+        if (document.getElementById('investimento').value === '') {
+            $('#mensagemErro').show();
+            document.getElementById('mensagemErro').innerHTML = 'Campo obrigatório não preenchido: Investimento ';
+            document.getElementById('investimento').focus();
+            window.setTimeout(function () {
+                $('#mensagemErro').hide();
+                document.getElementById('mensagemErro').innerHTML = "";
+            }, 6000);
+            return false;
+        }
+
+        if (document.getElementById('melhor_data_pagamento').value === '0' || document.getElementById('melhor_data_pagamento').value === 0) {
+            $('#mensagemErro').show();
+            document.getElementById('mensagemErro').innerHTML = 'Campo obrigatório não preenchido: Melhor data para pagamento ';
+            document.getElementById('melhor_data_pagamento').focus();
+            window.setTimeout(function () {
+                $('#mensagemErro').hide();
+                document.getElementById('mensagemErro').innerHTML = "";
+            }, 6000);
+            return false;
+        }
+
+        if (document.getElementById('cep').value === '') {
+            $('#mensagemErro').show();
+            document.getElementById('mensagemErro').innerHTML = 'Campo obrigatório não preenchido: Cep ';
+            document.getElementById('cep').focus();
+            window.setTimeout(function () {
+                $('#mensagemErro').hide();
+                document.getElementById('mensagemErro').innerHTML = "";
+            }, 6000);
+            return false;
+        }
+
+        if (document.getElementById('logradouro').value === '') {
+            $('#mensagemErro').show();
+            document.getElementById('mensagemErro').innerHTML = 'Campo obrigatório não preenchido: Logradouro ';
+            document.getElementById('logradouro').focus();
+            window.setTimeout(function () {
+                $('#mensagemErro').hide();
+                document.getElementById('mensagemErro').innerHTML = "";
+            }, 6000);
+            return false;
+        }
+
+        if (document.getElementById('complemento').value === '') {
+            $('#mensagemErro').show();
+            document.getElementById('mensagemErro').innerHTML = 'Campo obrigatório não preenchido: Complemento ';
+            document.getElementById('complemento').focus();
+            window.setTimeout(function () {
+                $('#mensagemErro').hide();
+                document.getElementById('mensagemErro').innerHTML = "";
+            }, 6000);
+            return false;
+        }
+
+        if (document.getElementById('bairro').value === '') {
+            $('#mensagemErro').show();
+            document.getElementById('mensagemErro').innerHTML = 'Campo obrigatório não preenchido: Bairro ';
+            document.getElementById('bairro').focus();
+            window.setTimeout(function () {
+                $('#mensagemErro').hide();
+                document.getElementById('mensagemErro').innerHTML = "";
+            }, 6000);
+            return false;
+        }
+
+        if (document.getElementById('cidade').value === '') {
+            $('#mensagemErro').show();
+            document.getElementById('mensagemErro').innerHTML = 'Campo obrigatório não preenchido: Cidade ';
+            document.getElementById('cidade').focus();
+            window.setTimeout(function () {
+                $('#mensagemErro').hide();
+                document.getElementById('mensagemErro').innerHTML = "";
+            }, 6000);
+            return false;
+        }
+
+        if (document.getElementById('estado').value === '') {
+            $('#mensagemErro').show();
+            document.getElementById('mensagemErro').innerHTML = 'Campo obrigatório não preenchido: Estado ';
+            document.getElementById('estado').focus();
+            window.setTimeout(function () {
+                $('#mensagemErro').hide();
+                document.getElementById('mensagemErro').innerHTML = "";
+            }, 6000);
+            return false;
+        }
+
+        return true;
+    }
+</script>
+<section class="section">
+    <h1 class="section-header">
+        Cadastro de Alunos
+    </h1>
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="dados-cadastrais" role="tabpanel" aria-labelledby="home-tab">
+            <div class="table-responsive" style="overflow-x: auto">
+
+                <div id="mensagemSucesso" class="alert alert-success" style="display:none">
+
+                </div>
+                <div id="mensagemErro" class="alert alert-danger" style="display:none">
+
+                </div>
+                <table class="table" style="width: 100%">
+                    <tr>
+                        <th>Nome</th>
+                        <th>Data de Nascimento</th>
+                    </tr>
+                    <tr>
+                        <td><input type="text" class="form-control" id="nome" maxlength="200" /></td>
+                        <td><input type="date" class="form-control" id="data_nascimento" /></td>
+                    </tr>
+                </table>
+                <table class="table" style="width: 100%">
+                    <tr>
+                        <th>Rg</th>
+                        <th>Cpf</th>
+                    </tr>
+                    <tr>
+                        <td><input type="text" class="form-control" id="rg" maxlength="30" /></td>
+                        <td><input type="text" class="form-control" id="cpf" maxlength="30" /></td>
+                    </tr>
+                </table>
+                <table class="table" style="width: 100%">
+                    <tr>
+                        <th>WhatsApp</th>
+                        <th>E-mail</th>
+                    </tr>
+                    <tr>
+                        <td><input type="text" class="form-control" id="whatsapp" maxlength="30" /></td>
+                        <td><input type="email" class="form-control" id="email" maxlength="200" /></td>
+                    </tr>
+                </table>
+                <table class="table" style="width: 100%">
+                    <tr>
+                        <th>Investimento</th>
+                        <th>Melhor data para pagamento</th>
+                    </tr>
+                    <tr>
+                        <td><input type="text" class="form-control" id="investimento" maxlength="200" /></td>
+                        <td>
+                            <select class="form-control" id="melhor_data_pagamento">
+                                <option value="0" selected>--Selecione</option>
+                                <option value="5">05 de cada mês</option>
+                                <option value="10">10 de cada mês</option>
+                                <option value="15">15 de cada mês</option>
+                                <option value="20">20 de cada mês</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                <table class="table" style="width: 100%">
+                    <tr>
+                        <th style="width:30%">Cep</th>
+                        <th style="width:70%">Logradouro</th>
+                    </tr>
+                    <tr>
+                        <td><input type="text" class="form-control" id="cep" maxlength="30" /></td>
+                        <td><input type="text" class="form-control" id="logradouro" maxlength="200" /></td>
+                    </tr>
+                </table>
+                <table class="table" style="width: 100%">
+                    <tr>
+                        <th>Complemento</th>
+                        <th>Bairro</th>
+                    </tr>
+                    <tr>
+                        <td><input type="text" class="form-control" id="complemento" maxlength="200" /></td>
+                        <td><input type="text" class="form-control" id="bairro" maxlength="200" /></td>
+                    </tr>
+                </table>
+                <table class="table" style="width: 100%">
+                    <tr>
+                        <th>Cidade</th>
+                        <th>Estado</th>
+                    </tr>
+                    <tr>
+                        <td><input type="text" class="form-control" id="cidade" maxlength="200" /></td>
+                        <td><input type="text" class="form-control" id="estado" maxlength="200" /></td>
+                    </tr>
+                </table>
+                <table class="table" style="width: 100%">
+                    <tr>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td><input type="button" class="btn btn-primary" id="btnSalvar" value="Salvar" />&nbsp;<input type="button" class="btn btn-danger" id="btnCancelar" value="Cancelar" onclick="window.location.href = '/Alunos/Index'" /></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>

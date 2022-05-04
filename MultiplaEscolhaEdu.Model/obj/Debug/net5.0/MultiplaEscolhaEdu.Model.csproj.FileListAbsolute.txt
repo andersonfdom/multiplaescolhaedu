@@ -1,0 +1,11 @@
+D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Model\bin\Debug\net5.0\MultiplaEscolhaEdu.Model.deps.json
+D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Model\bin\Debug\net5.0\MultiplaEscolhaEdu.Model.dll
+D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Model\bin\Debug\net5.0\ref\MultiplaEscolhaEdu.Model.dll
+D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Model\bin\Debug\net5.0\MultiplaEscolhaEdu.Model.pdb
+D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Model\obj\Debug\net5.0\MultiplaEscolhaEdu.Model.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Model\obj\Debug\net5.0\MultiplaEscolhaEdu.Model.AssemblyInfoInputs.cache
+D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Model\obj\Debug\net5.0\MultiplaEscolhaEdu.Model.AssemblyInfo.cs
+D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Model\obj\Debug\net5.0\MultiplaEscolhaEdu.Model.csproj.CoreCompileInputs.cache
+D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Model\obj\Debug\net5.0\MultiplaEscolhaEdu.Model.dll
+D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Model\obj\Debug\net5.0\ref\MultiplaEscolhaEdu.Model.dll
+D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Model\obj\Debug\net5.0\MultiplaEscolhaEdu.Model.pdb
