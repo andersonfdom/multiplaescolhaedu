@@ -1,7 +1,177 @@
-﻿
+﻿@model MultiplaEscolhaEdu.Model.EmpresaModel
 @{
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<script>
+    function GravarEmpresa() {
+        var formData = new FormData();
+
+        formData.append('Id', $('#IdEmpresa').val());
+        formData.append('NomeFantasia', $('#Nomefantasia').val());
+        formData.append('RazaoSocial', $('#Razaosocial').val());
+        formData.append('Cnpj', $('#Cnpj').val());
+        formData.append('InscricaoEstadual', $('#Inscricaoestadual').val());
+        formData.append('Telefone', $('#Telefone').val());
+        formData.append('Celular', $('#Celular').val());
+        formData.append('Email', $('#Email').val());
+        formData.append('Cep', $('#Cep').val());
+        formData.append('Logradouro', $('#Logradouro').val());
+        formData.append('Numero', $('#Numero').val());
+        formData.append('Complemento', $('#Complemento').val());
+        formData.append('Bairro', $('#Bairro').val());
+        formData.append('Cidade', $('#Cidade').val());
+        formData.append('Estado', $('#Estado').val());
+
+        $.ajax(
+            {
+                url: "/Parametros/GravarEmpresa",
+                data: formData,
+                processData: false,
+                contentType: false,
+                type: "POST",
+                success: function (data) {
+                    window.location.href = "/Home/Index";
+                }
+            }
+        );
+    }
+
+    function BuscarCep(cep) {
+        cep = cep.replace('.', '');
+        cep = cep.replace('-', '');
+
+        $.getJSON("https://viacep.com.br/ws/" + cep + "/json/?callback=?", function (dados) {
+
+            if (!("erro" in dados)) {
+                $("#Logradouro").val(dados.logradouro);
+                $("#Bairro").val(dados.bairro);
+                $("#Cidade").val(dados.localidade);
+                $("#Estado").val(dados.uf);
+            }
+            else {
+                alert("CEP não encontrado.");
+            }
+        });
+    }
+</script>
+
+<section class="section">
+    <h1 class="section-header">
+        Parâmetros Configuração da Empresa
+    </h1>
+    <div class="section-body">
+        <input type="hidden" id="IdEmpresa" value="@Model.Id" />
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#dados-cadastrais" role="tab" aria-controls="dados-cadastrais" aria-selected="true">Dados Cadastrais</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#dados-endereco" role="tab" aria-controls="dados-endereco" aria-selected="false">Dados do Endereço</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="dados-cadastrais" role="tabpanel" aria-labelledby="home-tab">
+                <div class="table-responsive" style="overflow-x: auto">
+                    <table class="table" style="width: 100%">
+                        <tr>
+                            <th>Nome Fantasia</th>
+                            <th>Razão Social</th>
+                        </tr>
+                        <tr>
+                            <td><input type="text" id="NomeFantasia" name="NomeFantasia" value="@Model.NomeFantasia" class="form-control" /></td>
+                            <td><input type="text" id="RazaoSocial" name="RazaoSocial" value="@Model.RazaoSocial" class="form-control" /></td>
+                        </tr>
+                    </table>
+                    <table class="table" style="width: 100%">
+                        <tr>
+                            <th>CNPJ</th>
+                            <th>Inscrição Estadual</th>
+                        </tr>
+                        <tr>
+                            <td><input type="text" id="Cnpj" name="Cnpj" value="@Model.Cnpj" class="form-control" /></td>
+                            <td><input type="text" id="InscricaoEstadual" name="InscricaoEstadual" value="@Model.InscricaoEstadual" class="form-control" /></td>
+                        </tr>
+                    </table>
+                    <table class="table" style="width: 100%">
+                        <tr>
+                            <th>Telefone</th>
+                            <th>Celular</th>
+                        </tr>
+                        <tr>
+                            <td><input type="text" id="Telefone" name="Telefone" value="@Model.Telefone" class="form-control" /></td>
+                            <td><input type="text" id="Celular" name="Celular" value="@Model.Celular" class="form-control" /></td>
+                        </tr>
+                    </table>
+                    <table class="table" style="width: 100%">
+                        <tr>
+                            <th>E-mail</th>
+                        </tr>
+                        <tr>
+                            <td><input type="email" id="Email" name="Email" value="@Model.Email" class="form-control" /></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="dados-endereco" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="table-responsive" style="overflow-x: auto">
+                    <table class="table" style="width: 100%">
+                        <tr>
+                            <th style="width: 20%">Cep</th>
+                            <th style="width: 60%">Logradouro</th>
+                            <th style="width: 20%">Número</th>
+                        </tr>
+                        <tr>
+                            <td style="width: 20%">
+                                <input type="text" id="Cep" name="Cep" onfocusout="BuscarCep(this.value);" value="@Model.Cep" class="form-control" />
+                            </td>
+                            <td style="width: 60%">
+                                <input type="text" id="Logradouro" name="Logradouro" value="@Model.Logradouro" class="form-control" />
+                            </td>
+                            <td style="width: 20%">
+                                <input type="text" id="Numero" name="Numero" value="@Model.Numero" class="form-control" />
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="table" style="width: 100%">
+                        <tr>
+                            <th>Complemento</th>
+                            <th>Bairro</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" id="Complemento" name="Complemento" value="@Model.Complemento" class="form-control" />
+                            </td>
+                            <td>
+                                <input type="text" id="Bairro" name="Bairro" value="@Model.Bairro" class="form-control" />
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="table" style="width: 100%">
+                        <tr>
+                            <th style="width: 50%">Cidade</th>
+                            <th style="width: 50%">Estado</th>
+                        </tr>
+                        <tr>
+                            <td style="width: 50%">
+                                <input type="text" id="Cidade" name="Bairro" value="@Model.Cidade" class="form-control" />
+                            </td>
+                            <td style="width: 50%">
+                                <input type="text" id="Estado" name="Bairro" value="@Model.Estado" class="form-control" />
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <table class="table" style="width:100%">
+                <tr>
+                    <td>
+                        <input type="button" class="btn btn-primary" id="btnSalvar" value="Salvar" onclick="GravarEmpresa();" />
+                        <input type="button" id="btnCancelar" value="Cancelar" class="btn btn-danger" onclick="window.location.href = '/Empresa/Index'" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</section>
 
