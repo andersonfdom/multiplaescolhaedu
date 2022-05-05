@@ -72,14 +72,14 @@ namespace MultiplaEscolhaEdu.Dao
                     a.NomeFantasia = model.NomeFantasia;
                     a.RazaoSocial = model.RazaoSocial;
                     a.Cnpj = model.Cnpj;
-                    a.InscricaoEstadual = model.InscricaoEstadual;
+                    a.InscricaoEstadual = model.InscricaoEstadual == null ? "" : model.InscricaoEstadual;
                     a.Telefone = model.Telefone;
                     a.Celular = model.Celular;
                     a.Email = model.Email;
                     a.Cep = model.Cep;
                     a.Logradouro = model.Logradouro;
                     a.Numero = model.Numero;
-                    a.Complemento = model.Complemento;
+                    a.Complemento = model.Complemento == null ? "" : model.Complemento;
                     a.Bairro = model.Bairro;
                     a.Cidade = model.Cidade;
                     a.Estado = model.Estado;

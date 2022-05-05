@@ -117,7 +117,7 @@ namespace MultiplaEscolhaEdu.Dao
                         a.Bairro = model.Bairro;
                         a.Cep = model.Cep;
                         a.Cidade = model.Cidade;
-                        a.Complemento = model.Complemento;
+                        a.Complemento = model.Complemento == null ? "" : model.Complemento;
                         a.Cpf = model.Cpf;
                         a.DataNascimento = Convert.ToDateTime(model.DataNascimento);
                         a.Email = model.Email;

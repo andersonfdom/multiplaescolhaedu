@@ -56,16 +56,21 @@ namespace MultiplaEscolhaEdu.Dao
                     {
                         int matriculaParceiro = ctx.Matriculas.Count(c => c.IdParceiro == dadosParceiro.Id);
 
-                        if (matriculaParceiro == 0)
-                        {
-                            ctx.Parceiros.Remove(dadosParceiro);
-                            ctx.SaveChanges();
-                            return "Ok";
-                        }
-                        else
+                        if (matriculaParceiro != 0)
                         {
                             return "Não foi possível realizar a exclusão: Existe(m) matrícula(s) realizadas por este Parceiro! Impossível excluir.";
                         }
+
+                        bool parceiroPrincipal = ctx.Parceiros.FirstOrDefault(c => c.Id == ctx.Empresas.FirstOrDefault().Id) != null ? true : false;
+                        
+                        if(parceiroPrincipal == true)
+                        {
+                            return "Este parceiro não pode ser excluído.";
+                        }
+
+                        ctx.Parceiros.Remove(dadosParceiro);
+                        ctx.SaveChanges();
+                        return "Ok";
                     }
                     else
                     {
@@ -102,7 +107,7 @@ namespace MultiplaEscolhaEdu.Dao
                     a.Bairro = model.Bairro;
                     a.Cep = model.Cep;
                     a.Cidade = model.Cidade;
-                    a.Complemento = model.Complemento;
+                    a.Complemento = model.Complemento == null ? "" : model.Complemento;
                     a.Email = model.Email;
                     a.Estado = model.Estado;
                     a.Logradouro = model.Logradouro;

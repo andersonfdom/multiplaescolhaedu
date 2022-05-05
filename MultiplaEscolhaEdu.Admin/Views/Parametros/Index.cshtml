@@ -5,36 +5,144 @@
 
 <script>
     function GravarEmpresa() {
-        var formData = new FormData();
+        if (camposValidos() === true) {
+            var formData = new FormData();
 
-        formData.append('Id', $('#IdEmpresa').val());
-        formData.append('NomeFantasia', $('#Nomefantasia').val());
-        formData.append('RazaoSocial', $('#Razaosocial').val());
-        formData.append('Cnpj', $('#Cnpj').val());
-        formData.append('InscricaoEstadual', $('#Inscricaoestadual').val());
-        formData.append('Telefone', $('#Telefone').val());
-        formData.append('Celular', $('#Celular').val());
-        formData.append('Email', $('#Email').val());
-        formData.append('Cep', $('#Cep').val());
-        formData.append('Logradouro', $('#Logradouro').val());
-        formData.append('Numero', $('#Numero').val());
-        formData.append('Complemento', $('#Complemento').val());
-        formData.append('Bairro', $('#Bairro').val());
-        formData.append('Cidade', $('#Cidade').val());
-        formData.append('Estado', $('#Estado').val());
+            formData.append('Id', $('#IdEmpresa').val());
+            formData.append('NomeFantasia', $('#NomeFantasia').val());
+            formData.append('RazaoSocial', $('#RazaoSocial').val());
+            formData.append('Cnpj', $('#Cnpj').val());
+            formData.append('InscricaoEstadual', $('#InscricaoEstadual').val());
+            formData.append('Telefone', $('#Telefone').val());
+            formData.append('Celular', $('#Celular').val());
+            formData.append('Email', $('#Email').val());
+            formData.append('Cep', $('#Cep').val());
+            formData.append('Logradouro', $('#Logradouro').val());
+            formData.append('Numero', $('#Numero').val());
+            formData.append('Complemento', $('#Complemento').val());
+            formData.append('Bairro', $('#Bairro').val());
+            formData.append('Cidade', $('#Cidade').val());
+            formData.append('Estado', $('#Estado').val());
 
-        $.ajax(
-            {
-                url: "/Parametros/GravarEmpresa",
-                data: formData,
-                processData: false,
-                contentType: false,
-                type: "POST",
-                success: function (data) {
-                    window.location.href = "/Home/Index";
+            $.ajax(
+                {
+                    url: "/Parametros/GravarEmpresa",
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    type: "POST",
+                    success: function (data) {
+                        window.location.href = "/Home/Index";
+                    }
                 }
-            }
-        );
+            );
+        }        
+    }
+
+    function camposValidos() {
+        if (document.getElementById('NomeFantasia').value === '') {
+            alert('Campo obrigatório não preenchido: Nome Fantasia ');
+            document.getElementById('NomeFantasia').focus();
+            return false;
+        }
+
+        if (document.getElementById('RazaoSocial').value === '') {
+            alert('Campo obrigatório não preenchido: Razão Social ');
+            document.getElementById('RazaoSocial').focus();
+            return false;
+        }
+
+        if (document.getElementById('Cnpj').value === '') {
+            alert('Campo obrigatório não preenchido: Cnpj ');
+            document.getElementById('Cnpj').focus();
+            return false;
+        }
+
+        if (document.getElementById('Telefone').value === '') {
+            alert('Campo obrigatório não preenchido: Telefone ');
+            document.getElementById('Telefone').focus();
+            return false;
+        }
+
+        if (document.getElementById('Celular').value === '') {
+            alert('Campo obrigatório não preenchido: Celular ');
+            document.getElementById('Celular').focus();
+            return false;
+        }
+
+        if (document.getElementById('Email').value === '') {
+            alert('Campo obrigatório não preenchido: E-mail ');
+            document.getElementById('Email').focus();
+            return false;
+        }
+
+        if (document.getElementById('Cep').value === '') {
+            alert('Campo obrigatório não preenchido: Cep ');
+            document.getElementById('Cep').focus();
+            return false;
+        }
+
+        if (document.getElementById('Logradouro').value === '') {
+            alert('Campo obrigatório não preenchido: Logradouro ');
+            document.getElementById('Logradouro').focus();
+            return false;
+        }
+
+        if (document.getElementById('Numero').value === '') {
+            alert('Campo obrigatório não preenchido: Número ');
+            document.getElementById('Numero').focus();
+            return false;
+        }
+
+        if (document.getElementById('Bairro').value === '') {
+            alert('Campo obrigatório não preenchido: Bairro ');
+            document.getElementById('Bairro').focus();
+            return false;
+        }
+
+        if (document.getElementById('Cidade').value === '') {
+            alert('Campo obrigatório não preenchido: Cidade ');
+            document.getElementById('Cidade').focus();
+            return false;
+        }
+
+        if (document.getElementById('Estado').value === '') {
+            alert('Campo obrigatório não preenchido: Estado ');
+            document.getElementById('Estado').focus();
+            return false;
+        }
+
+        return true;
+    }
+
+    function mascaraTelefone(campo) {
+
+        if (mascaraInteiro(campo) == false) {
+            event.returnValue = false;
+        }
+        return formataCampo(campo, '(00)9 0000-0000', event);
+    }
+
+    function mascaraCnpj(cnpj) {
+        if (mascaraInteiro(cnpj) == false) {
+            event.returnValue = false;
+        }
+        return formataCampo(cnpj, '00.000.000/0000-00', event);
+    }
+
+    function mascaraCep(cep) {
+        if (mascaraInteiro(cep) == false) {
+            event.returnValue = false;
+        }
+        return formataCampo(cep, '00.000-000', event);
+    }
+
+    function mascaraInteiro() {
+        if (event.keyCode < 48 || event.keyCode > 57) {
+            event.returnValue = false;
+            return false;
+        }
+        return true;
     }
 
     function BuscarCep(cep) {
@@ -89,7 +197,7 @@
                             <th>Inscrição Estadual</th>
                         </tr>
                         <tr>
-                            <td><input type="text" id="Cnpj" name="Cnpj" value="@Model.Cnpj" class="form-control" /></td>
+                            <td><input type="text" id="Cnpj" name="Cnpj" value="@Model.Cnpj" onkeypress="mascaraCnpj(this)" class="form-control" /></td>
                             <td><input type="text" id="InscricaoEstadual" name="InscricaoEstadual" value="@Model.InscricaoEstadual" class="form-control" /></td>
                         </tr>
                     </table>
@@ -99,7 +207,7 @@
                             <th>Celular</th>
                         </tr>
                         <tr>
-                            <td><input type="text" id="Telefone" name="Telefone" value="@Model.Telefone" class="form-control" /></td>
+                            <td><input type="text" id="Telefone" name="Telefone" value="@Model.Telefone" onkeypress="mascaraTelefone(this)"  class="form-control" /></td>
                             <td><input type="text" id="Celular" name="Celular" value="@Model.Celular" class="form-control" /></td>
                         </tr>
                     </table>
@@ -123,7 +231,7 @@
                         </tr>
                         <tr>
                             <td style="width: 20%">
-                                <input type="text" id="Cep" name="Cep" onfocusout="BuscarCep(this.value);" value="@Model.Cep" class="form-control" />
+                                <input type="text" id="Cep" name="Cep" onkeypress="mascaraCep(this)" onfocusout="BuscarCep(this.value);" value="@Model.Cep" class="form-control" />
                             </td>
                             <td style="width: 60%">
                                 <input type="text" id="Logradouro" name="Logradouro" value="@Model.Logradouro" class="form-control" />
@@ -167,7 +275,7 @@
                 <tr>
                     <td>
                         <input type="button" class="btn btn-primary" id="btnSalvar" value="Salvar" onclick="GravarEmpresa();" />
-                        <input type="button" id="btnCancelar" value="Cancelar" class="btn btn-danger" onclick="window.location.href = '/Empresa/Index'" />
+                        <input type="button" id="btnCancelar" value="Cancelar" class="btn btn-danger" onclick="window.location.href = '/Home/Index'" />
                     </td>
                 </tr>
             </table>
