@@ -4257,7 +4257,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Anderson Domingos\\.nuget\\packages\\": {},
+    "C:\\Users\\anderson.domingos\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
@@ -4267,7 +4267,7 @@
       "projectUniqueName": "D:\\Projetos\\multiplaescolhaedu\\MultiplaEscolhaEdu.Admin\\MultiplaEscolhaEdu.Admin.csproj",
       "projectName": "MultiplaEscolhaEdu.Admin",
       "projectPath": "D:\\Projetos\\multiplaescolhaedu\\MultiplaEscolhaEdu.Admin\\MultiplaEscolhaEdu.Admin.csproj",
-      "packagesPath": "C:\\Users\\Anderson Domingos\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\anderson.domingos\\.nuget\\packages\\",
       "outputPath": "D:\\Projetos\\multiplaescolhaedu\\MultiplaEscolhaEdu.Admin\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
@@ -4275,7 +4275,7 @@
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Anderson Domingos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\anderson.domingos\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -4365,7 +4365,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.407\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
       }
     }
   }

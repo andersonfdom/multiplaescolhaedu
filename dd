@@ -1,0 +1,83 @@
+[33mcommit e9256468cadc0cf43a2ba334b9577f1aa9f9ea22[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: Anderson Fernando Domingos <anderson.ferdomingos@gmail.com>
+Date:   Thu May 5 11:54:59 2022 -0300
+
+    Ajustes necessários em Parceiros,Alunos e Parâmetros.
+
+[33mcommit 8a9a2e708ab9af351a8c3dce070c7c0d1ed0291d[m
+Author: Anderson Fernando Domingos <anderson.ferdomingos@gmail.com>
+Date:   Thu May 5 00:56:12 2022 -0300
+
+    Implementação parâmetros dados empresa. e modulo Parceiro(Aluno)
+
+[33mcommit 9b61760edde1f0a13fdd1bd83b56ec72435a7741[m
+Author: Anderson Fernando Domingos <anderson.ferdomingos@gmail.com>
+Date:   Wed May 4 18:12:04 2022 -0300
+
+    04/05/2022 Cadastro de Alunos Parceiros concluído com sucesso.
+
+[33mcommit 97ddcabee9c158c743be3dcbfb0a6265115904d0[m
+Author: Anderson Fernando Domingos <anderson.ferdomingos@gmail.com>
+Date:   Wed May 4 09:15:28 2022 -0300
+
+    Atualização
+
+[33mcommit ddb37176078c94937fd487da40d6e0dea3239983[m
+Author: Anderson Fernando Domingos <anderson.ferdomingos@gmail.com>
+Date:   Wed May 4 09:14:17 2022 -0300
+
+    Add projeto inicial
+
+[33mcommit 62bc7d468879e1c61f446a1b12d25326e2d8b96d[m
+Author: Anderson Fernando Domingos <anderson.ferdomingos@gmail.com>
+Date:   Tue May 3 11:56:54 2022 -0300
+
+    Ajustes
+
+[33mcommit 73baddfcf6fdc0d1eb96758246122272977deefe[m
+Author: Anderson Fernando Domingos <anderson.ferdomingos@gmail.com>
+Date:   Fri Apr 29 00:00:44 2022 -0300
+
+    Falta interface matrículas parâmetros e login. tambem leitura gravação e exclusão banco de dados
+
+[33mcommit d07e105e3931b3327f2b21f928155009fa509000[m
+Author: Anderson Fernando Domingos <anderson.ferdomingos@gmail.com>
+Date:   Thu Apr 28 14:16:20 2022 -0300
+
+    Atualização
+
+[33mcommit 8cd6434b45cd06838a3e234ad46d65da917de547[m
+Author: Anderson Fernando Domingos <anderson.ferdomingos@gmail.com>
+Date:   Thu Apr 28 09:46:34 2022 -0300
+
+    Atualização
+
+[33mcommit 4687161af4f0cf1caabd3a4a657d302ea3406162[m
+Author: Anderson Fernando Domingos <anderson.ferdomingos@gmail.com>
+Date:   Thu Apr 28 09:46:03 2022 -0300
+
+    Limpeza de dados
+
+[33mcommit 43498634994e7845880eea6f86a4c6b3ac6547fb[m
+Author: Anderson Fernando Domingos <anderson.ferdomingos@gmail.com>
+Date:   Thu Apr 28 09:43:44 2022 -0300
+
+    Limpeza
+
+[33mcommit 2e4dbe9013e2d75d435c0278723ffff6592f9313[m
+Author: Anderson Fernando Domingos <anderson.ferdomingos@gmail.com>
+Date:   Mon Apr 25 22:27:04 2022 -0300
+
+    Upgrade
+
+[33mcommit 4df4ad525101213864f900b8916aeed8db05fdc3[m
+Author: Anderson Fernando Domingos <anderson.ferdomingos@gmail.com>
+Date:   Wed Apr 20 18:41:23 2022 -0300
+
+    Criação Model Dao Categoria Curso.
+
+[33mcommit ff2a1456116a11c5bddc584e0ee9b457f47f1b20[m
+Author: Anderson Fernando Domingos <anderson.ferdomingos@gmail.com>
+Date:   Tue Apr 19 22:43:54 2022 -0300
+
+    Ajuste inicial
