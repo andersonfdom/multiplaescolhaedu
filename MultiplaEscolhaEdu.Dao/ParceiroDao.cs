@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using MultiplaEscolhaEdu.Model;
 using MultiplaEscolhaEdu.Dao.Models;
 using System.Collections;
+using Microsoft.EntityFrameworkCore;
 
 namespace MultiplaEscolhaEdu.Dao
 {
@@ -118,6 +119,11 @@ namespace MultiplaEscolhaEdu.Dao
                     if (novoRegistro == true)
                     {
                         ctx.Parceiros.Add(a);
+                    }
+                    else
+                    {
+                        ctx.Parceiros.Attach(a);
+                        ctx.Entry(a).State = EntityState.Modified;
                     }
 
                     ctx.SaveChanges();

@@ -482,7 +482,6 @@ namespace MultiplaEscolhaEdu.Dao.Models
 
                 entity.Property(e => e.Senha)
                     .IsRequired()
-                    .HasMaxLength(12)
                     .HasColumnName("senha");
 
                 entity.Property(e => e.UltimoAcesso)

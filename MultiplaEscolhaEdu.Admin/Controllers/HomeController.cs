@@ -15,6 +15,6 @@ namespace MultiplaEscolhaEdu.Admin.Controllers
         public IActionResult Index()
         {
             return View();
-        }      
+        }
     }
 }

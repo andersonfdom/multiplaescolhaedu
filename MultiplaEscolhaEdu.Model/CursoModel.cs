@@ -1,0 +1,17 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace MultiplaEscolhaEdu.Model
+{
+    public class CursoModel
+    {
+        public int Id { get; set; }
+        public string Descricao { get; set; }
+        public decimal Valor { get; set; }
+        public int? IdCategoriaCurso { get; set; }
+        public string Slug { get; set; }
+    }
+}

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using MultiplaEscolhaEdu.Model;
 using MultiplaEscolhaEdu.Dao;
 using MultiplaEscolhaEdu.Dao.Models;
+
 namespace MultiplaEscolhaEdu.Admin.Controllers
 {
     public class ParceirosController : Controller

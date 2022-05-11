@@ -139,3 +139,5 @@ D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Admin\bin\Debug\net5.0\Multipl
 D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Admin\bin\Debug\net5.0\MultiplaEscolhaEdu.Model.dll
 D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Admin\bin\Debug\net5.0\MultiplaEscolhaEdu.Dao.pdb
 D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Admin\bin\Debug\net5.0\MultiplaEscolhaEdu.Model.pdb
+D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Admin\obj\Debug\net5.0\Razor\Views\Usuarios\Cadastro.cshtml.g.cs
+D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Admin\obj\Debug\net5.0\Razor\Views\Login\Index.cshtml.g.cs

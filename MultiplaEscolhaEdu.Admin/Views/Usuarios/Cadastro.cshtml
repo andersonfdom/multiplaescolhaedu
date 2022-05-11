@@ -1,0 +1,71 @@
+﻿@model MultiplaEscolhaEdu.Model.UsuarioModel
+
+@{
+    ViewData["Title"] = "Cadastro";
+}
+
+
+<script>
+    $(function () {
+        $('#btnSalvar').click(function () {
+            var dados = new FormData();
+
+            dados.append("Id", $('#IdUsuario').val());
+            dados.append("LoginUsuario", $('#LoginUsuario').val());
+            dados.append("Senha", $('#Senha').val());
+            dados.append("IdParceiro", 0);
+            dados.append("IdEmpresa", $('#empresaId').val());
+            dados.append("Usuariologado", 0);
+
+            $.ajax(
+                {
+                    url: "/Usuarios/GravarUsuario",
+                    data: dados,
+                    processData: false,
+                    contentType: false,
+                    type: "POST",
+                    success: function (data) {
+                        window.location.href = "/Usuarios/Index";
+                    }
+                }
+            );
+        });
+    });
+</script>
+<section class="section">
+    <h1 class="section-header">
+        Dados Usuário
+    </h1>
+    <div class="section-body">
+        <div class="table-responsive" style="overflow-x: auto">
+            <input type="hidden" id="IdUsuario" value="@Model.Id" />
+            <table class="table" style="width: 100%">
+                <tr>
+                    <th>Login</th>
+                </tr>
+                <tr>
+                    <td><input type="text" id="LoginUsuario" name="LoginUsuario" value="@Model.LoginUsuario" class="form-control" /></td>
+                </tr>
+            </table>
+            <table class="table" style="width: 100%">
+                <tr>
+                    <th>Senha</th>
+                    <th>Confirmar Senha</th>
+                </tr>
+                <tr>
+                    <td><input type="password" id="Senha" name="Senha" value="@Model.Senha" class="form-control" /></td>
+                    <td><input type="password" id="ConfirmarSenha" name="ConfirmarSenha" value="@Model.Senha" class="form-control" /></td>
+                </tr>
+            </table>
+            <table class="table" style="width:100%">
+                <tr>
+                    <td>
+                        <input type="button" class="btn btn-primary" id="btnSalvar" value="Salvar" />
+                        <input type="button" id="btnCancelar" value="Cancelar" class="btn btn-danger" onclick="window.location.href = '/Usuarios/Index'" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</section>
+

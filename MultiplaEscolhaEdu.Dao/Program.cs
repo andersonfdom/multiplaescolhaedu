@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MultiplaEscolhaEdu.Model;
+using System;
 
 namespace MultiplaEscolhaEdu.Dao
 {
@@ -6,7 +7,13 @@ namespace MultiplaEscolhaEdu.Dao
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            UsuarioDao dao = new UsuarioDao();
+            UsuarioModel model = dao.CarregarDados(1);
+
+            dao.Gravar(model);
+
+            Console.WriteLine(model.Senha);
+            Console.ReadKey();
         }
     }
 }

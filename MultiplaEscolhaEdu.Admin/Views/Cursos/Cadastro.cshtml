@@ -1,7 +1,100 @@
-﻿
+﻿@model MultiplaEscolhaEdu.Model
+
 @{
     ViewData["Title"] = "Cadastro";
 }
 
-<h1>Cadastro</h1>
+<section class="section">
+    <h1 class="section-header">
+        Cadastro de Cursos
+    </h1>
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="dados-cadastrais" role="tabpanel" aria-labelledby="home-tab">
+            <div class="table-responsive" style="overflow-x: auto">
+                <table class="table" style="width: 100%">
+                    <tr>
+                        <th>Categoria</th>
+                        <th>
+                            <div class="modal fade" id="popCategoria" role="dialog">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="section-header">
+                                                Categoria dos Cursos
+                                            </h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <table class="table" style="width: 100%">
+                                                <tr>
+                                                    <th>Descrição</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <input type="text" id="txtDescricaoCategoria" class="form-control" />
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <table class="table" style="width: 100%">
+                                                <tr>
+                                                    <td>
+                                                        <input type="button" id="btnSalvarCategoria" value="Salvar" class="btn btn-primary" />
+                                                        <input type="button" id="btnCancelarCategoria" value="Cancelar" class="btn btn-danger" onclick="$('#popCategoria').modal('hide')" />
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select id="ddlCategoria" class="form-control">
+                            </select>
+                        </td>
+                        <td>
+                            <input type="button" class="btn btn-primary" id="btnCadastrar" value="Cadastrar" data-toggle="modal" data-target="#popCategoria" data-backdrop="" />
+                        </td>
+                    </tr>
+                </table>
+                <table class="table" style="width: 100%">
+                    <tr>
+                        <th>Descrição</th>
+                        <th>Valor</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="hidden" id="hdnCursoId" value="0" />
+                            <input type="text" id="txtDescricaoCurso" class="form-control" />
+                        </td>
+                        <td>
+                            <input type="text" id="txtValorCurso" class="form-control moeda" />
+                        </td>
+                    </tr>
+                </table>
+                <table class="table" style="width: 100%">
+                    <tr>
+                        <th>Slug</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" id="txtSlugCurso" class="form-control" />
+                        </td>
+                    </tr>
+                </table>
+                <table class="table" style="width: 100%">
+                    <tr>
+                        <td>
+                            <input type="button" id="btnSalvarCurso" value="Salvar" class="btn btn-primary" />
+                            <input type="button" id="btnCancelarCurso" value="Cancelar" class="btn btn-danger" onclick="window.location.href = '/Cursos/Index'" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
 

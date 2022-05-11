@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Http 
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8" />
@@ -11,6 +12,7 @@
 
     <link rel="stylesheet" href="~/css/demo.css">
     <link href="~/modules/datatables/DataTables-1.10.16/css/dataTables.bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/css/bootstrap-select.css" />
     <link rel="stylesheet" href="~/css/style.css">
 
     <script src="~/modules/jquery.min.js"></script>
@@ -30,15 +32,37 @@
     <script src="~/modules/datatables/DataTables-1.10.16/js/dataTables.bootstrap.js"></script>
     <script src="~/js/jquery.mask.js"></script>
     <script src="~/ckeditor/ckeditor.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-maskmoney/3.0.2/jquery.maskMoney.min.js"></script>
     <script src="~/js/utils.js"></script>
     <script>
         $(function () {
+            if ($('#usuarioId').val() === '0' && $('#empresaId').val() === '0') {
+                window.location.href = "/Login/Index"
+            }
             $(".moeda").maskMoney({
                 prefix: '',
                 allowNegative: true,
                 thousands: '.',
                 decimal: ','
+            });
+
+            $('#linkSair').click(function () {
+                var data = new FormData();
+
+                data.append("idUsuario", $('#usuarioId').val());
+
+                $.ajax({
+                    url: "/Login/RealizarLogoff",
+                    data: data,
+                    processData: false,
+                    contentType: false,
+                    type: "POST",
+                    success: function (jsonResult) {
+                        window.location.href = "/Login/Index"
+                    },
+                    error: function (request, status, error) {
+                        alert(request.responseText);
+                    }
+                });
             });
         });
     </script>
@@ -97,8 +121,12 @@
         </div>
         <div class="main-content">
             <form id="formDados" class="form-control" enctype="multipart/form-data">
-                <input type="hidden" id="UsuarioId" value="0" />
-                <input type="hidden" id="EmpresaId" value="0" />
+                @{ 
+                    var usuarioId = Context.Session.GetString("usuarioId") == null ? "0" : Context.Session.GetString("usuarioId").ToString();
+                    var empresaId = Context.Session.GetString("empresaId") == null ? "0" : Context.Session.GetString("empresaId").ToString();
+                }
+                <input type="hidden" id="usuarioId" value="@usuarioId" />
+                <input type="hidden" id="empresaId" value="@empresaId" />
                 @RenderBody()
             </form>
         </div>
