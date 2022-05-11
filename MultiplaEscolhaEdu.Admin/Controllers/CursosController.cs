@@ -19,6 +19,8 @@ namespace MultiplaEscolhaEdu.Admin.Controllers
 
         public IActionResult Cadastro(int? id)
         {
+            CategoriaCursoDao categoriaCursoDao = new CategoriaCursoDao();
+            ViewBag.Categoria = categoriaCursoDao.Listar();
             CursoModel model = new CursoModel();
             return View(model);
         }

@@ -1,9 +1,26 @@
-﻿@model MultiplaEscolhaEdu.Model
-
+﻿
 @{
     ViewData["Title"] = "Cadastro";
 }
+<script>
+    $(function () {
+        var id = getParameterByName("id") == null ? "0" : getParameterByName("id");
 
+        if (id !== "0") {
+        }
+
+
+    });
+
+    function getParameterByName(name, url = window.location.href) {
+        name = name.replace(/[\[\]]/g, '\\$&');
+        var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+            results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, ' '));
+    }
+</script>
 <section class="section">
     <h1 class="section-header">
         Cadastro de Cursos
@@ -53,6 +70,10 @@
                     <tr>
                         <td>
                             <select id="ddlCategoria" class="form-control">
+                                @foreach (var item in ViewBag.Categoria)
+                                {
+                                    <option value="@item.Id">@item.Descricao</option>
+                                }
                             </select>
                         </td>
                         <td>
