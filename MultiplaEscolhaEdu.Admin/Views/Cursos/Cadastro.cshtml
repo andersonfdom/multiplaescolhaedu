@@ -7,9 +7,84 @@
         var id = getParameterByName("id") == null ? "0" : getParameterByName("id");
 
         if (id !== "0") {
+            $('#hdnCursoId').val(id);
         }
 
+        $('#btnSalvarCategoria').click(function () {
+            if (document.getElementById('txtDescricaoCategoria').value === '') {
+                alert('Campo obrigatório não preenchido: Descrição');
+                document.getElementById('txtDescricaoCategoria').focus();
+                return false;
+            }
 
+            var data = new FormData();
+
+            data.append("Id", '0');
+            data.append("Descricao", $('#txtDescricaoCategoria').val());
+
+            $.ajax({
+                url: "/Cursos/GravarCategoria",
+                data: data,
+                processData: false,
+                contentType: false,
+                type: "POST",
+                success: function (data) {
+                    if (data.Id !== "0" || data.Id > 0) {
+                        window.location.reload(true);
+                    } else {
+                        alert(data.mensagem);
+                    }
+                },
+                error: function (request, status, error) {
+                    alert(request.responseText);
+                }
+            });
+        });
+
+        $('#btnSalvarCurso').click(function () {
+            if (document.getElementById('txtDescricaoCurso').value === '') {
+                alert('Campo obrigatório não preenchido: Descrição');
+                document.getElementById('txtDescricaoCurso').focus();
+                return false;
+            }
+
+            if (document.getElementById('txtValorCurso').value === '') {
+                alert('Campo obrigatório não preenchido: Valor');
+                document.getElementById('txtValorCurso').focus();
+                return false;
+            }
+
+            if (document.getElementById('txtSlugCurso').value === '') {
+                alert('Campo obrigatório não preenchido: Slug');
+                document.getElementById('txtSlugCurso').focus();
+                return false;
+            }
+
+            var data = new FormData();
+
+            data.append("Id", $('#hdnCursoId').val());
+            data.append("Descricao", $('#txtDescricao').val());
+            data.append("Valor", $('#txtValor').val());
+            data.append("Slug", $('#txtSlug').val());
+
+            $.ajax({
+                url: "/Cursos/GravarCurso",
+                data: data,
+                processData: false,
+                contentType: false,
+                type: "POST",
+                success: function (data) {
+                    if (data.Id !== "0" || data.Id > 0) {
+                        window.location.reload(true);
+                    } else {
+                        alert(data.mensagem);
+                    }
+                },
+                error: function (request, status, error) {
+                    alert(request.responseText);
+                }
+            });
+        });
     });
 
     function getParameterByName(name, url = window.location.href) {

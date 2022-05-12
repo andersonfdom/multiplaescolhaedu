@@ -24,5 +24,15 @@ namespace MultiplaEscolhaEdu.Admin.Controllers
             CursoModel model = new CursoModel();
             return View(model);
         }
+
+        [HttpPost]
+        public IActionResult GravarCategoria(CategoriaCursoModel model)
+        {
+            CategoriaCursoDao categoriaCursoDao = new CategoriaCursoDao();
+            return Ok(new
+            {
+                Id = categoriaCursoDao.Gravar(model)
+            });
+        }
     }
 }
