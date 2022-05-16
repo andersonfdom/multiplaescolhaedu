@@ -14,15 +14,16 @@ namespace MultiplaEscolhaEdu.Admin.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            CursoDao dao = new CursoDao();
+            return View(dao.ListarDados());
         }
 
         public IActionResult Cadastro(int? id)
         {
             CategoriaCursoDao categoriaCursoDao = new CategoriaCursoDao();
             ViewBag.Categoria = categoriaCursoDao.Listar();
-            CursoModel model = new CursoModel();
-            return View(model);
+            
+            return View();
         }
 
         [HttpPost]
@@ -32,6 +33,15 @@ namespace MultiplaEscolhaEdu.Admin.Controllers
             return Ok(new
             {
                 Id = categoriaCursoDao.Gravar(model)
+            });
+        }
+
+        [HttpGet]
+        public IActionResult ListarCursos()
+        {
+            CursoDao dao = new CursoDao();
+            return Ok(new {
+                dados = dao.ListarDados()
             });
         }
     }

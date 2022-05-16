@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace MultiplaEscolhaEdu.Dao
 {
-    public class CursoDao : IDao<CursoModel>
+    public class CursoDao 
     {
         public CursoModel CarregarDados(int id)
         {
@@ -125,28 +125,37 @@ namespace MultiplaEscolhaEdu.Dao
             }
         }
 
-        public List<CursoModel> ListarDados()
+        public List<CursoConsulta> ListarDados()
         {
-            List<CursoModel> lista = null;
+            List<CursoConsulta> lista = null;
 
             try
             {
                 using (MultiplaEscolhaEduContext ctx = new MultiplaEscolhaEduContext())
                 {
                     var cursos = (from c in ctx.Cursos
+                                  join t in ctx.CategoriaCursos on c.IdCategoriaCurso equals t.Id
                                   select new
                                   {
                                       Id = c.Id,
                                       Descricao = c.Descricao,
                                       Valor = c.Valor,
-                                      IdCategoriaCurso = c.IdCategoriaCurso,
-                                      Slug = c.Slug
+                                      CategoriaCurso = t.Descricao
                                   }).ToList();
 
-                    if (cursos != null)
+                    if (cursos != null && cursos.Count() >0 )
                     {
-                        lista = new List<CursoModel>();
-                        lista.AddRange((IEnumerable<CursoModel>)cursos);
+                        lista = new List<CursoConsulta>();
+                        foreach (var item in cursos)
+                        {
+                            lista.Add(new CursoConsulta
+                            {
+                                CategoriaCurso = item.CategoriaCurso,
+                                Descricao = item.Descricao,
+                                Id = item.Id,
+                                Valor = item.Valor
+                            });
+                        }
                     }
                 }
             }

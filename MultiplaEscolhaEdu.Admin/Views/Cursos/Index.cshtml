@@ -1,4 +1,4 @@
-﻿
+﻿@model IEnumerable<MultiplaEscolhaEdu.Model.CursoConsulta>
 @{
     ViewData["Title"] = "Index";
 }
@@ -100,6 +100,18 @@
                     </tr>
                 </thead>
                 <tbody id="dadosGridCursos" class="GridCursos tablelinhaimp">
+                    @foreach (var item in Model)
+                    {
+                    <tr>
+                        <td>
+                            <img src="~/img/btnEdit.png" alt="Alterar Registro" title="Alterar Registro" width="20" height="20" onclick="CarregarDadosCurso(@item.Id)" />
+                            <img src="~/img/btnDelete.png" alt="Excluir Registro" title="Excluir Registro" width="20" height="20" onclick="ExcluirDadosCurso(@item.Id)" />
+                        </td>
+                        <td>@item.Descricao</td>
+                        <td>@item.Valor</td>
+                        <td>@item.CategoriaCurso</td>
+                    </tr>
+                    }
                 </tbody>
             </table>
         </div>
