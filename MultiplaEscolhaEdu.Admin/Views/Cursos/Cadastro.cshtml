@@ -8,6 +8,21 @@
 
         if (id !== "0") {
             $('#hdnCursoId').val(id);
+
+            $.ajax({
+                type: "GET",
+                url: "/Cursos/CarregarDadosCurso?id=" + $('#hdnCursoId').val(),
+                contentType:"application/JSON; charset=UTF-8",
+                dataType: "json",
+                success: function (jsonResult) {
+                    $(jsonResult.dados).each(function () {
+                        $('#txtDescricaoCurso').val(this.descricao);
+                        $('#ddlCategoria').val(this.idCategoriaCurso);
+                        $('#txtSlugCurso').val(this.slug);
+                        $('#txtValorCurso').val(this.valor);
+                    });
+                }
+            });
         }
 
         $('#btnSalvarCategoria').click(function () {
@@ -63,9 +78,10 @@
             var data = new FormData();
 
             data.append("Id", $('#hdnCursoId').val());
-            data.append("Descricao", $('#txtDescricao').val());
-            data.append("Valor", $('#txtValor').val());
-            data.append("Slug", $('#txtSlug').val());
+            data.append("Descricao", $('#txtDescricaoCurso').val());
+            data.append("Valor", $('#txtValorCurso').val());
+            data.append("IdCategoriaCurso", $('#ddlCategoria').val());
+            data.append("Slug", $('#txtSlugCurso').val());
 
             $.ajax({
                 url: "/Cursos/GravarCurso",
@@ -74,7 +90,7 @@
                 contentType: false,
                 type: "POST",
                 success: function (data) {
-                    if (data.Id !== "0" || data.Id > 0) {
+                    if (data.mensagem === "Ok") {
                         window.location.reload(true);
                     } else {
                         alert(data.mensagem);
