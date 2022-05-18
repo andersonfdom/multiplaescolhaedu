@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiplaEscolhaEdu.Admin", "MultiplaEscolhaEdu.Admin\MultiplaEscolhaEdu.Admin.csproj", "{016F6441-142B-4A6B-81BE-D51BDAA4B0B7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiplaEscolhaEdu.Admin", "MultiplaEscolhaEdu.Admin\MultiplaEscolhaEdu.Admin.csproj", "{016F6441-142B-4A6B-81BE-D51BDAA4B0B7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiplaEscolhaEdu.Model", "MultiplaEscolhaEdu.Model\MultiplaEscolhaEdu.Model.csproj", "{7D70B63F-5A2F-4951-B6D1-02952706B405}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiplaEscolhaEdu.Model", "MultiplaEscolhaEdu.Model\MultiplaEscolhaEdu.Model.csproj", "{7D70B63F-5A2F-4951-B6D1-02952706B405}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiplaEscolhaEdu.Dao", "MultiplaEscolhaEdu.Dao\MultiplaEscolhaEdu.Dao.csproj", "{318593DE-7D94-49B9-B8A7-830B484F41A1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiplaEscolhaEdu.Dao", "MultiplaEscolhaEdu.Dao\MultiplaEscolhaEdu.Dao.csproj", "{318593DE-7D94-49B9-B8A7-830B484F41A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiplaEscolhaEdu.Parceiros", "MultiplaEscolhaEdu.Parceiros\MultiplaEscolhaEdu.Parceiros.csproj", "{00DFB7DB-5497-4C43-803D-F6201A7FB111}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiplaEscolhaEdu.Parceiros", "MultiplaEscolhaEdu.Parceiros\MultiplaEscolhaEdu.Parceiros.csproj", "{00DFB7DB-5497-4C43-803D-F6201A7FB111}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

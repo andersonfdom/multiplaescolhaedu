@@ -4257,9 +4257,10 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\anderson.domingos\\.nuget\\packages\\": {},
+    "C:\\Users\\Anderson Domingos\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
@@ -4267,15 +4268,16 @@
       "projectUniqueName": "D:\\Projetos\\multiplaescolhaedu\\MultiplaEscolhaEdu.Parceiros\\MultiplaEscolhaEdu.Parceiros.csproj",
       "projectName": "MultiplaEscolhaEdu.Parceiros",
       "projectPath": "D:\\Projetos\\multiplaescolhaedu\\MultiplaEscolhaEdu.Parceiros\\MultiplaEscolhaEdu.Parceiros.csproj",
-      "packagesPath": "C:\\Users\\anderson.domingos\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\Anderson Domingos\\.nuget\\packages\\",
       "outputPath": "D:\\Projetos\\multiplaescolhaedu\\MultiplaEscolhaEdu.Parceiros\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\anderson.domingos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Anderson Domingos\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"

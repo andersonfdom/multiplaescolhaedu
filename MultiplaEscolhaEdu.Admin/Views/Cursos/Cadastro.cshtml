@@ -91,7 +91,7 @@
                 type: "POST",
                 success: function (data) {
                     if (data.mensagem === "Ok") {
-                        window.location.reload(true);
+                        window.location.href = "/Cursos/Index";
                     } else {
                         alert(data.mensagem);
                     }

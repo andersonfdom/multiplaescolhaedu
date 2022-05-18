@@ -53,5 +53,15 @@ namespace MultiplaEscolhaEdu.Admin.Controllers
                 mensagem = dao.Gravar(model)
             });
         }
+
+        [HttpPost]
+        public IActionResult ExcluirCursos(int id)
+        {
+            CursoDao dao = new CursoDao();
+            return Ok(new
+            {
+                mensagem = dao.Excluir(id)
+            }); ;
+        }
     }
 }

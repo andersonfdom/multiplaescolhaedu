@@ -2,6 +2,320 @@
 @{
     ViewData["Title"] = "Cadastro";
 }
+<script>
+    $(function () {        
+        CarregarGridAlunos();
+        CarregarGridCursos();
+        CarregarGridParceiros();
+    });
 
-<h1>Cadastro</h1>
+    function CarregarGridAlunos() {
+        var wTotalPaginas = 0;
+        var wRotulo = "";
+        $("#GridAlunos").DataTable({
+            drawCallback: function () {
+                this.api().state.clear();
+                wTotalPaginas = $('.paginate_button:not(.previous,.next)').length;
+                $('.paginate_button', this.api().table().container())
+                    .on('click', function () {
+                        var wTextoPosicaoPagina = $('.active').text(); // Pega o valor da página selecionada
+                        var wPosicaoPagina = 0; // varíavel da posição da página
+
+                        wPosicaoPagina = wTextoPosicaoPagina;
+
+                        wRotulo = "Página " + wPosicaoPagina + " de " + wTotalPaginas + "(total de " + wQtde + " registros)";
+                        $('#GridAlunos_info').empty();
+                        $('#GridAlunos_info').html(wRotulo);
+                    });
+            },
+            bJQueryUI: true,
+            "oLanguage": {
+                "sProcessing": "Processando...",
+                "sLengthMenu": "Mostrar _MENU_ registros",
+                "sZeroRecords": "Não foram encontrados resultados",
+                "sInfo": "Mostrando de _START_ até _END_ de _TOTAL_ registros",
+                "sInfoEmpty": "Mostrando de 0 até 0 de 0 registros",
+                "sInfoFiltered": "",
+                "sInfoPostFix": "",
+                "sSearch": "Procurar:",
+                "sUrl": "",
+                "oPaginate": {
+                    "sFirst": "Primeiro",
+                    "sPrevious": "Anterior",
+                    "sNext": "Próximo",
+                    "sLast": "Último"
+                }
+            },
+            destroy: true,
+            searching: true,
+            ordering: false,
+            dom: 'Bfrtip',
+            select: true,
+            pageLength: 10
+        });
+
+        $('#GridAlunos_paginate').hide();
+
+        $('input[type="search"]').css("width", "950px");
+    }
+
+    function CarregarGridCursos() {
+        var wTotalPaginas = 0;
+        var wRotulo = "";
+        $("#GridCursos").DataTable({
+            drawCallback: function () {
+                this.api().state.clear();
+                wTotalPaginas = $('.paginate_button:not(.previous,.next)').length;
+                $('.paginate_button', this.api().table().container())
+                    .on('click', function () {
+                        var wTextoPosicaoPagina = $('.active').text(); // Pega o valor da página selecionada
+                        var wPosicaoPagina = 0; // varíavel da posição da página
+
+                        wPosicaoPagina = wTextoPosicaoPagina;
+
+                        wRotulo = "Página " + wPosicaoPagina + " de " + wTotalPaginas + "(total de " + wQtde + " registros)";
+                        $('#GridCursos_info').empty();
+                        $('#GridCursos_info').html(wRotulo);
+                    });
+            },
+            bJQueryUI: true,
+            "oLanguage": {
+                "sProcessing": "Processando...",
+                "sLengthMenu": "Mostrar _MENU_ registros",
+                "sZeroRecords": "Não foram encontrados resultados",
+                "sInfo": "Mostrando de _START_ até _END_ de _TOTAL_ registros",
+                "sInfoEmpty": "Mostrando de 0 até 0 de 0 registros",
+                "sInfoFiltered": "",
+                "sInfoPostFix": "",
+                "sSearch": "Procurar:",
+                "sUrl": "",
+                "oPaginate": {
+                    "sFirst": "Primeiro",
+                    "sPrevious": "Anterior",
+                    "sNext": "Próximo",
+                    "sLast": "Último"
+                }
+            },
+            destroy: true,
+            searching: true,
+            ordering: false,
+            dom: 'Bfrtip',
+            select: true,
+            pageLength: 10
+        });
+
+        $('#GridCursos_paginate').hide();
+
+        $('input[type="search"]').css("width", "950px");
+    }
+
+    function CarregarGridParceiros() {
+        var wTotalPaginas = 0;
+        var wRotulo = "";
+        $("#GridParceiros").DataTable({
+            drawCallback: function () {
+                this.api().state.clear();
+                wTotalPaginas = $('.paginate_button:not(.previous,.next)').length;
+                $('.paginate_button', this.api().table().container())
+                    .on('click', function () {
+                        var wTextoPosicaoPagina = $('.active').text(); // Pega o valor da página selecionada
+                        var wPosicaoPagina = 0; // varíavel da posição da página
+
+                        wPosicaoPagina = wTextoPosicaoPagina;
+
+                        wRotulo = "Página " + wPosicaoPagina + " de " + wTotalPaginas + "(total de " + wQtde + " registros)";
+                        $('#GridParceiros_info').empty();
+                        $('#GridParceiros_info').html(wRotulo);
+                    });
+            },
+            bJQueryUI: true,
+            "oLanguage": {
+                "sProcessing": "Processando...",
+                "sLengthMenu": "Mostrar _MENU_ registros",
+                "sZeroRecords": "Não foram encontrados resultados",
+                "sInfo": "Mostrando de _START_ até _END_ de _TOTAL_ registros",
+                "sInfoEmpty": "Mostrando de 0 até 0 de 0 registros",
+                "sInfoFiltered": "",
+                "sInfoPostFix": "",
+                "sSearch": "Procurar:",
+                "sUrl": "",
+                "oPaginate": {
+                    "sFirst": "Primeiro",
+                    "sPrevious": "Anterior",
+                    "sNext": "Próximo",
+                    "sLast": "Último"
+                }
+            },
+            destroy: true,
+            searching: true,
+            ordering: false,
+            dom: 'Bfrtip',
+            select: true,
+            pageLength: 10
+        });
+
+        $('#GridParceiros_paginate').hide();
+
+        $('input[type="search"]').css("width", "950px");
+    }
+    </script>
+    <section class="section">
+        <h1 class="section-header">
+            Registro de Matrículas
+        </h1>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="dados-cadastrais" role="tabpanel" aria-labelledby="home-tab">
+                <div class="table-responsive" style="overflow-x: auto">
+                    <table class="table" style="width: 100%">
+                        <tr>
+                            <th>Aluno</th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="hidden" id="IdAluno" value="0" />
+                                <input type="text" id="txtAluno" class="form-control" />
+                            </td>
+                            <td>
+                                <div class="modal fade" id="popAluno" role="dialog" style="width:100%">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-body" style="width:100%">
+                                                <section class="section">
+                                                    <h1 class="section-header">
+                                                        Lista de Alunos
+                                                    </h1>
+                                                    <div class="section-body">
+                                                        <div class="table-responsive" style="overflow-x: auto">
+                                                            <table id="GridAlunos" class="table" style="width: 100%">
+                                                                <thead class="rotuloTable">
+                                                                    <tr>
+                                                                        <th style="width: 8%"></th>
+                                                                        <th style="width: 32%">Nome</th>
+                                                                        <th style="width: 30%">Cpf</th>
+                                                                        <th style="width: 30%">E-mail</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody id="dadosGridAlunos" class="GridAlunos tablelinhaimp">
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="button" class="btn btn-primary" id="btnPesquisarAluno" value="Procurar" data-toggle="modal" data-target="#popAluno" data-backdrop="" />
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="table" style="width: 100%">
+                        <tr>
+                            <th>Curso</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="hidden" id="IdCurso" value="0" />
+                                <input type="text" id="txtCurso" class="form-control" />
+                            </td>
+                            <td>
+                                <div class="modal fade" id="popCursos" role="dialog" style="width:100%">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-body" style="width:100%">
+                                                <section class="section">
+                                                    <h1 class="section-header">
+                                                        Lista de Cursos
+                                                    </h1>
+                                                    <div class="section-body">
+                                                        <div class="table-responsive" style="overflow-x: auto">
+                                                            <table id="GridCursos" class="table" style="width: 100%">
+                                                                <thead class="rotuloTable">
+                                                                    <tr>
+                                                                        <th style="width: 8%"></th>
+                                                                        <th style="width: 32%">Descrição</th>
+                                                                        <th style="width: 30%">Categoria</th>
+                                                                        <th style="width: 30%">Valor</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody id="dadosGridCursos" class="GridCursos tablelinhaimp">
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="button" class="btn btn-primary" id="btnPesquisarCurso" value="Procurar" data-toggle="modal" data-target="#popCursos" data-backdrop="" />
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="table" style="width: 100%">
+                        <tr>
+                            <th>Parceiro</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="hidden" id="IdParceiro" value="0" />
+                                <input type="text" id="txtParceiro" class="form-control" />
+                            </td>
+                            <td>
+                                <div class="modal fade" id="popParceiros" role="dialog" style="width:100%">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-body" style="width:100%">
+                                                <section class="section">
+                                                    <h1 class="section-header">
+                                                        Lista de Parceiros
+                                                    </h1>
+                                                    <div class="section-body">
+                                                        <div class="table-responsive" style="overflow-x: auto">
+                                                            <table id="GridParceiros" class="table" style="width: 100%">
+                                                                <thead class="rotuloTable">
+                                                                    <tr>
+                                                                        <th style="width: 8%"></th>
+                                                                        <th style="width: 32%">Descrição</th>
+                                                                        <th style="width: 30%">Categoria</th>
+                                                                        <th style="width: 30%">Valor</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody id="dadosGridParceiros" class="GridParceiros tablelinhaimp">
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="button" class="btn btn-primary" id="btnPesquisarParceiro" value="Procurar" data-toggle="modal" data-target="#popParceiros" data-backdrop="" />
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="table" style="width: 100%">
+                        <tr>
+                            <th>Status Matrícula</th>
+                            <th>Data Matrícula</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select id="ddlStatusMatricula" class="form-control">
+                                    <option value="0">Pendente</option>
+                                    <option value="1">Efetivada</option>
+                                    <option value="2">Cancelada</option>
+                                </select>
+                            </td>
+                            <td>
+                                <input type="date" id="txtDataMatricula" class="form-control" />
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
 
