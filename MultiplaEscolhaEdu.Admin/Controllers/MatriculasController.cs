@@ -3,6 +3,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using MultiplaEscolhaEdu.Model;
+using MultiplaEscolhaEdu.Dao;
+using MultiplaEscolhaEdu.Dao.Models;
 
 namespace MultiplaEscolhaEdu.Admin.Controllers
 {
@@ -15,6 +18,15 @@ namespace MultiplaEscolhaEdu.Admin.Controllers
 
         public IActionResult Cadastro(int? id)
         {
+            CursoDao cursoDao = new CursoDao();
+            ViewBag.Cursos = cursoDao.ListarDados();
+
+            AlunoDao alunoDao = new AlunoDao();
+            ViewBag.Alunos = alunoDao.ListarDados();
+
+            ParceiroDao parceiroDao = new ParceiroDao();
+            ViewBag.Parceiros = parceiroDao.ListarDados();
+
             return View();
         }
     }
