@@ -12,4 +12,4 @@ D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Model\obj\Debug\net5.0\ref\Mul
 D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Model\obj\Debug\net5.0\MultiplaEscolhaEdu.Model.pdb
 D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Model\obj\Debug\net5.0\MultiplaEscolhaEdu.Model.genruntimeconfig.cache
 D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Model\obj\Debug\net5.0\MultiplaEscolhaEdu.Model.csproj.AssemblyReference.cache
-D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Model\obj\Debug\net5.0\refint\MultiplaEscolhaEdu.Model.dll
+D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Model\bin\Debug\net5.0\ref\MultiplaEscolhaEdu.Model.dll

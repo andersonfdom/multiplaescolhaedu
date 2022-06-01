@@ -64,6 +64,34 @@
                     }
                 });
             });
+
+            $('#lnkMatricula').click(function () {
+                $.ajax({
+                    type: "POST",
+                    url: "/Home/ValidarQtdeRegistrosMatricula",
+                    async: false,
+                    dataType: "JSON",
+                    contentType: "application/json; charset=UTF-8",
+                    success: function (jsonResult) {
+                        $(jsonResult).each(function () {
+                            if (this.qtdeCursos === 0 || this.qtdeCursos === '0' ) {
+                                alert('É necessário estar cadastrado pelo menos 1 Curso.');
+                                return;
+                            }
+                            if (this.qtdeParceiros === 0 || this.qtdeParceiros === '0') {
+                                alert('É necessário estar cadastrado pelo menos 1 Parceiro.');
+                                return;
+                            }
+                            if (this.qtdeAlunos === 0 || this.qtdeAlunos === '0') {
+                                alert('É necessário estar cadastrado pelo menos 1 Aluno.');
+                                return;
+                            }
+
+                            window.location.href = '/Matriculas/Index';
+                        });
+                    }
+                });
+            });
         });
     </script>
 </head>
@@ -106,7 +134,7 @@
                     <li>
                         <a href="#" class="has-dropdown"><i class="ion ion-upload"></i><span>Movimentações</span></a>
                         <ul class="menu-dropdown">
-                            <li><a href="/Matriculas/Index"><i class="ion ion-person"></i>Matrículas</a></li>
+                            <li><a id="lnkMatricula"><i class="ion ion-person"></i>Matrículas</a></li>
                         </ul>
                     </li>
                     <li>

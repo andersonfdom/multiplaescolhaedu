@@ -61,7 +61,7 @@ namespace MultiplaEscolhaEdu.Admin.Controllers
             return Ok(new
             {
                 mensagem = dao.Excluir(id)
-            }); ;
+            }); 
         }
     }
 }

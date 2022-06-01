@@ -1,11 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-using MultiplaEscolhaEdu.Admin.Models;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using MultiplaEscolhaEdu.Model;
+using MultiplaEscolhaEdu.Dao;
+using MultiplaEscolhaEdu.Dao.Models;
+
 
 namespace MultiplaEscolhaEdu.Admin.Controllers
 {
@@ -15,6 +16,18 @@ namespace MultiplaEscolhaEdu.Admin.Controllers
         public IActionResult Index()
         {
             return View();
+        }
+
+        [HttpPost]
+        public IActionResult ValidarQtdeRegistrosMatricula()
+        {
+            MatriculaDao dao = new MatriculaDao();
+            return Ok(new
+            {
+                qtdeCursos = dao.QtdeCursosCadastrados(),
+                qtdeAlunos = dao.QtdeAlunosCadastrados(),
+                qtdeParceiros = dao.QtdeParceirosCadastrados()
+            });
         }
     }
 }

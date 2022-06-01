@@ -1,6 +1,69 @@
 ﻿@{
     ViewData["Title"] = "Cadastro";
 }
+<script>
+    $(function () {
+        var id = getParameterByName("id") == null ? "0" : getParameterByName("id");
+
+        if (id !== "0") {
+            $('#hdnIdMatricula').val(id);
+
+            $.ajax({
+                type: "GET",
+                url: "/Matriculas/CarregarDadosMatricula?id=" + $('#hdnIdMatricula').val(),
+                contentType: "application/JSON; charset=UTF-8",
+                dataType: "json",
+                success: function (jsonResult) {
+                    $(jsonResult.dados).each(function () {
+                        $('#ddlStatusMatricula').val(this.statusMatricula);
+                        $('#txtDataMatricula').val(this.dataMatricula);
+                        $('#ddlCurso').val(this.idCurso);
+                        $('#ddlAluno').val(this.idAluno);
+                        $('#ddlParceiro').val(this.idParceiro);
+                    });
+                }
+            });
+        }
+
+        $('#btnSalvarMatricula').click(function () {
+            var data = new FormData();
+
+            data.append("Id", $('#hdnIdMatricula').val());
+            data.append("StatusMatricula", $('#ddlStatusMatricula').val());
+            data.append("DataMatricula", $('#txtDataMatricula').val());
+            data.append("IdCurso", $('#ddlCurso').val());
+            data.append("IdAluno", $('#ddlAluno').val());
+            data.append("IdParceiro", $('#ddlParceiro').val());
+
+            $.ajax({
+                url: "/Matriculas/GravarMatricula",
+                data: data,
+                processData: false,
+                contentType: false,
+                type: "POST",
+                success: function (data) {
+                    if (data.mensagem === "Ok") {
+                        window.location.href = "/Matriculas/Index";
+                    } else {
+                        alert(data.mensagem);
+                    }
+                },
+                error: function (request, status, error) {
+                    alert(request.responseText);
+                }
+            });
+        });
+    });
+
+    function getParameterByName(name, url = window.location.href) {
+        name = name.replace(/[\[\]]/g, '\\$&');
+        var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+            results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, ' '));
+    }
+</script>
 <section class="section">
     <h1 class="section-header">
         Registro de Matrículas
@@ -15,6 +78,7 @@
                     </tr>
                     <tr>
                         <td>
+                            <input type="hidden" id="hdnIdMatricula" value="0" />
                             <select id="ddlStatusMatricula" class="form-control">
                                 <option value="0">Pendente</option>
                                 <option value="1">Efetivada</option>
@@ -56,6 +120,14 @@
                                     <option value="@item.Id">@item.NomeCompleto</option>
                                 }
                             </select>
+                        </td>
+                    </tr>
+                </table>
+                <table class="table" style="width: 100%">
+                    <tr>
+                        <td>
+                            <input type="button" id="btnSalvarMatricula" value="Salvar" class="btn btn-primary" />
+                            <input type="button" id="btnCancelarMatricula" value="Cancelar" class="btn btn-danger" onclick="window.location.href = '/Matriculas/Index'" />
                         </td>
                     </tr>
                 </table>

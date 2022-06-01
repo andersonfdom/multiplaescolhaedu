@@ -29,5 +29,37 @@ namespace MultiplaEscolhaEdu.Admin.Controllers
 
             return View();
         }
+
+        [HttpGet]
+        public IActionResult CarregarDadosMatricula(int id)
+        {
+            MatriculaDao dao = new MatriculaDao();
+            
+            return Ok(new
+            {
+                mensagem = dao.CarregarDados(id)
+            });
+        }
+
+        [HttpPost]
+        public IActionResult ExcluirMatriculas(int id)
+        {
+            MatriculaDao dao = new MatriculaDao();
+            return Ok(new
+            {
+                mensagem = dao.Excluir(id)
+            });
+        }
+
+        [HttpPost]
+        public IActionResult GravarMatricula(MatriculaModel model)
+        {
+            MatriculaDao MatriculaDao = new MatriculaDao();
+
+            return Ok(new
+            {
+                mensagem = MatriculaDao.Gravar(model)
+            });
+        }
     }
 }
