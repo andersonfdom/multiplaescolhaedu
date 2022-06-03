@@ -9,6 +9,7 @@ D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Admin\bin\Debug\net5.0\Multipl
 D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Admin\bin\Debug\net5.0\MultiplaEscolhaEdu.Admin.runtimeconfig.json
 D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Admin\bin\Debug\net5.0\MultiplaEscolhaEdu.Admin.runtimeconfig.dev.json
 D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Admin\bin\Debug\net5.0\MultiplaEscolhaEdu.Admin.dll
+D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Admin\bin\Debug\net5.0\ref\MultiplaEscolhaEdu.Admin.dll
 D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Admin\bin\Debug\net5.0\MultiplaEscolhaEdu.Admin.pdb
 D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Admin\bin\Debug\net5.0\MultiplaEscolhaEdu.Admin.Views.dll
 D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Admin\bin\Debug\net5.0\MultiplaEscolhaEdu.Admin.Views.pdb
@@ -100,6 +101,7 @@ D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Admin\bin\Debug\net5.0\Multipl
 D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Admin\bin\Debug\net5.0\MultiplaEscolhaEdu.Model.dll
 D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Admin\bin\Debug\net5.0\MultiplaEscolhaEdu.Dao.pdb
 D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Admin\bin\Debug\net5.0\MultiplaEscolhaEdu.Model.pdb
+D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Admin\obj\Debug\net5.0\MultiplaEscolhaEdu.Admin.csproj.AssemblyReference.cache
 D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Admin\obj\Debug\net5.0\MultiplaEscolhaEdu.Admin.GeneratedMSBuildEditorConfig.editorconfig
 D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Admin\obj\Debug\net5.0\MultiplaEscolhaEdu.Admin.AssemblyInfoInputs.cache
 D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Admin\obj\Debug\net5.0\MultiplaEscolhaEdu.Admin.AssemblyInfo.cs
@@ -108,6 +110,7 @@ D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Admin\obj\Debug\net5.0\Multipl
 D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Admin\obj\Debug\net5.0\MultiplaEscolhaEdu.Admin.RazorAssemblyInfo.cache
 D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Admin\obj\Debug\net5.0\MultiplaEscolhaEdu.Admin.RazorAssemblyInfo.cs
 D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Admin\obj\Debug\net5.0\staticwebassets\MultiplaEscolhaEdu.Admin.StaticWebAssets.Manifest.cache
+D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Admin\obj\Debug\net5.0\staticwebassets\MultiplaEscolhaEdu.Admin.StaticWebAssets.xml
 D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Admin\obj\Debug\net5.0\scopedcss\bundle\MultiplaEscolhaEdu.Admin.styles.css
 D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Admin\obj\Debug\net5.0\MultiplaEscolhaEdu.Admin.TagHelpers.input.cache
 D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Admin\obj\Debug\net5.0\MultiplaEscolhaEdu.Admin.TagHelpers.output.cache
@@ -138,6 +141,3 @@ D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Admin\obj\Debug\net5.0\Multipl
 D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Admin\obj\Debug\net5.0\ref\MultiplaEscolhaEdu.Admin.dll
 D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Admin\obj\Debug\net5.0\MultiplaEscolhaEdu.Admin.pdb
 D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Admin\obj\Debug\net5.0\MultiplaEscolhaEdu.Admin.genruntimeconfig.cache
-D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Admin\obj\Debug\net5.0\MultiplaEscolhaEdu.Admin.csproj.AssemblyReference.cache
-D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Admin\bin\Debug\net5.0\ref\MultiplaEscolhaEdu.Admin.dll
-D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Admin\obj\Debug\net5.0\staticwebassets\MultiplaEscolhaEdu.Admin.StaticWebAssets.xml
