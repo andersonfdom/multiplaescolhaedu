@@ -15,6 +15,13 @@ namespace MultiplaEscolhaEdu.Admin.Controllers
      
         public IActionResult Index()
         {
+            MatriculaDao dao = new MatriculaDao();
+
+            ViewBag.QtdeMatriculas = dao.QtdeMatriculasRealizadas();
+            ViewBag.QtdeAlunos = dao.QtdeAlunosCadastrados();
+            ViewBag.QtdeParceiros = dao.QtdeParceirosCadastrados();
+            ViewBag.QtdeCursos = dao.QtdeCursosCadastrados();
+
             return View();
         }
 

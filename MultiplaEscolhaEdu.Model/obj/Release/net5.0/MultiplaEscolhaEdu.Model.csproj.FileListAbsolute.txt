@@ -2,7 +2,6 @@ D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Model\bin\Release\net5.0\Multi
 D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Model\bin\Release\net5.0\MultiplaEscolhaEdu.Model.runtimeconfig.json
 D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Model\bin\Release\net5.0\MultiplaEscolhaEdu.Model.runtimeconfig.dev.json
 D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Model\bin\Release\net5.0\MultiplaEscolhaEdu.Model.dll
-D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Model\bin\Release\net5.0\ref\MultiplaEscolhaEdu.Model.dll
 D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Model\bin\Release\net5.0\MultiplaEscolhaEdu.Model.pdb
 D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Model\obj\Release\net5.0\MultiplaEscolhaEdu.Model.csproj.AssemblyReference.cache
 D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Model\obj\Release\net5.0\MultiplaEscolhaEdu.Model.GeneratedMSBuildEditorConfig.editorconfig
@@ -13,3 +12,4 @@ D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Model\obj\Release\net5.0\Multi
 D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Model\obj\Release\net5.0\ref\MultiplaEscolhaEdu.Model.dll
 D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Model\obj\Release\net5.0\MultiplaEscolhaEdu.Model.pdb
 D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Model\obj\Release\net5.0\MultiplaEscolhaEdu.Model.genruntimeconfig.cache
+D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Model\obj\Release\net5.0\refint\MultiplaEscolhaEdu.Model.dll

@@ -1,12 +1,68 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-
-<script>
-    $(function () {
-    });
-</script>
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<h1 class="section-header">
+    Dashboard
+</h1>
+<div class="row">
+    <div class="col-lg-3 col-md-6 col-12">
+        <div class="card card-sm-3">
+            <div class="card-icon bg-primary">
+                <i class="ion ion-person"></i>
+            </div>
+            <div class="card-wrap">
+                <div class="card-header">
+                    <h4>Cursos Cadastrados</h4>
+                </div>
+                <div id="dvQuantidadeCursos" class="card-body">
+                    <a href="/Cursos/Index">@ViewBag.QtdeCursos</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-12">
+        <div class="card card-sm-3">
+            <div class="card-icon bg-danger">
+                <i class="ion ion-ios-paper-outline"></i>
+            </div>
+            <div class="card-wrap">
+                <div class="card-header">
+                    <h4>Alunos Cadastrados</h4>
+                </div>
+                <div id="dvQuantidadeAlunos" class="card-body">
+                    <a href="/Alunos/Index">@ViewBag.QtdeAlunos</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-12">
+        <div class="card card-sm-3">
+            <div class="card-icon bg-warning">
+                <i class="ion ion-paper-airplane"></i>
+            </div>
+            <div class="card-wrap">
+                <div class="card-header">
+                    <h4>Parceiros Cadastrados</h4>
+                </div>
+                <div id="dvQuantidadeParceiros" class="card-body">
+                     <a href="/Parceiros/Index">@ViewBag.QtdeParceiros</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-12">
+        <div class="card card-sm-3">
+            <div class="card-icon bg-secondary">
+                <i class="ion ion-paper-airplane"></i>
+            </div>
+            <div class="card-wrap">
+                <div class="card-header">
+                    <h4>Matrículas Realizadas</h4>
+                </div>
+                <div id="dvQuantidadeParceiros" class="card-body">
+                     <a href="/Matriculas/Index">@ViewBag.QtdeMatriculas</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

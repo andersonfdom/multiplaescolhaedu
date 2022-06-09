@@ -5,6 +5,6 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <_PublishTargetUrl>D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Admin\bin\Release\net5.0\publish\</_PublishTargetUrl>
-    <History>True|2022-06-02T00:55:19.7092347Z;</History>
+    <History>True|2022-06-03T16:22:05.2344390Z;True|2022-06-01T21:55:19.7092347-03:00;</History>
   </PropertyGroup>
 </Project>

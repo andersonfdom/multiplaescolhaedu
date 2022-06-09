@@ -5,15 +5,15 @@
 }
 
 <script>
-    $(function () {
+    $(function() {
         var wTotalPaginas = 0;
         var wRotulo = "";
         $("#GridMatriculas").DataTable({
-            drawCallback: function () {
+            drawCallback: function() {
                 this.api().state.clear();
                 wTotalPaginas = $('.paginate_button:not(.previous,.next)').length;
                 $('.paginate_button', this.api().table().container())
-                    .on('click', function () {
+                    .on('click', function() {
                         var wTextoPosicaoPagina = $('.active').text(); // Pega o valor da página selecionada
                         var wPosicaoPagina = 0; // varíavel da posição da página
 
@@ -67,7 +67,7 @@
                 async: false,
                 dataType: "JSON",
                 contentType: "application/json; charset=UTF-8",
-                success: function (jsonResult) {
+                success: function(jsonResult) {
                     if (jsonResult.mensagem === 'Ok') {
                         window.location.reload(true);
                     } else {
@@ -98,19 +98,22 @@
                     </tr>
                 </thead>
                 <tbody id="dadosGridMatriculas" class="GridMatriculas tablelinhaimp">
-                    @foreach (var item in Model)
+                    @if (Model != null)
                     {
-                    <tr>
-                        <td>
-                            <img src="~/img/btnEdit.png" alt="Alterar Registro" title="Alterar Registro" width="20" height="20" onclick="CarregarDadosMatricula(@item.Id)" />
-                            <img src="~/img/btnDelete.png" alt="Excluir Registro" title="Excluir Registro" width="20" height="20" onclick="ExcluirDadosMatricula(@item.Id)" />
-                        </td>
-                        <td>@item.NomeAluno</td>
-                        <td>@item.NomeCurso</td>
-                        <td>@item.NomeParceiro</td>
-                        <td>@item.StatusMatricula</td>
-                        <td>@item.DataMatricula</td>
-                    </tr>
+                        foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    <img src="~/img/btnEdit.png" alt="Alterar Registro" title="Alterar Registro" width="20" height="20" onclick="CarregarDadosMatricula(@item.Id)" />
+                                    <img src="~/img/btnDelete.png" alt="Excluir Registro" title="Excluir Registro" width="20" height="20" onclick="ExcluirDadosMatricula(@item.Id)" />
+                                </td>
+                                <td>@item.NomeAluno</td>
+                                <td>@item.NomeCurso</td>
+                                <td>@item.NomeParceiro</td>
+                                <td>@item.StatusMatricula</td>
+                                <td>@item.DataMatricula</td>
+                            </tr>
+                        }
                     }
                 </tbody>
             </table>

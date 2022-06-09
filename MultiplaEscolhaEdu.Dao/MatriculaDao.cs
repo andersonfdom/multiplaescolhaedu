@@ -221,5 +221,20 @@ namespace MultiplaEscolhaEdu.Dao
 
             return qtde;
         }
+
+        public int QtdeMatriculasRealizadas()
+        {
+            try
+            {
+                using (MultiplaEscolhaEduContext ctx = new MultiplaEscolhaEduContext())
+                {
+                    return ctx.Matriculas.Count();
+                }
+            }
+            catch (Exception)
+            {
+                return 0;
+            }
+        }
     }
 }
