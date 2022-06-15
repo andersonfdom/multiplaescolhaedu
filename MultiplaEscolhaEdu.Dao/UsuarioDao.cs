@@ -356,7 +356,7 @@ namespace MultiplaEscolhaEdu.Dao
             }
         }
 
-        public void RealizarLogoffParceiro(int idUsuario)
+        public bool RealizarLogoffParceiro(int idUsuario)
         {
             try
             {
@@ -387,14 +387,17 @@ namespace MultiplaEscolhaEdu.Dao
 
                         ctx.Logusuarios.Add(logusuario);
                         ctx.SaveChanges();
-
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
                     }
                 }
             }
             catch (Exception)
             {
-
-                throw;
+                return false;
             }
         }
     }

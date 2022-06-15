@@ -11,6 +11,7 @@ namespace MultiplaEscolhaEdu.Parceiros.Controllers
 {
     public class AlunosController : Controller
     {
+
         public IActionResult Index()
         {
             AlunoDao alunoDao = new AlunoDao();

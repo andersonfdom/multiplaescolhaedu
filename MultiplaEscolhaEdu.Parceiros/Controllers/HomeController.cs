@@ -1,37 +1,38 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-using MultiplaEscolhaEdu.Parceiros.Models;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using MultiplaEscolhaEdu.Model;
+using MultiplaEscolhaEdu.Dao;
+using MultiplaEscolhaEdu.Dao.Models;
+
 
 namespace MultiplaEscolhaEdu.Parceiros.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
-        {
-            _logger = logger;
-        }
-
         public IActionResult Index()
         {
+            MatriculaDao dao = new MatriculaDao();
+
+            ViewBag.QtdeMatriculas = dao.QtdeMatriculasRealizadas();
+            ViewBag.QtdeAlunos = dao.QtdeAlunosCadastrados();
+            ViewBag.QtdeCursos = dao.QtdeCursosCadastrados();
+
             return View();
         }
 
-        public IActionResult Privacy()
+        [HttpPost]
+        public IActionResult ValidarQtdeRegistrosMatricula()
         {
-            return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            MatriculaDao dao = new MatriculaDao();
+            return Ok(new
+            {
+                qtdeCursos = dao.QtdeCursosCadastrados(),
+                qtdeAlunos = dao.QtdeAlunosCadastrados(),
+                qtdeParceiros = dao.QtdeParceirosCadastrados()
+            });
         }
     }
 }
