@@ -128,3 +128,12 @@ D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Parceiros\obj\Debug\net5.0\Mul
 D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Parceiros\obj\Debug\net5.0\ref\MultiplaEscolhaEdu.Parceiros.dll
 D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Parceiros\obj\Debug\net5.0\MultiplaEscolhaEdu.Parceiros.pdb
 D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Parceiros\obj\Debug\net5.0\MultiplaEscolhaEdu.Parceiros.genruntimeconfig.cache
+D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Parceiros\obj\Debug\net5.0\Razor\Views\Alunos\Index.cshtml.g.cs
+D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Parceiros\obj\Debug\net5.0\Razor\Views\Alunos\Cadastro.cshtml.g.cs
+D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Parceiros\obj\Debug\net5.0\Razor\Views\Cursos\Index.cshtml.g.cs
+D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Parceiros\obj\Debug\net5.0\Razor\Views\Cursos\Consulta.cshtml.g.cs
+D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Parceiros\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Parceiros\obj\Debug\net5.0\Razor\Views\Login\Index.cshtml.g.cs
+D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Parceiros\obj\Debug\net5.0\Razor\Views\Matriculas\Index.cshtml.g.cs
+D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Parceiros\obj\Debug\net5.0\Razor\Views\Matriculas\Cadastro.cshtml.g.cs
+D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Parceiros\obj\Debug\net5.0\Razor\Views\Parametros\Index.cshtml.g.cs

@@ -29,6 +29,8 @@ namespace MultiplaEscolhaEdu.Dao.Models
         public string Estado { get; set; }
         public DateTime? DataCadastro { get; set; }
         public DateTime UltimaAtualizacao { get; set; }
+        public string SlugCurso { get; set; }
+        public string SlugUnidade { get; set; }
 
         public virtual ICollection<Matricula> Matriculas { get; set; }
     }

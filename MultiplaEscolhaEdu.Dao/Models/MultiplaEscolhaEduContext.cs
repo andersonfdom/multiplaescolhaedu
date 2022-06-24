@@ -117,6 +117,14 @@ namespace MultiplaEscolhaEdu.Dao.Models
                     .HasMaxLength(30)
                     .HasColumnName("rg");
 
+                entity.Property(e => e.SlugCurso)
+                    .HasMaxLength(100)
+                    .HasColumnName("slug_curso");
+
+                entity.Property(e => e.SlugUnidade)
+                    .HasMaxLength(100)
+                    .HasColumnName("slug_unidade");
+
                 entity.Property(e => e.UltimaAtualizacao)
                     .HasColumnType("timestamp")
                     .HasColumnName("ultima_atualizacao")

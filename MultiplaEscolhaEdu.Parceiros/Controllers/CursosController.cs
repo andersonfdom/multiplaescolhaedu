@@ -23,5 +23,15 @@ namespace MultiplaEscolhaEdu.Parceiros.Controllers
             ViewBag.Categoria = categoriaCursoDao.Listar();
             return View();
         }
+
+        [HttpGet]
+        public IActionResult CarregarDadosCurso(int id)
+        {
+            CursoDao dao = new CursoDao();
+            return Ok(new
+            {
+                dados = dao.CarregarDados(id)
+            });
+        }
     }
 }

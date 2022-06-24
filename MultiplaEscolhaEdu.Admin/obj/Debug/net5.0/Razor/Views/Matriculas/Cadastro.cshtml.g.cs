@@ -28,9 +28,7 @@ using MultiplaEscolhaEdu.Admin.Models;
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d03391a8a5915bdbd9c3dbe0a11a731f6c9dec50", @"/Views/Matriculas/Cadastro.cshtml")]
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"b34a49b024ae6342944c23a1a4b2a7141541591e", @"/Views/_ViewImports.cshtml")]
-    #nullable restore
     public class Views_Matriculas_Cadastro : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
-    #nullable disable
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("value", "0", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_1 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("value", "1", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -147,7 +145,7 @@ using MultiplaEscolhaEdu.Admin.Models;
                     <tr>
       ");
             WriteLiteral("                  <td>\r\n                            <input type=\"hidden\" id=\"hdnIdMatricula\" value=\"0\" />\r\n                            <select id=\"ddlStatusMatricula\" class=\"form-control\">\r\n                                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d03391a8a5915bdbd9c3dbe0a11a731f6c9dec507731", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d03391a8a5915bdbd9c3dbe0a11a731f6c9dec507685", async() => {
                 WriteLiteral("Pendente");
             }
             );
@@ -163,7 +161,7 @@ using MultiplaEscolhaEdu.Admin.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n                                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d03391a8a5915bdbd9c3dbe0a11a731f6c9dec508924", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d03391a8a5915bdbd9c3dbe0a11a731f6c9dec508878", async() => {
                 WriteLiteral("Efetivada");
             }
             );
@@ -179,7 +177,7 @@ using MultiplaEscolhaEdu.Admin.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n                                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d03391a8a5915bdbd9c3dbe0a11a731f6c9dec5010118", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d03391a8a5915bdbd9c3dbe0a11a731f6c9dec5010072", async() => {
                 WriteLiteral("Cancelada");
             }
             );
@@ -221,7 +219,7 @@ using MultiplaEscolhaEdu.Admin.Models;
 #line hidden
 #nullable disable
             WriteLiteral("                                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d03391a8a5915bdbd9c3dbe0a11a731f6c9dec5012280", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d03391a8a5915bdbd9c3dbe0a11a731f6c9dec5012234", async() => {
 #nullable restore
 #line 104 "D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Admin\Views\Matriculas\Cadastro.cshtml"
                                                         Write(item.Descricao);
@@ -269,7 +267,7 @@ using MultiplaEscolhaEdu.Admin.Models;
 #line hidden
 #nullable disable
             WriteLiteral("                                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d03391a8a5915bdbd9c3dbe0a11a731f6c9dec5014891", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d03391a8a5915bdbd9c3dbe0a11a731f6c9dec5014845", async() => {
 #nullable restore
 #line 112 "D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Admin\Views\Matriculas\Cadastro.cshtml"
                                                         Write(item.Nome);
@@ -317,7 +315,7 @@ using MultiplaEscolhaEdu.Admin.Models;
 #line hidden
 #nullable disable
             WriteLiteral("                                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d03391a8a5915bdbd9c3dbe0a11a731f6c9dec5017503", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d03391a8a5915bdbd9c3dbe0a11a731f6c9dec5017457", async() => {
 #nullable restore
 #line 120 "D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Admin\Views\Matriculas\Cadastro.cshtml"
                                                         Write(item.NomeCompleto);
@@ -375,26 +373,16 @@ using MultiplaEscolhaEdu.Admin.Models;
 ");
         }
         #pragma warning restore 1998
-        #nullable restore
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
-        public global::Microsoft.AspNetCore.Mvc.ViewFeatures.IModelExpressionProvider ModelExpressionProvider { get; private set; } = default!;
-        #nullable disable
-        #nullable restore
+        public global::Microsoft.AspNetCore.Mvc.ViewFeatures.IModelExpressionProvider ModelExpressionProvider { get; private set; }
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
-        public global::Microsoft.AspNetCore.Mvc.IUrlHelper Url { get; private set; } = default!;
-        #nullable disable
-        #nullable restore
+        public global::Microsoft.AspNetCore.Mvc.IUrlHelper Url { get; private set; }
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
-        public global::Microsoft.AspNetCore.Mvc.IViewComponentHelper Component { get; private set; } = default!;
-        #nullable disable
-        #nullable restore
+        public global::Microsoft.AspNetCore.Mvc.IViewComponentHelper Component { get; private set; }
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
-        public global::Microsoft.AspNetCore.Mvc.Rendering.IJsonHelper Json { get; private set; } = default!;
-        #nullable disable
-        #nullable restore
+        public global::Microsoft.AspNetCore.Mvc.Rendering.IJsonHelper Json { get; private set; }
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
-        public global::Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper<dynamic> Html { get; private set; } = default!;
-        #nullable disable
+        public global::Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper<dynamic> Html { get; private set; }
     }
 }
 #pragma warning restore 1591

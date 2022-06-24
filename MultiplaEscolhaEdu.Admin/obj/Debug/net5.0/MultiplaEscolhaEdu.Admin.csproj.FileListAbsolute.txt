@@ -139,4 +139,5 @@ D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Admin\obj\Debug\net5.0\Multipl
 D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Admin\obj\Debug\net5.0\ref\MultiplaEscolhaEdu.Admin.dll
 D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Admin\obj\Debug\net5.0\MultiplaEscolhaEdu.Admin.pdb
 D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Admin\obj\Debug\net5.0\MultiplaEscolhaEdu.Admin.genruntimeconfig.cache
-D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Admin\obj\Debug\net5.0\refint\MultiplaEscolhaEdu.Admin.dll
+D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Admin\bin\Debug\net5.0\ref\MultiplaEscolhaEdu.Admin.dll
+D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Admin\obj\Debug\net5.0\staticwebassets\MultiplaEscolhaEdu.Admin.StaticWebAssets.xml
