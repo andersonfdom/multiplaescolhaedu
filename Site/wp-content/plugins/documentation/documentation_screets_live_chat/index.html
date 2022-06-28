@@ -1,0 +1,179 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>Screets Live Chat Plugin for WordPress - Documentation</title>
+	
+	<meta name="description" content="Chat with your customers on your site for sales and support easily, and beautifully.">
+	<meta name="author" content="Screets Team">
+	<meta name="copyright" content="Screets Team">
+	<meta name="generator" content="Documenter v1.6 http://rxa.li/documenter">
+	<meta name="date" content="2013-02-03T00:00:00+01:00">
+	
+	<link rel="stylesheet" href="css/documenter_style.css" media="all">
+	
+	
+	<script src="js/jquery.1.6.4.js"></script>
+	
+	<script src="js/jquery.scrollTo-1.4.2-min.js"></script>
+	<script src="js/jquery.easing.js"></script>
+	
+	
+	<script>document.createElement('section');var duration=500,easing='easeInOutExpo';</script>
+	<script src="js/script.js"></script>
+	
+	<style>
+		html{background-color:#EEEEEE;color:#383838;}
+		::-moz-selection{background:#333636;color:#BF3723;}
+		::selection{background:#333636;color:#BF3723;}
+		#documenter_sidebar #documenter_logo{background-image:url(assets/images/image_1.png);}
+		a{color:#BF3723;}
+		hr{border-top:1px solid #D4D4D4;border-bottom:1px solid #FFFFFF;}
+		#documenter_sidebar, #documenter_sidebar ol a{background-color:#343838;color:#FFFFFF;}
+		#documenter_sidebar ol a{-webkit-text-shadow:1px 1px 0px #494F4F;-moz-text-shadow:1px 1px 0px #494F4F;text-shadow:1px 1px 0px #494F4F;}
+		#documenter_sidebar ol{border-top:1px solid #212424;}
+		#documenter_sidebar ol a{border-top:1px solid #494F4F;border-bottom:1px solid #212424;color:#FFFFFF;}
+		#documenter_sidebar ol a:hover{background:#333636;color:#BF3723;border-top:1px solid #333636;}
+		#documenter_sidebar ol a.current{background:#333636;color:#BF3723;border-top:1px solid #333636;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+	
+</head>
+<body>
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ol id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Start</a></li>
+			<li><a href="#features">Features</a></li>
+			<li><a href="#technology">Technology</a></li>
+			<li><a href="#how_to">How to</a>
+				<ol>
+					<li><a href="#how_to_how_to_create_an_operator">How to create an operator?</a>
+					<li><a href="#how_to_how_to_go_offline_on_chat">How to go offline on chat?</a>
+					<li><a href="#how_to_how_to_customize_skin">How to customize skin?</a>
+					<li><a href="#how_to_how_to_create_your_own_skin_nbsp">How to create your own skin?&nbsp;</a>
+				</ol>
+			</li>
+			<li><a href="#support_information">Support Information</a></li>
+
+		</ol>
+		<div id="documenter_copyright">Copyright Screets Team 2013<br>
+		made with the <a href="http://rxa.li/documenter">Documenter v1.6</a> 
+		</div>
+	</div>
+	<div id="documenter_content">
+	<section id="documenter_cover"><h1>Screets Live Chat Plugin for WordPress</h1><h2>Documentation</h2><hr><ul><li>Created: 02/03/2013</li><li>latest Update: 02/03/2013</li><li>By: Screets Team</li><li><a href=""></a></li><li>Email: <a href="mailto:&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#115;&#99;&#114;&#101;&#101;&#116;&#115;&#46;&#99;&#111;&#109;">&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#115;&#99;&#114;&#101;&#101;&#116;&#115;&#46;&#99;&#111;&#109;</a></li></ul><p>Chat with your customers on your site for sales and support easily, and beautifully.</p></section><section id="features">
+	<h3>Features</h3><hr class="notop">
+<p>
+	Chat with your customers on your site for sales and support easily, and beautifully.</p>
+<ul>
+	<li>
+		You DON&rsquo;T need to pay monthly payments</li>
+	<li>
+		Install on your own WordPress and start to use it</li>
+	<li>
+		Very clean code</li>
+	<li>
+		Cute skin (fully customizable)</li>
+	<li>
+		Create your own operators</li>
+	<li>
+		Chat logs, of course ;)</li>
+	<li>
+		More than one operators can reply the same user&rsquo;s question</li>
+	<li>
+		Visitors can fill out contact form when all operators are offline</li>
+</ul>
+<div>
+	&nbsp;</div>
+<p>
+	&nbsp;</p>
+</section>
+<section id="technology">
+	<h3>Technology</h3><hr class="notop">
+<p>
+	We simply use Ajax technique instead of Web Sockets. Because it&#39;s pretty straightforward and works even on <strong>Internet Explorer</strong>. Also, you probably won&rsquo;t need any server modifications for this plugin. It works with native PHP 5 server and WordPress well.</p>
+<p>
+	<strong>Why we don&#39;t use comets?</strong></p>
+<p>
+	As you know comet is a web application model in which a long-held HTTP request allows a web server to push data to a browser, without the browser explicitly requesting it. This&nbsp;technique was also a good alternative, but we are more familiar with Ajax. And it works good enough for chat.</p>
+</section>
+<section id="how_to">
+	<h3>How to</h3><hr class="notop">
+<h4 id="how_to_how_to_create_an_operator">How to create an operator?</h4>
+<p>
+	It&#39;s brutally simple! Just like creating a normal user from administration panel.</p>
+<ul>
+	<li>
+		Go to Users menu and click <strong>Add New</strong> link</li>
+	<li>
+		Fill out &nbsp;form</li>
+	<li>
+		Find Role field and select <strong>Chat Operator</strong> in the list</li>
+</ul>
+<p>
+	Now this user CAN:</p>
+<ul>
+	<li>
+		Chat with both operators and visitors</li>
+	<li>
+		Read &nbsp;and delete chat logs</li>
+	<li>
+		Manage posts</li>
+</ul>
+<h4 id="how_to_how_to_go_offline_on_chat">How to go offline on chat?</h4>
+<p>
+	Once you open chat console, you automatically connected to the chat. When you decide to go offline, just click <strong>Online </strong>button on the Chat Console page without logged out. It is good when you don&#39;t need to go offline for a long time.</p>
+<h4 id="how_to_how_to_customize_skin">How to customize skin?</h4>
+<p>
+	If you only need to change colors of current skin, just open <strong>Options </strong>under the &quot;Chat Console&quot; menu and then you can change features from there.</p>
+<p>
+	If you are advanced user, you can create your own skin. Just skip next question:</p>
+<h4 id="how_to_how_to_create_your_own_skin_nbsp">How to create your own skin?&nbsp;</h4>
+<p>
+	This is for ADVANCED USERS.</p>
+<ul>
+	<li>
+		Find&nbsp;<strong>basic </strong>folder inside &quot;wp-contents/plugins/screets-chat/skins&quot;</li>
+	<li>
+		Clone this folder in the same place</li>
+	<li>
+		Give a new name to this folder (such as <strong>my-skin</strong>)</li>
+	<li>
+		Go to options page under Chat Console menu</li>
+	<li>
+		Change &quot;Default Theme&quot; with yours</li>
+	<li>
+		And now you can customize the appereance of skin<strong>&nbsp;</strong>- at your own risk :)</li>
+</ul>
+</section>
+<section id="support_information">
+	<h3>Support Information</h3><hr class="notop">
+<p>
+	Normally we will answer your questions within 24 hours. You can read the FAQ page first and find more information in the documentation delivered with your product.</p>
+<div>
+	&nbsp;</div>
+<div>
+	If you still have questions or concerns about the product:</div>
+<ul>
+	<li>
+		You can send us an email to this address: <strong>&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#115;&#99;&#114;&#101;&#101;&#116;&#115;&#46;&#99;&#111;&#109;</strong></li>
+	<li>
+		Chat with us using the right-bottom box</li>
+</ul>
+<p>
+	We will be happy to provide you with a detailed answer as quickly as we can.</p>
+<p>
+	&nbsp;</p>
+<p class="warning">
+	If you did not find the information you were looking for in the documentation or if you have any other questions regarding the product feel free to contact us. We will be happy to provide you with a detailed answer as quickly as we can.</p>
+</section>
+
+	</div>
+</body>
+</html>

@@ -1,0 +1,122 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	color: #666;
+	font-family: "Open Sans",sans-serif;
+}
+
+#header{
+	width: 100%;
+	height: 56px;
+	padding-top: 16px;
+	background: #ffffff;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNhYWFhYWEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(left, #ffffff 0%, #aaaaaa 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), color-stop(100%,#aaaaaa));
+	background: -webkit-linear-gradient(left, #ffffff 0%,#aaaaaa 100%);
+	background: -o-linear-gradient(left, #ffffff 0%,#aaaaaa 100%);
+	background: -ms-linear-gradient(left, #ffffff 0%,#aaaaaa 100%);
+	background: linear-gradient(to right, #ffffff 0%,#aaaaaa 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#aaaaaa',GradientType=1 );
+	margin-top: 10px;
+}
+
+#header img{
+	float: left;
+	margin-left: 50px;
+}
+
+#header #social{
+	float: right;
+	width: 400px;
+	margin-top: 5px;
+}
+
+#header #social #follow{
+	float: left;
+	font-size: 20px;
+	padding-top: 6px;
+}
+
+#header #social a img{
+	float: left;
+	margin-left: 26px;
+}
+
+#content{
+	padding: 20px;
+}
+
+#content h1{
+	font-size: 30px;
+	font-weight: 300;
+}
+#content #benefits h2{
+	font-size: 22px;
+	font-weight: 600;
+}
+#content #callToAction h3{
+	font-size: 18px;
+	font-weight: 300;
+}
+#content p{
+	font-size: 16px;
+}
+#content #benefits{
+	float: left;
+	width: 520px;
+}
+#content #benefits ul{
+	list-style: none;
+	list-style-image: url('../images/help/star.png');
+	margin-top: 10px;
+}
+
+#content #benefits ul li{
+	font-size: 18px;
+	line-height: 32px;
+	font-weight: 100;
+	margin-left: 30px;
+}
+
+#content #callToAction{
+	float: left;
+	text-align: center;
+	width: 300px;
+	height: 157px;
+	margin-top: 20px;
+	padding: 15px 50px 15px 50px;
+	border: 2px dashed #0059B2;
+}
+
+#content #callToAction form label{
+	display: block;
+	font-size: 14px;
+	margin-top: 4px;
+}
+
+#mce-EMAIL{
+	width: 224px;
+	height: 30px;
+	padding:10px 10px 4px 10px;
+	border: 1px solid #CCCCCC;
+	color: #878787;
+	font-size: 16px;
+}
+
+#mc-embedded-subscribe{
+	margin-top: 10px;
+	background-color: #FF8000;
+	color: #FFF;
+	font-size: 16px;
+	width: 224px;
+	height: 30px;
+	padding:4px 10px 4px 10px;
+	border: none;	
+}
+#mc-embedded-subscribe:hover{
+	cursor: pointer;
+}
+
+#submit,
+#btn-reset {display: none;}

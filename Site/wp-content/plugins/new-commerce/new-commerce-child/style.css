@@ -1,0 +1,13 @@
+/*
+	Theme Name: New-Commerce Child
+	Theme URI: http://newcommerce.f5themes.com
+	Description: Child theme for New-Commerce.
+	Author: F5 Themes
+	Author URI: http://www.f5themes.com/
+	Tags: right-sidebar, left-sidebar, fluid-layout, custom-background, custom-header, custom-menu, featured-images, flexible-header, post-formats, sticky-post, theme-options, translation-ready
+	License: GPL
+	License URI: http://www.gnu.org/licenses/gpl-2.0.html
+	Template: new-commerce
+*/
+
+@import url("../new-commerce/style.css");

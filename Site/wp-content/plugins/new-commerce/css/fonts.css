@@ -1,0 +1,33 @@
+/* Fonts */
+@font-face {
+    font-family: "Anklada";
+    src: url("fonts/anklada-webfont.eot");
+    src: url("fonts/anklada-webfont.eot?#iefix") format("embedded-opentype"),
+         url("fonts/anklada-webfont.woff") format("woff"),
+         url("fonts/anklada-webfont.ttf") format("truetype"),
+         url("fonts/anklada-webfont.svg#ankladaoriginal") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Missionscript";
+    src: url("fonts/mission-script-webfont.eot");
+    src: url("fonts/mission-script-webfont.eot?#iefix") format("embedded-opentype"),
+         url("fonts/mission-script-webfont.woff") format("woff"),
+         url("fonts/mission-script-webfont.ttf") format("truetype"),
+         url("fonts/mission-script-webfont.svg#mission_scriptregular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oswaldbook";
+    src: url("fonts/oswald-webfont.eot");
+    src: url("fonts/oswald-webfont.eot?#iefix") format("embedded-opentype"),
+         url("fonts/oswald-webfont.woff") format("woff"),
+         url("fonts/oswald-webfont.ttf") format("truetype"),
+         url("fonts/oswald-webfont.svg#oswaldbook") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}

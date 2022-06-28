@@ -1,0 +1,482 @@
+/**
+ * Main YITH WooCommerce Wishlist CSS
+ *
+ * @author Your Inspiration Themes
+ * @package YITH WooCommerce Wishlist
+ * @version 1.0.0
+ */
+
+/* Popup message */
+#yith-wcwl-popup-message {
+  background: #fff;
+  border: 1px solid;
+  line-height: 50px;
+  padding: 12px;
+  position: fixed;
+  text-align: center;
+  z-index: 100000;
+  top: 50%;
+  left: 50%;
+  width: 14em;
+  height: 3.5em;
+  margin-top: -1.75em !important;
+  margin-left: -7em !important;
+  box-shadow: 0px 0px 15px 1px #000;
+  -webkit-box-shadow: 0px 0px 15px 1px #000;
+  -moz-box-shadow: 0px 0px 15px 1px #000;
+  -ms-box-shadow: 0px 0px 15px 1px #000;
+  -o-box-shadow: 0px 0px 15px 1px #000;
+}
+
+#yith-wcwl-popup-message #yith-wcwl-message {
+  font-family: "Oswaldbook";
+  font-size: 18px;
+}
+
+/* General */
+#wrapperContent .yith-wcwl-add-to-wishlist a,
+#wrapperContent
+  .yith-wcwl-add-to-wishlist
+  .yith-wcwl-wishlistaddedbrowse
+  span.feedback,
+#wrapperContent
+  .yith-wcwl-add-to-wishlist
+  .yith-wcwl-wishlistexistsbrowse
+  span.feedback {
+  font-family: "Oswaldbook";
+}
+
+#wrapperContent .yith-wcwl-add-button .add_to_wishlist {
+  background: url("../images/heart-off.png") no-repeat left center;
+  padding-left: 22px !important;
+}
+
+#wrapperContent .yith-wcwl-add-button .add_to_wishlist:hover {
+  background-image: url("../images/heart-on.png");
+}
+
+#wrapperContent .yith-wcwl-add-to-wishlist * {
+  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+}
+
+/* Single */
+#wrapperProductView .yith-wcwl-add-to-wishlist {
+  width: 20%;
+  border-top: 1px solid #e7e7e7;
+  padding-top: 10px;
+  padding-right: 10px;
+  margin-top: 5px;
+  float: left;
+}
+
+#wrapperProductView .yith-wcwl-add-to-wishlist + .clear {
+  clear: none !important;
+}
+
+#wrapperProductView .yith-wcwl-add-to-wishlist * {
+  font-size: 12px;
+}
+
+#wrapperProductView .only-wish .yith-wcwl-add-to-wishlist {
+  width: 100%;
+}
+
+#wrapperProductView .yith-wcwl-add-to-wishlist a.add_to_wishlist {
+  float: left;
+  padding: 0;
+}
+
+#wrapperProductView
+  .yith-wcwl-add-to-wishlist
+  .yith-wcwl-add-button
+  img.ajax-loading {
+  margin-left: 8px;
+}
+
+#wrapperContent
+  #wrapperProductView
+  .yith-wcwl-add-to-wishlist
+  .yith-wcwl-wishlistaddedbrowse
+  span.feedback,
+#wrapperContent
+  #wrapperProductView
+  .yith-wcwl-add-to-wishlist
+  .yith-wcwl-wishlistexistsbrowse
+  span.feedback {
+  margin: 0;
+}
+
+#wrapperContent .yith-wcwl-add-to-wishlist a {
+  color: #c3c3c3;
+}
+
+#wrapperContent .yith-wcwl-add-to-wishlist a:hover {
+  color: #727272;
+}
+
+#wrapperContent
+  .yith-wcwl-add-to-wishlist
+  .yith-wcwl-wishlistaddedbrowse
+  span.feedback,
+#wrapperContent
+  .yith-wcwl-add-to-wishlist
+  .yith-wcwl-wishlistexistsbrowse
+  span.feedback {
+  margin-left: 4px;
+  display: block;
+}
+
+.ncm-products .productActions .yith-wcwl-add-to-wishlist a:hover,
+.ncm-products .productActions a.compare:hover {
+  color: #727272 !important;
+}
+
+.ncm-products .productActions a.compare {
+  padding-left: 20px !important;
+}
+
+/* Loop */
+.ncm-products .ncm-product-grid .productActions .yith-wcwl-add-to-wishlist {
+  border-top: 1px solid #e7e7e7;
+  float: left;
+  margin: 0;
+  margin-top: 10px;
+  width: 100%;
+  height: auto;
+  padding: 6px 0 0 0;
+  text-align: center;
+}
+
+.ncm-products .ncm-product-grid .productName + .yith-wcwl-add-to-wishlist {
+  display: none;
+}
+
+.ncm-products .ncm-product-list .productActions .yith-wcwl-add-to-wishlist {
+  float: left;
+  margin-top: 5px;
+}
+
+.ncm-products .ncm-product-grid .productActions .yith-wcwl-add-to-wishlist *,
+.ncm-products .ncm-product-list .productActions .yith-wcwl-add-to-wishlist * {
+  font-size: 12px;
+}
+
+.ncm-products
+  .ncm-product-grid
+  .productActions
+  .yith-wcwl-add-to-wishlist
+  .yith-wcwl-add-button
+  img.ajax-loading {
+  margin-left: 4px;
+}
+
+#wrapperContent
+  .ncm-products
+  .ncm-product-list
+  .yith-wcwl-add-to-wishlist
+  + .clear,
+#wrapperContent
+  .ncm-products
+  .ncm-product-grid
+  .yith-wcwl-add-to-wishlist
+  + .clear {
+  clear: none;
+}
+
+#wrapperContent .ncm-products .yith-wcwl-add-to-wishlist a {
+  background: url("../images/heart-off.png") no-repeat left center;
+  padding-left: 22px !important;
+}
+
+#wrapperContent .ncm-products .yith-wcwl-add-to-wishlist a:hover {
+  background-image: url("../images/heart-on.png");
+}
+
+#wrapperContent
+  .ncm-products
+  .yith-wcwl-add-to-wishlist
+  .yith-wcwl-wishlistaddedbrowse
+  span.feedback,
+#wrapperContent
+  .ncm-products
+  .yith-wcwl-add-to-wishlist
+  .yith-wcwl-wishlistexistsbrowse
+  span.feedback {
+  display: none;
+}
+
+#wrapperContent .ncm-products .ncm-product-list .yith-wcwl-add-to-wishlist {
+  display: inline-block;
+}
+
+#wrapperContent .ncm-products .ncm-product-list .yith-wcwl-add-to-wishlist a {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+}
+
+#wrapperContent .ncm-products .ncm-product-list .yith-wcwl-add-button,
+#wrapperContent .ncm-products .ncm-product-list .yith-wcwl-wishlistaddedbrowse,
+#wrapperContent
+  .ncm-products
+  .ncm-product-list
+  .yith-wcwl-wishlistexistsbrowse {
+  float: left;
+  margin-left: 10px;
+}
+
+/* Template */
+#wrapperContent #ncm-wishlist-messages {
+  overflow: hidden;
+}
+
+#wrapperContent #ncm-wishtable {
+  min-height: 40px;
+}
+
+#wrapperContent .wishlist_table {
+  width: 100%;
+  text-align: center;
+}
+
+#wrapperContent .wishlist_table tbody tr {
+  background-color: #fff;
+}
+
+#wrapperContent .wishlist_table thead tr th .rotated {
+  color: #404040;
+  font-family: "Anklada";
+  display: inline-block;
+  writing-mode: tb-rl;
+  margin-left: 5px;
+  filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0.9)";
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0.9)";
+}
+
+#wrapperContent .wishlist_table thead tr th span.nobr {
+  font-family: "Oswaldbook";
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #fff !important;
+  padding: 12px 12px 12px 0;
+  position: relative;
+  font-weight: normal;
+}
+
+#wrapperContent .wishlist_table thead tr th.header1 {
+  background-color: #858486;
+}
+
+#wrapperContent .wishlist_table thead tr th.header2 {
+  background-color: #787878;
+}
+
+#wrapperContent .wishlist_table thead tr th.header3 {
+  background-color: #6a6a6a;
+}
+
+#wrapperContent .wishlist_table thead tr th.header4 {
+  background-color: #5a5a5a;
+}
+
+#wrapperContent .wishlist_table thead tr th.header5 {
+  background-color: #4c4c4c;
+}
+
+#wrapperContent .wishlist_table thead tr th.header6 {
+  background-color: #3d3d3d;
+}
+
+#wrapperContent .wishlist_table thead tr,
+#wrapperContent .wishlist_table thead tr th {
+  border: none !important;
+}
+
+#wrapperContent .wishlist_table tbody tr,
+#wrapperContent .wishlist_table tbody tr td {
+  border: 1px solid #eeebea;
+}
+
+#wrapperContent .wishlist_table td {
+  padding: 15px 10px;
+}
+
+#wrapperContent .wishlist_table tr td {
+  text-align: center !important;
+}
+
+#wrapperContent .wishlist_table tbody tr td.product-thumbnail img {
+  width: 90px !important;
+  height: 90px !important;
+  display: block;
+  border: 1px solid #fff;
+  max-width: 90px;
+  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+}
+
+#wrapperContent .wishlist_table tr td.product-remove a {
+  background: url("../images/btn-remove.png") no-repeat center center;
+  width: 25px;
+  height: 25px;
+  display: block;
+}
+
+#wrapperContent .wishlist_table tr td.product-thumbnail,
+#wrapperContent .wishlist_table tr td.product-name {
+  text-align: left !important;
+}
+
+#wrapperContent .wishlist_table tr td.product-name a {
+  font-weight: bold;
+}
+
+#wrapperContent .wishlist_table tr td.product-price span {
+  color: #858486;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+#wrapperContent .wishlist_table tr td.product-stock-status span {
+  font-weight: bold;
+}
+
+#wrapperContent
+  .wishlist_table
+  tr
+  td.product-stock-status
+  span.wishlist-in-stock {
+  color: #48b30d;
+}
+
+#wrapperContent
+  .wishlist_table
+  tr
+  td.product-stock-status
+  span.wishlist-out-of-stock {
+  color: #ff0000;
+}
+
+#wrapperContent .wishlist_table a.add_to_cart.button {
+  padding: 9px 12px 9px 22px;
+  background-image: url("../images/mini-basket.png") !important;
+  background-repeat: no-repeat;
+  background-position: 4% center;
+}
+
+#wrapperContent .wishlist_table a.add_to_cart.button .icon-shopping-cart {
+  display: none;
+}
+
+#wrapperContent .wishlist_table a.add_to_cart.button {
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Oswaldbook";
+  font-size: 13px;
+  border: 3px solid;
+  font-weight: normal;
+  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  text-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+#wrapperContent .wishlist_table a.add_to_cart.button:hover {
+  border-color: #fff !important;
+  color: #fff;
+  opacity: 0.75;
+  filter: alpha(opacity=75);
+  -ms-filter: "alpha(opacity=75)";
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  box-shadow: 0px 0px 10px #ababab;
+  -webkit-box-shadow: 0px 0px 10px #ababab;
+  -moz-box-shadow: 0px 0px 10px #ababab;
+  -ms-box-shadow: 0px 0px 10px #ababab;
+  -o-box-shadow: 0px 0px 10px #ababab;
+  text-shadow: none;
+}
+
+/* Share */
+#wrapperContent .yith-wcwl-share ul {
+  margin-bottom: 10px;
+  margin-left: 0px;
+}
+
+#wrapperContent .yith-wcwl-share ul,
+.yith-wcwl-share li {
+  height: 21px;
+}
+
+#wrapperContent .yith-wcwl-share li {
+  margin-right: 3px;
+}
+
+#wrapperContent .yith-wcwl-share li:before {
+  content: "";
+}
+
+#wrapperContent .yith-wcwl-share li a {
+  background-position: left bottom;
+  display: inline-block;
+  width: 22px;
+  height: 21px;
+}
+
+#wrapperContent .yith-wcwl-share li a:hover {
+  background-position: left top;
+  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+}
+
+#wrapperContent .yith-wcwl-share li a.facebook {
+  background-image: url("../images/wishlist/wish-facebook.png");
+}
+
+#wrapperContent .yith-wcwl-share li a.twitter {
+  background-image: url("../images/wishlist/wish-twitter.png");
+}
+
+#wrapperContent .yith-wcwl-share li a.pinterest {
+  background-image: url("../images/wishlist/wish-pinterest.jpg");
+}
+
+#wrapperContent .yith-wcwl-share li a.googleplus {
+  background-image: url("../images/wishlist/wish-gplus.jpg");
+}
+
+#wrapperContent .yith-wcwl-share li a.email {
+  background-image: url("../images/wishlist/wish-email.jpg");
+}
+
+#wrapperContent .yith-wcwl-add-button a {
+  line-height: 18px !important;
+}

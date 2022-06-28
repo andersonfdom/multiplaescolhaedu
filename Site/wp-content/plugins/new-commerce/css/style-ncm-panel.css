@@ -1,0 +1,104 @@
+/* --------------------------------------------------------------------------------------------------------------------------------------------- */
+/* Fonts */
+/* --------------------------------------------------------------------------------------------------------------------------------------------- */
+@import url("fonts.css");
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------- */
+/* New-Commerce Admin */
+/* --------------------------------------------------------------------------------------------------------------------------------------------- */
+#ncm-wrapper #panel-title {
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+#ncm-wrapper .icon32 {
+    background: url("../images/logo-36x34.png") no-repeat center center;
+    margin: 10px 20px;
+}
+
+#ncm-wrapper .postbox {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#ncm-wrapper .postbox h3.box-title {
+    padding: 10px;
+    cursor: auto;
+}
+
+#ncm-wrapper .postbox div.box-description {
+    padding: 0 10px;
+}
+
+#ncm-wrapper .mceIframeContainer iframe {
+    background-color: #fff;
+}
+
+#ncm-wrapper #icon-themes {
+    height: 24px;
+    width: 36px;
+    float: left;
+    display: inline-block;
+    padding-top: 0px;
+    margin: 15px 20px 0;
+}
+
+#ncm-wrapper .font-preview {
+    font-size: 26px;
+    width: 300px;
+}
+
+#ncm-wrapper #doc-link {
+    float: right;
+    z-index: 9999999;
+    margin-top: -25px;
+}
+
+.import_message_success {
+    border-top: 1px solid #eee;
+    padding-top: 14px;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------- */
+/* Wordpress General Admin */
+/* --------------------------------------------------------------------------------------------------------------------------------------------- */
+#adminmenuwrap ul#adminmenu li#toplevel_page_ncm-page-custom-settings a .wp-menu-image {
+    background-image: url("../images/logo-28x28.png");
+    width: 28px;
+    height: 28px;
+    margin: 2px 4px 0 2px;
+}
+
+#wpwrap #ncm-wrapper table.form-table {
+    padding: 0 10px;
+    display: block;
+}
+
+#wpwrap #ncm-wrapper table.form-table th + td {
+    display: inline-block;
+    float: left;
+}
+
+#wpwrap #ncm-wrapper table.form-table th + td {
+    display: inline-block;
+    float: left;
+}
+
+#wpwrap #ncm-wrapper table.form-table th + td + td {
+    float: left;
+}
+
+#wpwrap #ncm-wrapper form p.submit {
+    display: inline-block;
+}
+
+#wpwrap #ncm-wrapper form input.button-delete {
+    margin-left: 5px;
+}
+
+.yith_banner {
+    display: none !important;
+    content: '' !important;
+    visibility: hidden !important;
+    z-index: -99999 !important;
+}

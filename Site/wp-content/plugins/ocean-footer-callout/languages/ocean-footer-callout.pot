@@ -1,0 +1,203 @@
+# Copyright (C) 2016 
+# This file is distributed under the same license as the  package.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/style\n"
+"POT-Creation-Date: 2017-07-29 19:42+0200\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
+"Last-Translator: OceanWP\n"
+"Language-Team: OceanWP\n"
+"X-Generator: Poedit 2.0.3\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: _esc_attr__;esc_attr_x;esc_attr_e;esc_html__;"
+"esc_html_e;esc_html_x;__;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c;_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
+"X-Textdomain-Support: yes\n"
+"Language: en_US\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: ocean-footer-callout.php:146 ocean-footer-callout.php:155
+msgid "Cheatin&#8217; huh?"
+msgstr ""
+
+#: ocean-footer-callout.php:223
+msgid ""
+"Ocean Footer Callout requires that you use OceanWP as your parent theme."
+msgstr ""
+
+#: ocean-footer-callout.php:223
+msgid "Install OceanWP now"
+msgstr ""
+
+#: ocean-footer-callout.php:237
+msgid "Footer Callout"
+msgstr ""
+
+#: ocean-footer-callout.php:250
+msgid "Page ID"
+msgstr ""
+
+#: ocean-footer-callout.php:251
+msgid ""
+"Deprecated, this field is no longer supported. Please use the Select "
+"Template field below instead."
+msgstr ""
+
+#: ocean-footer-callout.php:266
+msgid "Select Template"
+msgstr ""
+
+#: ocean-footer-callout.php:267
+msgid "Choose a template created in Theme Panel > My Library."
+msgstr ""
+
+#: ocean-footer-callout.php:285
+msgid "Content"
+msgstr ""
+
+#: ocean-footer-callout.php:300
+msgid "Button"
+msgstr ""
+
+#: ocean-footer-callout.php:314
+msgid "Enable Button"
+msgstr ""
+
+#: ocean-footer-callout.php:330
+msgid "Button URL"
+msgstr ""
+
+#: ocean-footer-callout.php:341
+msgid "Get In Touch"
+msgstr ""
+
+#: ocean-footer-callout.php:347
+msgid "Button Text"
+msgstr ""
+
+#: ocean-footer-callout.php:364
+msgid "Button Target"
+msgstr ""
+
+#: ocean-footer-callout.php:369
+msgid "Blank"
+msgstr ""
+
+#: ocean-footer-callout.php:370
+msgid "Self"
+msgstr ""
+
+#: ocean-footer-callout.php:385
+msgid "Button Rel"
+msgstr ""
+
+#: ocean-footer-callout.php:390
+msgid "None"
+msgstr ""
+
+#: ocean-footer-callout.php:391
+msgid "Nofollow"
+msgstr ""
+
+#: ocean-footer-callout.php:404
+msgid "Styling"
+msgstr ""
+
+#: ocean-footer-callout.php:442
+msgid "Padding (px)"
+msgstr ""
+
+#: ocean-footer-callout.php:470
+msgid "Background"
+msgstr ""
+
+#: ocean-footer-callout.php:486
+msgid "Border Color"
+msgstr ""
+
+#: ocean-footer-callout.php:502
+msgid "Text Color"
+msgstr ""
+
+#: ocean-footer-callout.php:518
+msgid "Links"
+msgstr ""
+
+#: ocean-footer-callout.php:534
+msgid "Links: Hover"
+msgstr ""
+
+#: ocean-footer-callout.php:550
+msgid "Button Border Radius (px)"
+msgstr ""
+
+#: ocean-footer-callout.php:566
+msgid "Button Background"
+msgstr ""
+
+#: ocean-footer-callout.php:582
+msgid "Button Color"
+msgstr ""
+
+#: ocean-footer-callout.php:598
+msgid "Button: Hover Background"
+msgstr ""
+
+#: ocean-footer-callout.php:614
+msgid "Button: Hover Color"
+msgstr ""
+
+#: ocean-footer-callout.php:654
+msgid "Callout"
+msgstr ""
+
+#: ocean-footer-callout.php:664
+msgid "Display Callout"
+msgstr ""
+
+#: ocean-footer-callout.php:665
+msgid "Enable or disable the footer callout."
+msgstr ""
+
+#: ocean-footer-callout.php:667
+msgid "Default"
+msgstr ""
+
+#: ocean-footer-callout.php:668
+msgid "Enable"
+msgstr ""
+
+#: ocean-footer-callout.php:669
+msgid "Disable"
+msgstr ""
+
+#: ocean-footer-callout.php:686
+msgid "Callout Button Url"
+msgstr ""
+
+#: ocean-footer-callout.php:687
+msgid "Enter a valid link."
+msgstr ""
+
+#: ocean-footer-callout.php:703
+msgid "Callout Button Text"
+msgstr ""
+
+#: ocean-footer-callout.php:704
+msgid "Enter your text."
+msgstr ""
+
+#: ocean-footer-callout.php:720
+msgid "Callout Text"
+msgstr ""
+
+#: ocean-footer-callout.php:721
+msgid "Override the default callout text."
+msgstr ""

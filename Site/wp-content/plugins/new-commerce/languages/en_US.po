@@ -1,0 +1,4362 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: new-commerce\n"
+"POT-Creation-Date: 2018-07-02 00:19-0300\n"
+"PO-Revision-Date: 2018-07-02 00:19-0300\n"
+"Last-Translator: Danilo <dnl_pnd16@hotmail.com>\n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.7\n"
+"X-Poedit-KeywordsList: __;_e;gettext;gettext_noop\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ../.\n"
+
+#: .././404.php:17
+#, php-format
+msgid "Error %s - Nothing Found"
+msgstr "Error %s - Nothing Found"
+
+#: .././404.php:18
+msgid "Sorry, but what you are looking for could not be found"
+msgstr "Sorry, but what you are looking for could not be found"
+
+#: .././404.php:19
+msgid ""
+"Maybe, it could have been moved to another place or doesn't exist anymore"
+msgstr ""
+"Maybe, it could have been moved to another place or doesn't exist anymore"
+
+#: .././404.php:20
+msgid "Try searching what you are looking for using the form below"
+msgstr "Try searching what you are looking for using the form below"
+
+#: .././archive.php:38 .././author.php:26 .././category.php:29 .././date.php:32
+#: .././index.php:20 .././page-full.php:22 .././page.php:23 .././search.php:23
+#: .././single.php:15 .././tag.php:24
+msgid "Nothing Found"
+msgstr "Nothing Found"
+
+#: .././archive.php:39 .././author.php:27 .././category.php:30 .././date.php:33
+#: .././index.php:21 .././page-full.php:23 .././page.php:24 .././search.php:24
+#: .././single.php:16 .././tag.php:25
+msgid "Error"
+msgstr "Error"
+
+#: .././archive.php:40 .././index.php:22
+msgid "Sorry, but this blog doesn't have posts yet"
+msgstr "Sorry, but this blog doesn't have posts yet"
+
+#: .././archive.php:42 .././author.php:30 .././category.php:33 .././date.php:36
+#: .././index.php:24 .././tag.php:28
+msgid "Create your posts in the"
+msgstr "Create your posts in the"
+
+#: .././archive.php:42 .././author.php:30 .././category.php:33 .././date.php:36
+#: .././index.php:24 .././tag.php:28
+msgid "Administration Panel"
+msgstr "Administration Panel"
+
+#: .././author.php:17
+msgid "Posts of author"
+msgstr "Posts of author"
+
+#: .././author.php:28 .././date.php:34
+#, php-format
+msgid "Sorry, but this blog doesn't have posts published by author \"%s\" yet"
+msgstr "Sorry, but this blog doesn't have posts published by author \"%s\" yet"
+
+#: .././blog/content/content-archive.php:30
+#: .././blog/content/content-index.php:30 .././blog/post/post-options.php:7
+msgid "read more"
+msgstr "read more"
+
+#: .././blog/content/content-archive.php:53
+#: .././blog/content/content-single.php:27
+msgid "Copy this post to your website/blog"
+msgstr "Copy this post to your website/blog"
+
+#: .././blog/content/content-archive.php:55
+#: .././blog/content/content-single.php:29
+msgid ""
+"Copy the code below and paste into the HTML editor of your blog and you're "
+"ready to publish."
+msgstr ""
+"Copy the code below and paste into the HTML editor of your blog and you're "
+"ready to publish."
+
+#: .././blog/content/content-archive.php:56
+#: .././blog/content/content-single.php:30
+msgid "Original Post"
+msgstr "Original Post"
+
+#: .././blog/content/content-archive.php:56
+#: .././blog/content/content-single.php:30
+#: .././functions/admin/library/post-type/post-type-testimonial.php:56
+msgid "Author"
+msgstr "Author"
+
+#: .././blog/post/post-metadata-archive.php:4
+#: .././blog/post/post-metadata-index.php:4
+msgid "View this post"
+msgstr "View this post"
+
+#: .././blog/post/post-metadata-archive.php:15
+#: .././blog/post/post-metadata-index.php:15
+#: .././blog/post/post-metadata-single.php:15
+msgid "no comments"
+msgstr "no comments"
+
+#: .././blog/post/post-metadata-archive.php:15
+#: .././blog/post/post-metadata-index.php:15
+#: .././blog/post/post-metadata-single.php:15
+msgid "comment"
+msgstr "comment"
+
+#: .././blog/post/post-metadata-archive.php:15
+#: .././blog/post/post-metadata-index.php:15
+#: .././blog/post/post-metadata-single.php:15
+#, php-format
+msgid "% comments"
+msgstr "% comments"
+
+#: .././blog/post/post-metadata-archive.php:18
+#: .././blog/post/post-metadata-index.php:18
+#: .././blog/post/post-metadata-single.php:18
+msgid "by"
+msgstr "by"
+
+#: .././blog/post/post-metadata-single.php:22
+msgid "Categories:"
+msgstr "Categories:"
+
+#: .././blog/post/post-metadata-single.php:23
+msgid "Tags: "
+msgstr "Tags: "
+
+#: .././category.php:16
+msgid "Posts of category"
+msgstr "Posts of category"
+
+#: .././category.php:31
+msgid "Sorry, but this blog doesn't have posts of category"
+msgstr "Sorry, but this blog doesn't have posts of category"
+
+#: .././category.php:33
+#: .././functions/theme-functions/library/theme/lib-hooks-theme.php:205
+#: .././index.php:24 .././tag.php:28
+msgid "Login"
+msgstr "Login"
+
+#: .././comments.php:3
+msgid "Please, do not load this page directly. Thanks!"
+msgstr "Please, do not load this page directly. Thanks!"
+
+#: .././comments.php:6
+msgid "This post is protected by password. Insert it to see the comments"
+msgstr "This post is protected by password. Insert it to see the comments"
+
+#: .././comments.php:16
+msgid "Comments"
+msgstr "Comments"
+
+#: .././comments.php:31
+msgid "No comments were published for this post yet"
+msgstr "No comments were published for this post yet"
+
+#: .././comments.php:47
+msgid "Leave your comment"
+msgstr "Leave your comment"
+
+#: .././comments.php:48
+#, php-format
+msgid "Leave your comment to '%s'"
+msgstr "Leave your comment to '%s'"
+
+#: .././comments.php:49 .././page-contact.php:143
+msgid "Message"
+msgstr "Message"
+
+#: .././comments.php:51
+msgid "COMMENT"
+msgstr "COMMENT"
+
+#: .././comments.php:53 .././page-contact.php:111
+#: .././woocommerce/single-product-reviews.php:76
+msgid "Name"
+msgstr "Name"
+
+#: .././comments.php:53
+msgid "required"
+msgstr "required"
+
+#: .././comments.php:54
+msgid "E-mail"
+msgstr "E-mail"
+
+#: .././comments.php:54
+msgid "required, it won't be published"
+msgstr "required, it won't be published"
+
+#: .././comments.php:55
+msgid "Site/Blog"
+msgstr "Site/Blog"
+
+#: .././comments.php:55
+msgid "optional"
+msgstr "optional"
+
+#: .././comments.php:61
+msgid "The comments are closed in this post"
+msgstr "The comments are closed in this post"
+
+#: .././components/cart.php:25
+msgid "view cart"
+msgstr "view cart"
+
+#: .././components/cart.php:30
+msgid "CHECKOUT"
+msgstr "CHECKOUT"
+
+#: .././components/edit-post-link.php:7
+msgid "edit page"
+msgstr "edit page"
+
+#: .././components/edit-post-link.php:8
+msgid "edit post"
+msgstr "edit post"
+
+#: .././components/last-comments.php:7
+msgid "LAST COMMENTS"
+msgstr "LAST COMMENTS"
+
+#: .././components/last-comments.php:29
+msgid "Check our last posts"
+msgstr "Check our last posts"
+
+#: .././components/last-comments.php:29
+msgid "go to blog"
+msgstr "go to blog"
+
+#: .././components/slides-box-front.php:16
+msgid "Recent Products"
+msgstr "Recent Products"
+
+#: .././components/slides-box-front.php:27
+#: .././components/slides-box-stack.php:36
+msgid "Best Sellers"
+msgstr "Best Sellers"
+
+#: .././components/slides-box-stack.php:24
+#: .././functions/plugins/class-tgm-plugin-activation.php:1185
+msgid "Recommended"
+msgstr "Recommended"
+
+#: .././components/slides-box-stack.php:30
+msgid "Special Offers"
+msgstr "Special Offers"
+
+#: .././components/subscribe.php:7
+msgid "SUBSCRIBE TO OUR NEWS"
+msgstr "SUBSCRIBE TO OUR NEWS"
+
+#: .././components/subscribe.php:8
+msgid "Stay updated with our Shop to enjoy our special promotions!"
+msgstr "Stay updated with our Shop to enjoy our special promotions!"
+
+#: .././components/subscribe.php:10
+msgid "SUBSCRIBE"
+msgstr "SUBSCRIBE"
+
+#: .././components/testimonials.php:10
+msgid "TESTIMONIALS"
+msgstr "TESTIMONIALS"
+
+#: .././date.php:18 .././date.php:20 .././date.php:22
+msgid "Posts from"
+msgstr "Posts from"
+
+#: .././functions/admin/library/lib-admin.php:27
+msgid "Settings"
+msgstr "Settings"
+
+#: .././functions/admin/library/lib-control-renderer.php:192
+msgid "Upload an Image"
+msgstr "Upload an Image"
+
+#: .././functions/admin/library/lib-control-renderer.php:195
+msgid "Delete the Image"
+msgstr "Delete the Image"
+
+#: .././functions/admin/library/lib-control-renderer.php:219
+msgid "Default Font"
+msgstr "Default Font"
+
+#: .././functions/admin/library/lib-control-renderer.php:225
+msgid "This is the font preview text."
+msgstr "This is the font preview text."
+
+#: .././functions/admin/library/lib-hooks-admin.php:16
+#, php-format
+msgid "%s settings saved!"
+msgstr "%s settings saved!"
+
+#: .././functions/admin/library/lib-hooks-admin.php:22
+#, php-format
+msgid "An error ocurred! %s settings couldn't be saved!"
+msgstr "An error ocurred! %s settings couldn't be saved!"
+
+#: .././functions/admin/library/lib-hooks-admin.php:36
+msgid ""
+"Please, if you have liked this theme, remember to motivate us with your "
+"like / rate, here:"
+msgstr ""
+"Please, if you have liked this theme, remember to motivate us with your "
+"like / rate, here:"
+
+#: .././functions/admin/library/lib-hooks-admin.php:37
+msgid "Dismiss this message permanently"
+msgstr "Dismiss this message permanently"
+
+#: .././functions/admin/library/lib-hooks-admin.php:75
+#, php-format
+msgid "%s Custom Settings Page"
+msgstr "%s Custom Settings Page"
+
+#: .././functions/admin/library/lib-hooks-admin.php:76
+#: .././functions/admin/library/tab/lib-tab.php:22
+msgid "General"
+msgstr "General"
+
+#: .././functions/admin/library/lib-hooks-admin.php:77
+#: .././functions/admin/library/tab/lib-tab.php:23
+msgid "Front Page"
+msgstr "Front Page"
+
+#: .././functions/admin/library/lib-hooks-admin.php:78
+#: .././functions/admin/library/tab/lib-tab.php:24
+msgid "Shop"
+msgstr "Shop"
+
+#: .././functions/admin/library/lib-hooks-admin.php:79
+#: .././functions/admin/library/tab/lib-tab.php:25
+msgid "Blog"
+msgstr "Blog"
+
+#: .././functions/admin/library/lib-hooks-admin.php:80
+#: .././functions/admin/library/tab/lib-tab.php:26
+msgid "Integration"
+msgstr "Integration"
+
+#: .././functions/admin/library/lib-hooks-admin.php:81
+#: .././functions/admin/library/tab/lib-tab.php:27
+msgid "Import"
+msgstr "Import"
+
+#: .././functions/admin/library/lib-hooks-admin.php:82
+#: .././functions/admin/library/tab/lib-tab.php:28
+msgid "Help"
+msgstr "Help"
+
+#: .././functions/admin/library/lib-uploader.php:17
+msgid "Choose this one as my logo!"
+msgstr "Choose this one as my logo!"
+
+#: .././functions/admin/library/post-type/post-type-contact-category.php:7
+msgid "Contact Categories"
+msgstr "Contact Categories"
+
+#: .././functions/admin/library/post-type/post-type-contact-category.php:8
+#: .././functions/admin/library/post-type/post-type-review-category.php:8
+msgid "Category"
+msgstr "Category"
+
+#: .././functions/admin/library/post-type/post-type-contact-category.php:9
+#: .././functions/admin/library/post-type/post-type-contact.php:9
+#: .././functions/admin/library/post-type/post-type-faq.php:9
+#: .././functions/admin/library/post-type/post-type-review-category.php:9
+#: .././functions/admin/library/post-type/post-type-testimonial.php:10
+msgid "Add New"
+msgstr "Add New"
+
+#: .././functions/admin/library/post-type/post-type-contact-category.php:10
+#: .././functions/admin/library/post-type/post-type-review-category.php:10
+msgid "Add New Category"
+msgstr "Add New Category"
+
+#: .././functions/admin/library/post-type/post-type-contact-category.php:11
+#: .././functions/admin/library/post-type/post-type-review-category.php:11
+msgid "Edit Category"
+msgstr "Edit Category"
+
+#: .././functions/admin/library/post-type/post-type-contact-category.php:12
+#: .././functions/admin/library/post-type/post-type-review-category.php:12
+msgid "New Category"
+msgstr "New Category"
+
+#: .././functions/admin/library/post-type/post-type-contact-category.php:13
+#: .././functions/admin/library/post-type/post-type-review-category.php:13
+msgid "All Categories"
+msgstr "All Categories"
+
+#: .././functions/admin/library/post-type/post-type-contact-category.php:14
+#: .././functions/admin/library/post-type/post-type-review-category.php:14
+msgid "View Category"
+msgstr "View Category"
+
+#: .././functions/admin/library/post-type/post-type-contact-category.php:15
+#: .././functions/admin/library/post-type/post-type-review-category.php:15
+msgid "Search Categories"
+msgstr "Search Categories"
+
+#: .././functions/admin/library/post-type/post-type-contact-category.php:16
+#: .././functions/admin/library/post-type/post-type-review-category.php:16
+msgid "No Categories found"
+msgstr "No Categories found"
+
+#: .././functions/admin/library/post-type/post-type-contact-category.php:17
+#: .././functions/admin/library/post-type/post-type-review-category.php:17
+msgid "No Categories found in Trash"
+msgstr "No Categories found in Trash"
+
+#: .././functions/admin/library/post-type/post-type-contact-category.php:19
+msgid "Departments"
+msgstr "Departments"
+
+#: .././functions/admin/library/post-type/post-type-contact.php:7
+#: .././functions/admin/library/post-type/post-type-contact.php:19
+msgid "Contacts"
+msgstr "Contacts"
+
+#: .././functions/admin/library/post-type/post-type-contact.php:8
+msgid "Contact"
+msgstr "Contact"
+
+#: .././functions/admin/library/post-type/post-type-contact.php:10
+msgid "Add New Contact"
+msgstr "Add New Contact"
+
+#: .././functions/admin/library/post-type/post-type-contact.php:11
+msgid "Edit Contact"
+msgstr "Edit Contact"
+
+#: .././functions/admin/library/post-type/post-type-contact.php:12
+msgid "New Contact"
+msgstr "New Contact"
+
+#: .././functions/admin/library/post-type/post-type-contact.php:13
+msgid "All Contacts"
+msgstr "All Contacts"
+
+#: .././functions/admin/library/post-type/post-type-contact.php:14
+msgid "View Contact"
+msgstr "View Contact"
+
+#: .././functions/admin/library/post-type/post-type-contact.php:15
+msgid "Search Contacts"
+msgstr "Search Contacts"
+
+#: .././functions/admin/library/post-type/post-type-contact.php:16
+msgid "No Contacts found"
+msgstr "No Contacts found"
+
+#: .././functions/admin/library/post-type/post-type-contact.php:17
+msgid "No Contacts found in Trash"
+msgstr "No Contacts found in Trash"
+
+#: .././functions/admin/library/post-type/post-type-contact.php:38
+msgid "Contact Settings"
+msgstr "Contact Settings"
+
+#: .././functions/admin/library/post-type/post-type-contact.php:52
+msgid "Receiver(s)"
+msgstr "Receiver(s)"
+
+#: .././functions/admin/library/post-type/post-type-contact.php:58
+msgid "Separate emails with a comma"
+msgstr "Separate emails with a comma"
+
+#: .././functions/admin/library/post-type/post-type-contact.php:64
+msgid "Email Body"
+msgstr "Email Body"
+
+#: .././functions/admin/library/post-type/post-type-contact.php:70
+#, php-format
+msgid ""
+"Message sent: %1s \n"
+" From: %2s <%3s> \n"
+" Sent from blog '%4s'"
+msgstr ""
+"Message sent: %1s \n"
+" From: %2s <%3s> \n"
+" Sent from blog '%4s'"
+
+#: .././functions/admin/library/post-type/post-type-contact.php:80
+#, php-format
+msgid ""
+"Keys for the body content are:<br />%1s (stands for the message sent);<br />"
+"%2s (stands for the name of the sender);<br />%3s (stands for the email of "
+"the sender);"
+msgstr ""
+"Keys for the body content are:<br />%1s (stands for the message sent);<br />"
+"%2s (stands for the name of the sender);<br />%3s (stands for the email of "
+"the sender);"
+
+#: .././functions/admin/library/post-type/post-type-contact.php:90
+msgid "Send Button Alignment"
+msgstr "Send Button Alignment"
+
+#: .././functions/admin/library/post-type/post-type-contact.php:95
+#: .././functions/admin/library/tab/tab-blog.php:22
+#: .././functions/admin/library/tab/tab-shop.php:228
+msgid "Left Align"
+msgstr "Left Align"
+
+#: .././functions/admin/library/post-type/post-type-contact.php:96
+msgid "Center Align"
+msgstr "Center Align"
+
+#: .././functions/admin/library/post-type/post-type-contact.php:97
+#: .././functions/admin/library/tab/tab-blog.php:37
+#: .././functions/admin/library/tab/tab-shop.php:243
+msgid "Right Align"
+msgstr "Right Align"
+
+#: .././functions/admin/library/post-type/post-type-contact.php:101
+msgid "The alignment of the send button on the contact form"
+msgstr "The alignment of the send button on the contact form"
+
+#: .././functions/admin/library/post-type/post-type-contact.php:107
+msgid "Success Message"
+msgstr "Success Message"
+
+#: .././functions/admin/library/post-type/post-type-contact.php:111
+msgid "Thanks! Your message has been sent."
+msgstr "Thanks! Your message has been sent."
+
+#: .././functions/admin/library/post-type/post-type-contact.php:118
+msgid "Message for bad email format"
+msgstr "Message for bad email format"
+
+#: .././functions/admin/library/post-type/post-type-contact.php:122
+msgid "The email address is invalid."
+msgstr "The email address is invalid."
+
+#: .././functions/admin/library/post-type/post-type-contact.php:124
+msgid "The message used when the user inputs an incorrect email format"
+msgstr "The message used when the user inputs an incorrect email format"
+
+#: .././functions/admin/library/post-type/post-type-contact.php:130
+msgid "Message for email not sent"
+msgstr "Message for email not sent"
+
+#: .././functions/admin/library/post-type/post-type-contact.php:134
+msgid "The message couldn't be sent. Please, try again."
+msgstr "The message couldn't be sent. Please, try again."
+
+#: .././functions/admin/library/post-type/post-type-contact.php:136
+msgid "The message used when the system can't send the email of contact"
+msgstr "The message used when the system can't send the email of contact"
+
+#: .././functions/admin/library/post-type/post-type-contact.php:142
+msgid "Message for missing content"
+msgstr "Message for missing content"
+
+#: .././functions/admin/library/post-type/post-type-contact.php:146
+msgid "Please supply all information."
+msgstr "Please supply all information."
+
+#: .././functions/admin/library/post-type/post-type-contact.php:148
+msgid ""
+"The message used when the user didn't input all the necessary information"
+msgstr ""
+"The message used when the user didn't input all the necessary information"
+
+#: .././functions/admin/library/post-type/post-type-contact.php:154
+msgid "Active"
+msgstr "Active"
+
+#: .././functions/admin/library/post-type/post-type-contact.php:159
+msgid "Use this contact configuration"
+msgstr "Use this contact configuration"
+
+#: .././functions/admin/library/post-type/post-type-faq.php:7
+#: .././functions/admin/library/post-type/post-type-faq.php:19
+msgid "FAQs"
+msgstr "FAQs"
+
+#: .././functions/admin/library/post-type/post-type-faq.php:8
+msgid "FAQ"
+msgstr "FAQ"
+
+#: .././functions/admin/library/post-type/post-type-faq.php:10
+msgid "Add New FAQ"
+msgstr "Add New FAQ"
+
+#: .././functions/admin/library/post-type/post-type-faq.php:11
+msgid "Edit FAQ"
+msgstr "Edit FAQ"
+
+#: .././functions/admin/library/post-type/post-type-faq.php:12
+msgid "New FAQ"
+msgstr "New FAQ"
+
+#: .././functions/admin/library/post-type/post-type-faq.php:13
+msgid "All FAQs"
+msgstr "All FAQs"
+
+#: .././functions/admin/library/post-type/post-type-faq.php:14
+msgid "View FAQ"
+msgstr "View FAQ"
+
+#: .././functions/admin/library/post-type/post-type-faq.php:15
+msgid "Search FAQs"
+msgstr "Search FAQs"
+
+#: .././functions/admin/library/post-type/post-type-faq.php:16
+msgid "No FAQs found"
+msgstr "No FAQs found"
+
+#: .././functions/admin/library/post-type/post-type-faq.php:17
+msgid "No FAQs found in Trash"
+msgstr "No FAQs found in Trash"
+
+#: .././functions/admin/library/post-type/post-type-review-category.php:7
+msgid "Review Categories"
+msgstr "Review Categories"
+
+#: .././functions/admin/library/post-type/post-type-review-category.php:19
+msgid "Product Reviews"
+msgstr "Product Reviews"
+
+#: .././functions/admin/library/post-type/post-type-testimonial.php:8
+#: .././functions/admin/library/post-type/post-type-testimonial.php:20
+msgid "Testimonials"
+msgstr "Testimonials"
+
+#: .././functions/admin/library/post-type/post-type-testimonial.php:9
+msgid "Testimonial"
+msgstr "Testimonial"
+
+#: .././functions/admin/library/post-type/post-type-testimonial.php:11
+msgid "Add New Testimonial"
+msgstr "Add New Testimonial"
+
+#: .././functions/admin/library/post-type/post-type-testimonial.php:12
+msgid "Edit Testimonial"
+msgstr "Edit Testimonial"
+
+#: .././functions/admin/library/post-type/post-type-testimonial.php:13
+msgid "New Testimonial"
+msgstr "New Testimonial"
+
+#: .././functions/admin/library/post-type/post-type-testimonial.php:14
+msgid "All Testimonials"
+msgstr "All Testimonials"
+
+#: .././functions/admin/library/post-type/post-type-testimonial.php:15
+msgid "View Testimonial"
+msgstr "View Testimonial"
+
+#: .././functions/admin/library/post-type/post-type-testimonial.php:16
+msgid "Search Testimonials"
+msgstr "Search Testimonials"
+
+#: .././functions/admin/library/post-type/post-type-testimonial.php:17
+msgid "No testimonials found"
+msgstr "No testimonials found"
+
+#: .././functions/admin/library/post-type/post-type-testimonial.php:18
+msgid "No testimonials found in Trash"
+msgstr "No testimonials found in Trash"
+
+#: .././functions/admin/library/post-type/post-type-testimonial.php:40
+msgid "Additional Information"
+msgstr "Additional Information"
+
+#: .././functions/admin/library/post-type/post-type-testimonial.php:62
+msgid "The author of this testimonial"
+msgstr "The author of this testimonial"
+
+#: .././functions/admin/library/post-type/post-type-testimonial.php:68
+#: .././woocommerce/myaccount/my-orders.php:14
+#: .././woocommerce/myaccount/orders.php:38
+msgid "Date"
+msgstr "Date"
+
+#: .././functions/admin/library/post-type/post-type-testimonial.php:73
+msgid "The date of this testimonial"
+msgstr "The date of this testimonial"
+
+#: .././functions/admin/library/tab/lib-tab.php:29
+msgid "Services"
+msgstr "Services"
+
+#: .././functions/admin/library/tab/tab-blog.php:27
+#: .././functions/admin/library/tab/tab-shop.php:233
+msgid "Sidebar Align Position"
+msgstr "Sidebar Align Position"
+
+#: .././functions/admin/library/tab/tab-blog.php:61
+msgid "Post Call maximum characters"
+msgstr "Post Call maximum characters"
+
+#: .././functions/admin/library/tab/tab-blog.php:74
+msgid "Overlay Width"
+msgstr "Overlay Width"
+
+#: .././functions/admin/library/tab/tab-blog.php:87
+msgid "Overlay Height"
+msgstr "Overlay Height"
+
+#: .././functions/admin/library/tab/tab-blog.php:93
+#: .././functions/admin/library/tab/tab-general.php:196
+#: .././functions/admin/library/tab/tab-shop.php:316
+#, php-format
+msgid "Enable / Disable %s"
+msgstr "Enable / Disable %s"
+
+#: .././functions/admin/library/tab/tab-blog.php:105
+msgid "Display posts on grid view"
+msgstr "Display posts on grid view"
+
+#: .././functions/admin/library/tab/tab-blog.php:116
+msgid "Copy Post Box"
+msgstr "Copy Post Box"
+
+#: .././functions/admin/library/tab/tab-blog.php:127
+msgid "Enable the sidebar on the Contact page"
+msgstr "Enable the sidebar on the Contact page"
+
+#: .././functions/admin/library/tab/tab-blog.php:138
+msgid "Enable the sidebar on the FAQ page"
+msgstr "Enable the sidebar on the FAQ page"
+
+#: .././functions/admin/library/tab/tab-blog.php:144
+#: .././functions/admin/library/tab/tab-shop.php:503
+msgid "Sidebar Position"
+msgstr "Sidebar Position"
+
+#: .././functions/admin/library/tab/tab-blog.php:146
+msgid "Choose which side the blog's sidebar will be set to"
+msgstr "Choose which side the blog's sidebar will be set to"
+
+#: .././functions/admin/library/tab/tab-blog.php:154
+msgid "Grid Posts Features"
+msgstr "Grid Posts Features"
+
+#: .././functions/admin/library/tab/tab-blog.php:156
+msgid ""
+"Customize how the posts will be shown when the Blog is using grid view mode"
+msgstr ""
+"Customize how the posts will be shown when the Blog is using grid view mode"
+
+#: .././functions/admin/library/tab/tab-blog.php:164
+msgid "Blog Features"
+msgstr "Blog Features"
+
+#: .././functions/admin/library/tab/tab-blog.php:166
+msgid "Customize which features should be active on your blog"
+msgstr "Customize which features should be active on your blog"
+
+#: .././functions/admin/library/tab/tab-front-page.php:23
+#: .././functions/admin/library/tab/tab-shop.php:308
+msgid ""
+"Products which appears inside a slider (like Recommeded Products or Featured "
+"Products)"
+msgstr ""
+"Products which appears inside a slider (like Recommeded Products or Featured "
+"Products)"
+
+#: .././functions/admin/library/tab/tab-front-page.php:25
+#: .././functions/admin/library/tab/tab-shop.php:310
+msgid "Sliders Total Products"
+msgstr "Sliders Total Products"
+
+#: .././functions/admin/library/tab/tab-front-page.php:31
+msgid "Enable / Disable"
+msgstr "Enable / Disable"
+
+#: .././functions/admin/library/tab/tab-front-page.php:42
+msgid "Testmonial Box"
+msgstr "Testmonial Box"
+
+#: .././functions/admin/library/tab/tab-front-page.php:53
+msgid "Last Comments Box"
+msgstr "Last Comments Box"
+
+#: .././functions/admin/library/tab/tab-front-page.php:59
+msgid "Front Page Total Products"
+msgstr "Front Page Total Products"
+
+#: .././functions/admin/library/tab/tab-front-page.php:61
+msgid "Customize how many products will appear on the Front Page"
+msgstr "Customize how many products will appear on the Front Page"
+
+#: .././functions/admin/library/tab/tab-front-page.php:69
+msgid "Front Page Features"
+msgstr "Front Page Features"
+
+#: .././functions/admin/library/tab/tab-front-page.php:71
+msgid "Customize which features should be active on your Front Page"
+msgstr "Customize which features should be active on your Front Page"
+
+#: .././functions/admin/library/tab/tab-general.php:25
+#: .././functions/admin/library/tab/tab-general.php:35
+#: .././functions/admin/library/tab/tab-general.php:45
+#: .././functions/admin/library/tab/tab-general.php:55
+#: .././functions/admin/library/tab/tab-general.php:65
+#: .././functions/admin/library/tab/tab-general.php:75
+#, php-format
+msgid "%s Profile"
+msgstr "%s Profile"
+
+#: .././functions/admin/library/tab/tab-general.php:86
+msgid "Default"
+msgstr "Default"
+
+#: .././functions/admin/library/tab/tab-general.php:106
+msgid "Upload an image to serve as a Favicon for your blog."
+msgstr "Upload an image to serve as a Favicon for your blog."
+
+#: .././functions/admin/library/tab/tab-general.php:108
+msgid "Favicon"
+msgstr "Favicon"
+
+#: .././functions/admin/library/tab/tab-general.php:108
+msgid "If you don't upload a favicon, a default one will be used instead"
+msgstr "If you don't upload a favicon, a default one will be used instead"
+
+#: .././functions/admin/library/tab/tab-general.php:118
+msgid "Favicon preview"
+msgstr "Favicon preview"
+
+#: .././functions/admin/library/tab/tab-general.php:124
+msgid "Upload a custom Logo"
+msgstr "Upload a custom Logo"
+
+#: .././functions/admin/library/tab/tab-general.php:126
+msgid "Logo"
+msgstr "Logo"
+
+#: .././functions/admin/library/tab/tab-general.php:126
+msgid "Upload a custom image to your header logo area"
+msgstr "Upload a custom image to your header logo area"
+
+#: .././functions/admin/library/tab/tab-general.php:132
+msgid "Upload a custom Background image"
+msgstr "Upload a custom Background image"
+
+#: .././functions/admin/library/tab/tab-general.php:134
+msgid "Background"
+msgstr "Background"
+
+#: .././functions/admin/library/tab/tab-general.php:134
+msgid "Upload a custom image to the background of the shop"
+msgstr "Upload a custom image to the background of the shop"
+
+#: .././functions/admin/library/tab/tab-general.php:148
+msgid "Click on the first textfield to choose the color"
+msgstr "Click on the first textfield to choose the color"
+
+#: .././functions/admin/library/tab/tab-general.php:150
+msgid "Color"
+msgstr "Color"
+
+#: .././functions/admin/library/tab/tab-general.php:164
+msgid "Select the primary font style for the theme"
+msgstr "Select the primary font style for the theme"
+
+#: .././functions/admin/library/tab/tab-general.php:166
+msgid "Primary Font"
+msgstr "Primary Font"
+
+#: .././functions/admin/library/tab/tab-general.php:176
+msgid "Select the secondary font style for the theme"
+msgstr "Select the secondary font style for the theme"
+
+#: .././functions/admin/library/tab/tab-general.php:178
+msgid "Secondary Font"
+msgstr "Secondary Font"
+
+#: .././functions/admin/library/tab/tab-general.php:188
+msgid "Select the general text font style for the theme"
+msgstr "Select the general text font style for the theme"
+
+#: .././functions/admin/library/tab/tab-general.php:190
+msgid "General Text Font"
+msgstr "General Text Font"
+
+#: .././functions/admin/library/tab/tab-general.php:208
+msgid "Fixed menu on scroll"
+msgstr "Fixed menu on scroll"
+
+#: .././functions/admin/library/tab/tab-general.php:219
+msgid "Header Customer Support"
+msgstr "Header Customer Support"
+
+#: .././functions/admin/library/tab/tab-general.php:225
+msgid "Follow Profile Buttons"
+msgstr "Follow Profile Buttons"
+
+#: .././functions/admin/library/tab/tab-general.php:227
+msgid "Customize the links of your profiles"
+msgstr "Customize the links of your profiles"
+
+#: .././functions/admin/library/tab/tab-general.php:228
+msgid ""
+"Note that you can set a profile to empty, so it will not appear on your blog"
+msgstr ""
+"Note that you can set a profile to empty, so it will not appear on your blog"
+
+#: .././functions/admin/library/tab/tab-general.php:236
+msgid "Uploads"
+msgstr "Uploads"
+
+#: .././functions/admin/library/tab/tab-general.php:238
+msgid "Upload custom assets to your blog"
+msgstr "Upload custom assets to your blog"
+
+#: .././functions/admin/library/tab/tab-general.php:246
+msgid "Color Schemes"
+msgstr "Color Schemes"
+
+#: .././functions/admin/library/tab/tab-general.php:248
+msgid "Choose which color scheme the theme will use"
+msgstr "Choose which color scheme the theme will use"
+
+#: .././functions/admin/library/tab/tab-general.php:256
+msgid "Font Styles"
+msgstr "Font Styles"
+
+#: .././functions/admin/library/tab/tab-general.php:258
+msgid "Choose which font styles the theme will use"
+msgstr "Choose which font styles the theme will use"
+
+#: .././functions/admin/library/tab/tab-general.php:266
+msgid "General Features"
+msgstr "General Features"
+
+#: .././functions/admin/library/tab/tab-general.php:268
+msgid "Customize which features should be active on both your shop and blog"
+msgstr "Customize which features should be active on both your shop and blog"
+
+#: .././functions/admin/library/tab/tab-import.php:12
+msgid "One-click Import"
+msgstr "One-click Import"
+
+#: .././functions/admin/library/tab/tab-import.php:14
+msgid ""
+"Import the theme's demo content to your installation (Wordpress and "
+"Woocommerce data)"
+msgstr ""
+"Import the theme's demo content to your installation (Wordpress and "
+"Woocommerce data)"
+
+#: .././functions/admin/library/tab/tab-integration.php:20
+#: .././functions/admin/library/tab/tab-integration.php:36
+#: .././functions/admin/library/tab/tab-integration.php:51
+#, php-format
+msgid "Note that you can omit the %s tag"
+msgstr "Note that you can omit the %s tag"
+
+#: .././functions/admin/library/tab/tab-integration.php:22
+msgid "Custom CSS"
+msgstr "Custom CSS"
+
+#: .././functions/admin/library/tab/tab-integration.php:38
+msgid "Custom Header Code"
+msgstr "Custom Header Code"
+
+#: .././functions/admin/library/tab/tab-integration.php:59
+msgid "Customized Code"
+msgstr "Customized Code"
+
+#: .././functions/admin/library/tab/tab-integration.php:61
+msgid "On this page you can add some pieces of code to your Shop / Blog"
+msgstr "On this page you can add some pieces of code to your Shop / Blog"
+
+#: .././functions/admin/library/tab/tab-shop.php:31
+msgid "Phone Number"
+msgstr "Phone Number"
+
+#: .././functions/admin/library/tab/tab-shop.php:41
+msgid ""
+"This can be your full address e.g.:<br/>30 South Park Avenue<br/>San "
+"Francisco, CA 94108<br/>USA"
+msgstr ""
+"This can be your full address e.g.:<br/>30 South Park Avenue<br/>San "
+"Francisco, CA 94108<br/>USA"
+
+#: .././functions/admin/library/tab/tab-shop.php:43
+msgid "Address"
+msgstr "Address"
+
+#: .././functions/admin/library/tab/tab-shop.php:56
+msgid "You can use any coordinates online service to discover your latitude"
+msgstr "You can use any coordinates online service to discover your latitude"
+
+#: .././functions/admin/library/tab/tab-shop.php:58
+msgid "Latitude"
+msgstr "Latitude"
+
+#: .././functions/admin/library/tab/tab-shop.php:67
+msgid "You can use any coordinates online service to discover your longitude"
+msgstr "You can use any coordinates online service to discover your longitude"
+
+#: .././functions/admin/library/tab/tab-shop.php:69
+msgid "Longitude"
+msgstr "Longitude"
+
+#: .././functions/admin/library/tab/tab-shop.php:81
+msgid "Bigger values (max of 21), means more zoom and vice versa"
+msgstr "Bigger values (max of 21), means more zoom and vice versa"
+
+#: .././functions/admin/library/tab/tab-shop.php:83
+msgid "Default zoom"
+msgstr "Default zoom"
+
+#: .././functions/admin/library/tab/tab-shop.php:96
+msgid "Maximum zoom"
+msgstr "Maximum zoom"
+
+#: .././functions/admin/library/tab/tab-shop.php:109
+msgid "MInimum zoom"
+msgstr "MInimum zoom"
+
+#: .././functions/admin/library/tab/tab-shop.php:118
+msgid ""
+"It's REQUIRED to use your own key for the map to work. Generate your own key "
+"here: "
+msgstr ""
+"It's REQUIRED to use your own key for the map to work. Generate your own key "
+"here: "
+
+#: .././functions/admin/library/tab/tab-shop.php:120
+msgid "Google's Map Key"
+msgstr "Google's Map Key"
+
+#: .././functions/admin/library/tab/tab-shop.php:262
+msgid "Grid View"
+msgstr "Grid View"
+
+#: .././functions/admin/library/tab/tab-shop.php:267
+msgid "Default View Mode"
+msgstr "Default View Mode"
+
+#: .././functions/admin/library/tab/tab-shop.php:277
+msgid "List View"
+msgstr "List View"
+
+#: .././functions/admin/library/tab/tab-shop.php:298
+msgid "Shop Index Total Products"
+msgstr "Shop Index Total Products"
+
+#: .././functions/admin/library/tab/tab-shop.php:328
+msgid "FAQ Page"
+msgstr "FAQ Page"
+
+#: .././functions/admin/library/tab/tab-shop.php:339
+msgid "Contact Page"
+msgstr "Contact Page"
+
+#: .././functions/admin/library/tab/tab-shop.php:350
+msgid "Products Custom Review"
+msgstr "Products Custom Review"
+
+#: .././functions/admin/library/tab/tab-shop.php:361
+msgid "Recommended Products Slides"
+msgstr "Recommended Products Slides"
+
+#: .././functions/admin/library/tab/tab-shop.php:372
+msgid "Special Offers Products Slides"
+msgstr "Special Offers Products Slides"
+
+#: .././functions/admin/library/tab/tab-shop.php:383
+msgid "Best Sellers Products Slides"
+msgstr "Best Sellers Products Slides"
+
+#: .././functions/admin/library/tab/tab-shop.php:394
+msgid "Grid / View toggle button"
+msgstr "Grid / View toggle button"
+
+#: .././functions/admin/library/tab/tab-shop.php:412
+msgid "This setting may be useful to help fit products with big images (in px)"
+msgstr ""
+"This setting may be useful to help fit products with big images (in px)"
+
+#: .././functions/admin/library/tab/tab-shop.php:414
+msgid "Product margin bottom"
+msgstr "Product margin bottom"
+
+#: .././functions/admin/library/tab/tab-shop.php:459
+msgid "Shop Options"
+msgstr "Shop Options"
+
+#: .././functions/admin/library/tab/tab-shop.php:461
+msgid "Customize some information about your store"
+msgstr "Customize some information about your store"
+
+#: .././functions/admin/library/tab/tab-shop.php:470
+msgid "Shop Map"
+msgstr "Shop Map"
+
+#: .././functions/admin/library/tab/tab-shop.php:472
+msgid "Configure the settings of your shop's contact page map"
+msgstr "Configure the settings of your shop's contact page map"
+
+#: .././functions/admin/library/tab/tab-shop.php:481
+msgid "Revolution Slider"
+msgstr "Revolution Slider"
+
+#: .././functions/admin/library/tab/tab-shop.php:483
+msgid "Customize the information about the Shop's index Revolution Slider"
+msgstr "Customize the information about the Shop's index Revolution Slider"
+
+#: .././functions/admin/library/tab/tab-shop.php:492
+msgid "Layer Slider"
+msgstr "Layer Slider"
+
+#: .././functions/admin/library/tab/tab-shop.php:494
+msgid "Customize the information about the Shop's index Layer Slider"
+msgstr "Customize the information about the Shop's index Layer Slider"
+
+#: .././functions/admin/library/tab/tab-shop.php:505
+msgid "Choose which side the Shop's sidebar will be set to"
+msgstr "Choose which side the Shop's sidebar will be set to"
+
+#: .././functions/admin/library/tab/tab-shop.php:514
+msgid "Product Default View Mode"
+msgstr "Product Default View Mode"
+
+#: .././functions/admin/library/tab/tab-shop.php:516
+msgid ""
+"Choose which view mode the products on the Shop page will be shown (note "
+"that this setting doesn't apply to sliders like the 'Best Sellers' or "
+"'Recommended', etc)"
+msgstr ""
+"Choose which view mode the products on the Shop page will be shown (note "
+"that this setting doesn't apply to sliders like the 'Best Sellers' or "
+"'Recommended', etc)"
+
+#: .././functions/admin/library/tab/tab-shop.php:525
+msgid "Shop Total Products"
+msgstr "Shop Total Products"
+
+#: .././functions/admin/library/tab/tab-shop.php:527
+msgid "Customize how many products will appear on the shop"
+msgstr "Customize how many products will appear on the shop"
+
+#: .././functions/admin/library/tab/tab-shop.php:536
+msgid "Shop Features"
+msgstr "Shop Features"
+
+#: .././functions/admin/library/tab/tab-shop.php:538
+msgid "Customize which features should be active on your shop"
+msgstr "Customize which features should be active on your shop"
+
+#: .././functions/admin/library/tab/tab-shop.php:547
+msgid "Products"
+msgstr "Products"
+
+#: .././functions/admin/library/tab/tab-shop.php:549
+msgid "Customize the layout of the products (inside the loop)"
+msgstr "Customize the layout of the products (inside the loop)"
+
+#: .././functions/importer/parsers.php:42
+#: .././functions/importer/parsers.php:72
+#: .././functions/importer/parsers.php:80
+msgid "There was an error when reading this WXR file"
+msgstr "There was an error when reading this WXR file"
+
+#: .././functions/importer/parsers.php:43
+msgid ""
+"Details are shown above. The importer will now try again with a different "
+"parser..."
+msgstr ""
+"Details are shown above. The importer will now try again with a different "
+"parser..."
+
+#: .././functions/importer/parsers.php:84
+#: .././functions/importer/parsers.php:89
+#: .././functions/importer/parsers.php:279
+#: .././functions/importer/parsers.php:468
+msgid ""
+"This does not appear to be a WXR file, missing/invalid WXR version number"
+msgstr ""
+"This does not appear to be a WXR file, missing/invalid WXR version number"
+
+#: .././functions/importer/wordpress-importer.php:134
+#: .././functions/importer/wordpress-importer.php:143
+#: .././functions/importer/wordpress-importer.php:194
+#: .././functions/importer/wordpress-importer.php:198
+#: .././functions/importer/wordpress-importer.php:207
+msgid "Sorry, there has been an error."
+msgstr "Sorry, there has been an error."
+
+#: .././functions/importer/wordpress-importer.php:135
+msgid "The file does not exist, please try again."
+msgstr "The file does not exist, please try again."
+
+#: .././functions/importer/wordpress-importer.php:178
+msgid "All done."
+msgstr "All done."
+
+#: .././functions/importer/wordpress-importer.php:178
+msgid "Have fun!"
+msgstr "Have fun!"
+
+#: .././functions/importer/wordpress-importer.php:179
+msgid "Remember to update the passwords and roles of imported users."
+msgstr "Remember to update the passwords and roles of imported users."
+
+#: .././functions/importer/wordpress-importer.php:199
+#, php-format
+msgid ""
+"The export file could not be found at <code>%s</code>. It is likely that "
+"this was caused by a permissions problem."
+msgstr ""
+"The export file could not be found at <code>%s</code>. It is likely that "
+"this was caused by a permissions problem."
+
+#: .././functions/importer/wordpress-importer.php:215
+#, php-format
+msgid ""
+"This WXR file (version %s) may not be supported by this version of the "
+"importer. Please consider updating."
+msgstr ""
+"This WXR file (version %s) may not be supported by this version of the "
+"importer. Please consider updating."
+
+#: .././functions/importer/wordpress-importer.php:240
+#, php-format
+msgid ""
+"Failed to import author %s. Their posts will be attributed to the current "
+"user."
+msgstr ""
+"Failed to import author %s. Their posts will be attributed to the current "
+"user."
+
+#: .././functions/importer/wordpress-importer.php:266
+msgid "Assign Authors"
+msgstr "Assign Authors"
+
+#: .././functions/importer/wordpress-importer.php:267
+msgid ""
+"To make it easier for you to edit and save the imported content, you may "
+"want to reassign the author of the imported item to an existing user of this "
+"site. For example, you may want to import all the entries as <code>admin</"
+"code>s entries."
+msgstr ""
+"To make it easier for you to edit and save the imported content, you may "
+"want to reassign the author of the imported item to an existing user of this "
+"site. For example, you may want to import all the entries as <code>admin</"
+"code>s entries."
+
+#: .././functions/importer/wordpress-importer.php:269
+#, php-format
+msgid ""
+"If a new user is created by WordPress, a new password will be randomly "
+"generated and the new user&#8217;s role will be set as %s. Manually changing "
+"the new user&#8217;s details will be necessary."
+msgstr ""
+"If a new user is created by WordPress, a new password will be randomly "
+"generated and the new user&#8217;s role will be set as %s. Manually changing "
+"the new user&#8217;s details will be necessary."
+
+#: .././functions/importer/wordpress-importer.php:279
+msgid "Import Attachments"
+msgstr "Import Attachments"
+
+#: .././functions/importer/wordpress-importer.php:282
+msgid "Download and import file attachments"
+msgstr "Download and import file attachments"
+
+#: .././functions/importer/wordpress-importer.php:299
+msgid "Import author:"
+msgstr "Import author:"
+
+#: .././functions/importer/wordpress-importer.php:310
+msgid "or create new user with login name:"
+msgstr "or create new user with login name:"
+
+#: .././functions/importer/wordpress-importer.php:313
+msgid "as a new user:"
+msgstr "as a new user:"
+
+#: .././functions/importer/wordpress-importer.php:321
+msgid "assign posts to an existing user:"
+msgstr "assign posts to an existing user:"
+
+#: .././functions/importer/wordpress-importer.php:323
+msgid "or assign posts to an existing user:"
+msgstr "or assign posts to an existing user:"
+
+#: .././functions/importer/wordpress-importer.php:324
+msgid "- Select -"
+msgstr "- Select -"
+
+#: .././functions/importer/wordpress-importer.php:374
+#, php-format
+msgid ""
+"Failed to create new user for %s. Their posts will be attributed to the "
+"current user."
+msgstr ""
+"Failed to create new user for %s. Their posts will be attributed to the "
+"current user."
+
+#: .././functions/importer/wordpress-importer.php:425
+#, php-format
+msgid "Failed to import category %s"
+msgstr "Failed to import category %s"
+
+#: .././functions/importer/wordpress-importer.php:465
+#, php-format
+msgid "Failed to import post tag %s"
+msgstr "Failed to import post tag %s"
+
+#: .././functions/importer/wordpress-importer.php:511
+#: .././functions/importer/wordpress-importer.php:652
+#, php-format
+msgid "Failed to import %s %s"
+msgstr "Failed to import %s %s"
+
+#: .././functions/importer/wordpress-importer.php:537
+#, php-format
+msgid "Failed to import &#8220;%s&#8221;: Invalid post type %s"
+msgstr "Failed to import &#8220;%s&#8221;: Invalid post type %s"
+
+#: .././functions/importer/wordpress-importer.php:559
+#, php-format
+msgid "%s &#8220;%s&#8221; already exists."
+msgstr "%s &#8220;%s&#8221; already exists."
+
+#: .././functions/importer/wordpress-importer.php:618
+#, php-format
+msgid "Failed to import %s &#8220;%s&#8221;"
+msgstr "Failed to import %s &#8220;%s&#8221;"
+
+#: .././functions/importer/wordpress-importer.php:783
+msgid "Menu item skipped due to missing menu slug"
+msgstr "Menu item skipped due to missing menu slug"
+
+#: .././functions/importer/wordpress-importer.php:790
+#, php-format
+msgid "Menu item skipped due to invalid menu slug: %s"
+msgstr "Menu item skipped due to invalid menu slug: %s"
+
+#: .././functions/importer/wordpress-importer.php:853
+msgid "Fetching attachments is not enabled"
+msgstr "Fetching attachments is not enabled"
+
+#: .././functions/importer/wordpress-importer.php:866
+msgid "Invalid file type"
+msgstr "Invalid file type"
+
+#: .././functions/importer/wordpress-importer.php:910
+msgid "Remote server did not respond"
+msgstr "Remote server did not respond"
+
+#: .././functions/importer/wordpress-importer.php:916
+#, php-format
+msgid "Remote server returned error response %1$d %2$s"
+msgstr "Remote server returned error response %1$d %2$s"
+
+#: .././functions/importer/wordpress-importer.php:923
+msgid "Remote file is incorrect size"
+msgstr "Remote file is incorrect size"
+
+#: .././functions/importer/wordpress-importer.php:928
+msgid "Zero size file downloaded"
+msgstr "Zero size file downloaded"
+
+#: .././functions/importer/wordpress-importer.php:934
+#, php-format
+msgid "Remote file is too large, limit is %s"
+msgstr "Remote file is too large, limit is %s"
+
+#: .././functions/importer/wordpress-importer.php:1033
+msgid "Import WordPress"
+msgstr "Import WordPress"
+
+#: .././functions/importer/wordpress-importer.php:1040
+#, php-format
+msgid ""
+"A new version of this importer is available. Please update to version %s to "
+"ensure compatibility with newer export files."
+msgstr ""
+"A new version of this importer is available. Please update to version %s to "
+"ensure compatibility with newer export files."
+
+#: .././functions/importer/wordpress-importer.php:1055
+msgid ""
+"Howdy! Upload your WordPress eXtended RSS (WXR) file and we&#8217;ll import "
+"the posts, pages, comments, custom fields, categories, and tags into this "
+"site."
+msgstr ""
+"Howdy! Upload your WordPress eXtended RSS (WXR) file and we&#8217;ll import "
+"the posts, pages, comments, custom fields, categories, and tags into this "
+"site."
+
+#: .././functions/importer/wordpress-importer.php:1056
+msgid "Choose a WXR (.xml) file to upload, then click Upload file and import."
+msgstr "Choose a WXR (.xml) file to upload, then click Upload file and import."
+
+#: .././functions/importer/wordpress-importer.php:1130
+msgid ""
+"Import <strong>posts, pages, comments, custom fields, categories, and tags</"
+"strong> from a WordPress export file."
+msgstr ""
+"Import <strong>posts, pages, comments, custom fields, categories, and tags</"
+"strong> from a WordPress export file."
+
+#: .././functions/plugins/class-tgm-plugin-activation.php:196
+#: .././functions/plugins/lib-plugin.php:94
+msgid "Install Required Plugins"
+msgstr "Install Required Plugins"
+
+#: .././functions/plugins/class-tgm-plugin-activation.php:197
+#: .././functions/plugins/lib-plugin.php:95
+msgid "Install Plugins"
+msgstr "Install Plugins"
+
+#: .././functions/plugins/class-tgm-plugin-activation.php:198
+#: .././functions/plugins/lib-plugin.php:96
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr "Installing Plugin: %s"
+
+#: .././functions/plugins/class-tgm-plugin-activation.php:199
+msgid "Something went wrong."
+msgstr "Something went wrong."
+
+#: .././functions/plugins/class-tgm-plugin-activation.php:210
+#: .././functions/plugins/lib-plugin.php:108
+msgid "Return to Required Plugins Installer"
+msgstr "Return to Required Plugins Installer"
+
+#: .././functions/plugins/class-tgm-plugin-activation.php:211
+msgid "Return to the dashboard"
+msgstr "Return to the dashboard"
+
+#: .././functions/plugins/class-tgm-plugin-activation.php:212
+#: .././functions/plugins/class-tgm-plugin-activation.php:1951
+#: .././functions/plugins/lib-plugin.php:109
+msgid "Plugin activated successfully."
+msgstr "Plugin activated successfully."
+
+#: .././functions/plugins/class-tgm-plugin-activation.php:213
+msgid "The following plugin was activated successfully:"
+msgstr "The following plugin was activated successfully:"
+
+#: .././functions/plugins/class-tgm-plugin-activation.php:214
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr "All plugins installed and activated successfully. %1$s"
+
+#: .././functions/plugins/class-tgm-plugin-activation.php:215
+msgid "Dismiss this notice"
+msgstr "Dismiss this notice"
+
+#: .././functions/plugins/class-tgm-plugin-activation.php:544
+#: .././functions/plugins/class-tgm-plugin-activation.php:2168
+msgid "Return to the Dashboard"
+msgstr "Return to the Dashboard"
+
+#: .././functions/plugins/class-tgm-plugin-activation.php:1174
+msgid "Private Repository"
+msgstr "Private Repository"
+
+#: .././functions/plugins/class-tgm-plugin-activation.php:1177
+msgid "Pre-Packaged"
+msgstr "Pre-Packaged"
+
+#: .././functions/plugins/class-tgm-plugin-activation.php:1182
+msgid "WordPress Repository"
+msgstr "WordPress Repository"
+
+#: .././functions/plugins/class-tgm-plugin-activation.php:1185
+msgid "Required"
+msgstr "Required"
+
+#: .././functions/plugins/class-tgm-plugin-activation.php:1188
+msgid "Not Installed"
+msgstr "Not Installed"
+
+#: .././functions/plugins/class-tgm-plugin-activation.php:1190
+msgid "Installed But Not Activated"
+msgstr "Installed But Not Activated"
+
+#: .././functions/plugins/class-tgm-plugin-activation.php:1290
+#: .././functions/plugins/class-tgm-plugin-activation.php:1398
+msgid "Install"
+msgstr "Install"
+
+#: .././functions/plugins/class-tgm-plugin-activation.php:1312
+#: .././functions/plugins/class-tgm-plugin-activation.php:1399
+msgid "Activate"
+msgstr "Activate"
+
+#: .././functions/plugins/class-tgm-plugin-activation.php:1361
+#, php-format
+msgid ""
+"No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the "
+"Dashboard\">Return to the Dashboard</a>"
+msgstr ""
+"No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the "
+"Dashboard\">Return to the Dashboard</a>"
+
+#: .././functions/plugins/class-tgm-plugin-activation.php:1377
+msgid "Plugin"
+msgstr "Plugin"
+
+#: .././functions/plugins/class-tgm-plugin-activation.php:1378
+msgid "Source"
+msgstr "Source"
+
+#: .././functions/plugins/class-tgm-plugin-activation.php:1379
+msgid "Type"
+msgstr "Type"
+
+#: .././functions/plugins/class-tgm-plugin-activation.php:1380
+#: .././woocommerce/myaccount/my-orders.php:15
+#: .././woocommerce/myaccount/orders.php:40 .././woocommerce/wishlist.php:98
+msgid "Status"
+msgstr "Status"
+
+#: .././functions/plugins/class-tgm-plugin-activation.php:1508
+msgid "No plugins are available to be installed at this time."
+msgstr "No plugins are available to be installed at this time."
+
+#: .././functions/plugins/class-tgm-plugin-activation.php:1616
+msgid "No plugins are available to be activated at this time."
+msgstr "No plugins are available to be activated at this time."
+
+#: .././functions/plugins/class-tgm-plugin-activation.php:1934
+msgid "Install package not available."
+msgstr "Install package not available."
+
+#: .././functions/plugins/class-tgm-plugin-activation.php:1935
+#, php-format
+msgid "Downloading install package from <span class=\"code\">%s</span>&#8230;"
+msgstr "Downloading install package from <span class=\"code\">%s</span>&#8230;"
+
+#: .././functions/plugins/class-tgm-plugin-activation.php:1936
+msgid "Unpacking the package&#8230;"
+msgstr "Unpacking the package&#8230;"
+
+#: .././functions/plugins/class-tgm-plugin-activation.php:1937
+msgid "Installing the plugin&#8230;"
+msgstr "Installing the plugin&#8230;"
+
+#: .././functions/plugins/class-tgm-plugin-activation.php:1938
+msgid "Plugin install failed."
+msgstr "Plugin install failed."
+
+#: .././functions/plugins/class-tgm-plugin-activation.php:1939
+msgid "Plugin installed successfully."
+msgstr "Plugin installed successfully."
+
+#: .././functions/plugins/class-tgm-plugin-activation.php:1950
+msgid "Plugin activation failed."
+msgstr "Plugin activation failed."
+
+#: .././functions/plugins/class-tgm-plugin-activation.php:2064
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+
+#: .././functions/plugins/class-tgm-plugin-activation.php:2065
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr "%1$s installed and activated successfully."
+
+#: .././functions/plugins/class-tgm-plugin-activation.php:2065
+#: .././functions/plugins/class-tgm-plugin-activation.php:2074
+msgid "Show Details"
+msgstr "Show Details"
+
+#: .././functions/plugins/class-tgm-plugin-activation.php:2065
+#: .././functions/plugins/class-tgm-plugin-activation.php:2074
+msgid "Hide Details"
+msgstr "Hide Details"
+
+#: .././functions/plugins/class-tgm-plugin-activation.php:2066
+msgid "All installations and activations have been completed."
+msgstr "All installations and activations have been completed."
+
+#: .././functions/plugins/class-tgm-plugin-activation.php:2067
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+
+#: .././functions/plugins/class-tgm-plugin-activation.php:2071
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+
+#: .././functions/plugins/class-tgm-plugin-activation.php:2072
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr "An error occurred while installing %1$s: <strong>%2$s</strong>."
+
+#: .././functions/plugins/class-tgm-plugin-activation.php:2073
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr "The installation of %1$s failed."
+
+#: .././functions/plugins/class-tgm-plugin-activation.php:2074
+#, php-format
+msgid "%1$s installed successfully."
+msgstr "%1$s installed successfully."
+
+#: .././functions/plugins/class-tgm-plugin-activation.php:2075
+msgid "All installations have been completed."
+msgstr "All installations have been completed."
+
+#: .././functions/plugins/class-tgm-plugin-activation.php:2076
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr "Installing Plugin %1$s (%2$d/%3$d)"
+
+#: .././functions/plugins/lib-plugin.php:97
+msgid "Something went wrong with the plugin API."
+msgstr "Something went wrong with the plugin API."
+
+#: .././functions/plugins/lib-plugin.php:110
+#, php-format
+msgid "All plugins installed and activated successfully. %s"
+msgstr "All plugins installed and activated successfully. %s"
+
+#: .././functions/theme-functions/library/theme/lib-hooks-theme.php:137
+#, php-format
+msgid "All rights reserved %s Copyright %s"
+msgstr "All rights reserved %s Copyright %s"
+
+#: .././functions/theme-functions/library/theme/lib-hooks-theme.php:186
+#, php-format
+msgid "Page %s"
+msgstr "Page %s"
+
+#: .././functions/theme-functions/library/theme/lib-hooks-theme.php:200
+msgid "Logged as"
+msgstr "Logged as"
+
+#: .././functions/theme-functions/library/theme/lib-hooks-theme.php:202
+#: .././woocommerce/auth/form-grant-access.php:30
+msgid "Logout"
+msgstr "Logout"
+
+#: .././functions/theme-functions/library/theme/lib-hooks-theme.php:205
+msgid "Login / Register"
+msgstr "Login / Register"
+
+#: .././functions/theme-functions/library/theme/lib-pagination.php:38
+msgid "Page"
+msgstr "Page"
+
+#: .././functions/theme-functions/library/theme/lib-pagination.php:38
+msgid "of"
+msgstr "of"
+
+#: .././functions/theme-functions/library/theme/lib-pagination.php:46
+msgid "Pages:"
+msgstr "Pages:"
+
+#: .././functions/theme-functions/library/theme/lib-scripts.php:126
+msgid "Location"
+msgstr "Location"
+
+#: .././functions/theme-functions/library/theme/lib-scripts.php:511
+msgid "Scroll up"
+msgstr "Scroll up"
+
+#: .././functions/theme-functions/library/theme/lib-theme.php:23
+msgid "Reply"
+msgstr "Reply"
+
+#: .././functions/theme-functions/library/theme/lib-theme.php:151
+msgid "Blog Sidebar"
+msgstr "Blog Sidebar"
+
+#: .././functions/theme-functions/library/theme/lib-theme.php:153
+msgid "Section to place widgets on your blog's sidebar"
+msgstr "Section to place widgets on your blog's sidebar"
+
+#: .././functions/theme-functions/library/theme/lib-theme.php:162
+msgid "Footer Links"
+msgstr "Footer Links"
+
+#: .././functions/theme-functions/library/theme/lib-theme.php:164
+msgid ""
+"Section to place links to any pages from your blog e.g.: Contact | FAQ, and "
+"so on"
+msgstr ""
+"Section to place links to any pages from your blog e.g.: Contact | FAQ, and "
+"so on"
+
+#: .././functions/theme-functions/library/theme/lib-theme.php:173
+msgid "Shop Sidebar"
+msgstr "Shop Sidebar"
+
+#: .././functions/theme-functions/library/theme/lib-theme.php:175
+msgid ""
+"Section to place Woocommerce's product widgets (only works with product "
+"archives)"
+msgstr ""
+"Section to place Woocommerce's product widgets (only works with product "
+"archives)"
+
+#: .././functions/theme-functions/library/theme/lib-theme.php:184
+msgid "Front Page Banner"
+msgstr "Front Page Banner"
+
+#: .././functions/theme-functions/library/theme/lib-theme.php:186
+msgid "Section to place an image banner for your shop"
+msgstr "Section to place an image banner for your shop"
+
+#: .././functions/theme-functions/library/theme/lib-theme.php:198
+msgid "Main Menu"
+msgstr "Main Menu"
+
+#: .././functions/theme-functions/library/theme/lib-theme.php:204
+msgid "Header Navigation Menu"
+msgstr "Header Navigation Menu"
+
+#: .././functions/theme-functions/library/theme/lib-theme.php:210
+msgid "Footer Navigation Menu"
+msgstr "Footer Navigation Menu"
+
+#: .././functions/theme-functions/library/theme/lib-theme.php:459
+#, php-format
+msgid "Posts by %s"
+msgstr "Posts by %s"
+
+#: .././functions/theme-functions/library/theme/lib-theme.php:475
+msgid "Add a menu"
+msgstr "Add a menu"
+
+#: .././functions/theme-functions/library/woocommerce/lib-hooks-woocommerce.php:11
+msgid "Technical Details"
+msgstr "Technical Details"
+
+#: .././functions/theme-functions/library/woocommerce/lib-hooks-woocommerce.php:22
+msgid "DETAILS"
+msgstr "DETAILS"
+
+#: .././functions/theme-functions/library/woocommerce/lib-hooks-woocommerce.php:88
+msgid "Product sucessfully added to cart."
+msgstr "Product sucessfully added to cart."
+
+#: .././functions/theme-functions/library/woocommerce/lib-woocommerce.php:177
+#: .././functions/theme-functions/library/woocommerce/widgets/class-ncm-widget-price-filter.php:135
+msgid "Price:"
+msgstr "Price:"
+
+#: .././functions/theme-functions/library/woocommerce/lib-woocommerce.php:179
+msgid "From:"
+msgstr "From:"
+
+#: .././functions/theme-functions/library/woocommerce/lib-woocommerce.php:245
+#: .././woocommerce/order/order-again.php:16
+msgid "Order Again"
+msgstr "Order Again"
+
+#: .././functions/theme-functions/library/woocommerce/widgets/class-ncm-widget-price-filter.php:25
+msgid ""
+"Shows a price filter slider in a widget which lets you narrow down the list "
+"of shown products when viewing product categories."
+msgstr ""
+"Shows a price filter slider in a widget which lets you narrow down the list "
+"of shown products when viewing product categories."
+
+#: .././functions/theme-functions/library/woocommerce/widgets/class-ncm-widget-price-filter.php:27
+msgid "WooCommerce Price Filter"
+msgstr "WooCommerce Price Filter"
+
+#: .././functions/theme-functions/library/woocommerce/widgets/class-ncm-widget-price-filter.php:31
+msgid "Filter by price"
+msgstr "Filter by price"
+
+#: .././functions/theme-functions/library/woocommerce/widgets/class-ncm-widget-price-filter.php:32
+msgid "Title"
+msgstr "Title"
+
+#: .././functions/theme-functions/library/woocommerce/widgets/class-ncm-widget-price-filter.php:133
+msgid "Filter"
+msgstr "Filter"
+
+#: .././header.php:85
+msgid "CUSTOMER SUPPORT"
+msgstr "CUSTOMER SUPPORT"
+
+#: .././header.php:124
+msgid "Search products"
+msgstr "Search products"
+
+#: .././page-contact.php:117
+msgid "Subject"
+msgstr "Subject"
+
+#: .././page-contact.php:123 .././woocommerce/single-product-reviews.php:78
+msgid "Email"
+msgstr "Email"
+
+#: .././page-contact.php:129
+msgid "Department"
+msgstr "Department"
+
+#: .././page-contact.php:149
+msgid "Send"
+msgstr "Send"
+
+#: .././page-full.php:24 .././page.php:25
+msgid "Sorry, but this page cannot be found"
+msgstr "Sorry, but this page cannot be found"
+
+#: .././search.php:15
+msgid "Posts found related to search term"
+msgstr "Posts found related to search term"
+
+#: .././search.php:25
+msgid "Sorry, but your search doesn't match any post"
+msgstr "Sorry, but your search doesn't match any post"
+
+#: .././search.php:26
+msgid "Try searching using the form below"
+msgstr "Try searching using the form below"
+
+#: .././searchform.php:2
+msgid "Type your search here..."
+msgstr "Type your search here..."
+
+#: .././searchform.php:3
+msgid "SEARCH"
+msgstr "SEARCH"
+
+#: .././sidebar.php:10
+msgid "The blog sidebar is inactive and doesn't have widgets"
+msgstr "The blog sidebar is inactive and doesn't have widgets"
+
+#: .././single.php:17
+msgid "Sorry, but this post cannot be found"
+msgstr "Sorry, but this post cannot be found"
+
+#: .././tag.php:15
+msgid "Posts tagged with"
+msgstr "Posts tagged with"
+
+#: .././tag.php:26
+msgid "Sorry, but this blog doesn't have posts tagged with"
+msgstr "Sorry, but this blog doesn't have posts tagged with"
+
+#: .././woocommerce/auth/form-grant-access.php:16
+#, php-format
+msgid "%s would like to connect to your store"
+msgstr "%s would like to connect to your store"
+
+#: .././woocommerce/auth/form-grant-access.php:20
+#, php-format
+msgid ""
+"This will give \"%s\" <strong>%s</strong> access which will allow it to:"
+msgstr ""
+"This will give \"%s\" <strong>%s</strong> access which will allow it to:"
+
+#: .././woocommerce/auth/form-grant-access.php:30
+#, php-format
+msgid "Logged in as %s"
+msgstr "Logged in as %s"
+
+#: .././woocommerce/auth/form-grant-access.php:34
+msgid "Approve"
+msgstr "Approve"
+
+#: .././woocommerce/auth/form-grant-access.php:35
+msgid "Deny"
+msgstr "Deny"
+
+#: .././woocommerce/auth/form-login.php:28
+#, php-format
+msgid ""
+"To connect to %1$s you need to be logged in. Log in to your store below, or "
+"<a href=\"%2$s\">cancel and return to %1$s</a>"
+msgstr ""
+"To connect to %1$s you need to be logged in. Log in to your store below, or "
+"<a href=\"%2$s\">cancel and return to %1$s</a>"
+
+#: .././woocommerce/auth/header.php:20
+msgid "Application Authentication Request"
+msgstr "Application Authentication Request"
+
+#: .././woocommerce/cart/cart-empty.php:34
+msgid "Return to shop"
+msgstr "Return to shop"
+
+#: .././woocommerce/cart/cart-shipping.php:27
+#, php-format
+msgid "Shipping #%d"
+msgstr "Shipping #%d"
+
+#: .././woocommerce/cart/cart-shipping.php:29
+msgid "Shipping and Handling"
+msgstr "Shipping and Handling"
+
+#: .././woocommerce/cart/cart-shipping.php:72
+msgid ""
+"Please continue to the checkout and enter your full address to see if there "
+"are any available shipping methods."
+msgstr ""
+"Please continue to the checkout and enter your full address to see if there "
+"are any available shipping methods."
+
+#: .././woocommerce/cart/cart-shipping.php:76
+msgid "Please fill in your details to see available shipping methods."
+msgstr "Please fill in your details to see available shipping methods."
+
+#: .././woocommerce/cart/cart-shipping.php:85
+#: .././woocommerce/cart/cart-shipping.php:91
+msgid ""
+"There don&lsquo;t seem to be available shipping methods. Please double check "
+"your address, or contact us if you need any help."
+msgstr ""
+"There don&lsquo;t seem to be available shipping methods. Please double check "
+"your address, or contact us if you need any help."
+
+#: .././woocommerce/cart/cart-shipping.php:106
+#: .././woocommerce/cart/cart-totals.php:46
+msgid "Shipping"
+msgstr "Shipping"
+
+#: .././woocommerce/cart/cart-totals.php:19
+msgid "Cart Totals"
+msgstr "Cart Totals"
+
+#: .././woocommerce/cart/cart-totals.php:24
+#: .././woocommerce/checkout/review-order.php:62
+msgid "Cart Subtotal"
+msgstr "Cart Subtotal"
+
+#: .././woocommerce/cart/cart-totals.php:78
+#: .././woocommerce/checkout/review-order.php:119
+msgid "Order Total"
+msgstr "Order Total"
+
+#: .././woocommerce/cart/cart-totals.php:90
+#, php-format
+msgid " (taxes estimated for %s)"
+msgstr " (taxes estimated for %s)"
+
+#: .././woocommerce/cart/cart-totals.php:93
+#, php-format
+msgid ""
+"Note: Shipping and taxes are estimated%s and will be updated during checkout "
+"based on your billing and shipping information."
+msgstr ""
+"Note: Shipping and taxes are estimated%s and will be updated during checkout "
+"based on your billing and shipping information."
+
+#: .././woocommerce/cart/cart.php:161
+msgid "Remove from cart"
+msgstr "Remove from cart"
+
+#: .././woocommerce/cart/cart.php:164 .././woocommerce/cart/mini-cart.php:44
+msgid "Remove this item"
+msgstr "Remove this item"
+
+#: .././woocommerce/cart/cross-sells.php:29
+msgid "You may be interested in&hellip;"
+msgstr "You may be interested in&hellip;"
+
+#: .././woocommerce/cart/mini-cart.php:68
+msgid "Subtotal"
+msgstr "Subtotal"
+
+#: .././woocommerce/cart/mini-cart.php:76
+msgid "No products in the cart."
+msgstr "No products in the cart."
+
+#: .././woocommerce/cart/proceed-to-checkout-button.php:16
+msgid "Proceed to Checkout"
+msgstr "Proceed to Checkout"
+
+#: .././woocommerce/checkout/cart-errors.php:18
+msgid ""
+"There are some issues with the items in your cart (shown above). Please go "
+"back to the cart page and resolve these issues before checking out."
+msgstr ""
+"There are some issues with the items in your cart (shown above). Please go "
+"back to the cart page and resolve these issues before checking out."
+
+#: .././woocommerce/checkout/cart-errors.php:22
+msgid "Return To Cart"
+msgstr "Return To Cart"
+
+#: .././woocommerce/checkout/form-billing.php:28
+msgid "Billing &amp; Shipping"
+msgstr "Billing &amp; Shipping"
+
+#: .././woocommerce/checkout/form-billing.php:30
+#: .././woocommerce/myaccount/my-address.php:19
+#: .././woocommerce/myaccount/my-address.php:25
+#: .././woocommerce/order/order-details-customer.php:68
+msgid "Billing Address"
+msgstr "Billing Address"
+
+#: .././woocommerce/checkout/form-billing.php:36
+#: .././woocommerce/checkout/form-shipping.php:53
+#: .././woocommerce/myaccount/form-edit-address.php:43
+#: .././woocommerce/myaccount/form-edit-address.php:54
+msgid "Complement (e.g.: number)"
+msgstr "Complement (e.g.: number)"
+
+#: .././woocommerce/checkout/form-billing.php:46
+msgid "Create an account?"
+msgstr "Create an account?"
+
+#: .././woocommerce/checkout/form-billing.php:54
+msgid "New Account"
+msgstr "New Account"
+
+#: .././woocommerce/checkout/form-billing.php:55
+msgid ""
+"Create an account by entering the information below. If you are a returning "
+"customer please login at the top of the page."
+msgstr ""
+"Create an account by entering the information below. If you are a returning "
+"customer please login at the top of the page."
+
+#: .././woocommerce/checkout/form-checkout.php:27
+msgid "You must be logged in to checkout."
+msgstr "You must be logged in to checkout."
+
+#: .././woocommerce/checkout/form-checkout.php:78
+msgid "Your order"
+msgstr "Your order"
+
+#: .././woocommerce/checkout/form-checkout.php:83
+msgid "Payment"
+msgstr "Payment"
+
+#: .././woocommerce/checkout/form-checkout.php:95
+msgid "Processing..."
+msgstr "Processing..."
+
+#: .././woocommerce/checkout/form-coupon.php:19
+msgid "Have a coupon?"
+msgstr "Have a coupon?"
+
+#: .././woocommerce/checkout/form-coupon.php:19
+msgid "Click here to enter your code"
+msgstr "Click here to enter your code"
+
+#: .././woocommerce/checkout/form-login.php:25
+msgid "Returning customer?"
+msgstr "Returning customer?"
+
+#: .././woocommerce/checkout/form-login.php:26
+msgid "Click here to login"
+msgstr "Click here to login"
+
+#: .././woocommerce/checkout/form-login.php:33
+msgid "Returning customer"
+msgstr "Returning customer"
+
+#: .././woocommerce/checkout/form-login.php:33
+msgid ""
+"If you have shopped with us before, please enter your details below. If you "
+"are a new customer, please proceed to the Billing &amp; Shipping section."
+msgstr ""
+"If you have shopped with us before, please enter your details below. If you "
+"are a new customer, please proceed to the Billing &amp; Shipping section."
+
+#: .././woocommerce/checkout/form-pay.php:97
+msgid ""
+"Sorry, it seems that there are no available payment methods for your "
+"location. Please contact us if you require assistance or wish to make "
+"alternate arrangements."
+msgstr ""
+"Sorry, it seems that there are no available payment methods for your "
+"location. Please contact us if you require assistance or wish to make "
+"alternate arrangements."
+
+#: .././woocommerce/checkout/form-shipping.php:36
+msgid "Ship to a different address?"
+msgstr "Ship to a different address?"
+
+#: .././woocommerce/checkout/form-shipping.php:40
+#: .././woocommerce/myaccount/my-address.php:20
+#: .././woocommerce/order/order-details-customer.php:80
+msgid "Shipping Address"
+msgstr "Shipping Address"
+
+#: .././woocommerce/checkout/form-shipping.php:71
+#: .././woocommerce/single-product/tabs/additional-information.php:25
+msgid "Additional information"
+msgstr "Additional information"
+
+#: .././woocommerce/checkout/payment.php:28
+msgid "Please fill in your details above to see available payment methods."
+msgstr "Please fill in your details above to see available payment methods."
+
+#: .././woocommerce/checkout/payment.php:30
+msgid ""
+"Sorry, it seems that there are no available payment methods for your state. "
+"Please contact us if you require assistance or wish to make alternate "
+"arrangements."
+msgstr ""
+"Sorry, it seems that there are no available payment methods for your state. "
+"Please contact us if you require assistance or wish to make alternate "
+"arrangements."
+
+#: .././woocommerce/checkout/payment.php:51
+#, php-format
+msgid ""
+"I&rsquo;ve read and accept the <a href=\"%s\" target=\"_blank\">terms &amp; "
+"conditions</a>"
+msgstr ""
+"I&rsquo;ve read and accept the <a href=\"%s\" target=\"_blank\">terms &amp; "
+"conditions</a>"
+
+#: .././woocommerce/checkout/review-order.php:19
+#: .././woocommerce/order/order-details.php:48
+msgid "Product"
+msgstr "Product"
+
+#: .././woocommerce/checkout/review-order.php:20
+#: .././woocommerce/order/order-details.php:49
+msgid "Qty"
+msgstr "Qty"
+
+#: .././woocommerce/checkout/review-order.php:21
+#: .././woocommerce/myaccount/my-orders.php:16
+#: .././woocommerce/myaccount/orders.php:42
+#: .././woocommerce/order/order-details.php:50
+msgid "Total"
+msgstr "Total"
+
+#: .././woocommerce/checkout/thankyou.php:38
+msgid ""
+"Unfortunately your order cannot be processed as the originating bank/"
+"merchant has declined your transaction."
+msgstr ""
+"Unfortunately your order cannot be processed as the originating bank/"
+"merchant has declined your transaction."
+
+#: .././woocommerce/checkout/thankyou.php:41
+#: .././woocommerce/myaccount/my-orders.php:75
+msgid "Pay"
+msgstr "Pay"
+
+#: .././woocommerce/checkout/thankyou.php:43
+#: .././woocommerce/myaccount/dashboard.php:26
+#: .././woocommerce/myaccount/my-account.php:37
+msgid "My Account"
+msgstr "My Account"
+
+#: .././woocommerce/checkout/thankyou.php:49
+msgid "Order received"
+msgstr "Order received"
+
+#: .././woocommerce/checkout/thankyou.php:53
+#: .././woocommerce/checkout/thankyou.php:87
+msgid "Thank you. Your order has been received."
+msgstr "Thank you. Your order has been received."
+
+#: .././woocommerce/checkout/thankyou.php:59
+msgid "Order:"
+msgstr "Order:"
+
+#: .././woocommerce/checkout/thankyou.php:63
+msgid "Date:"
+msgstr "Date:"
+
+#: .././woocommerce/checkout/thankyou.php:68
+msgid "Total:"
+msgstr "Total:"
+
+#: .././woocommerce/checkout/thankyou.php:74
+msgid "Payment method:"
+msgstr "Payment method:"
+
+#: .././woocommerce/compare.php:51
+msgid "Product Comparison"
+msgstr "Product Comparison"
+
+#: .././woocommerce/compare.php:76
+msgid "Close window [X]"
+msgstr "Close window [X]"
+
+#: .././woocommerce/compare.php:101
+msgid "No products added in the compare table."
+msgstr "No products added in the compare table."
+
+#: .././woocommerce/compare.php:109
+msgid "Remove"
+msgstr "Remove"
+
+#: .././woocommerce/emails/admin-cancelled-order.php:28
+#: .././woocommerce/emails/plain/admin-cancelled-order.php:25
+#, php-format
+msgid "The order #%1$s from %2$s has been cancelled. The order was as follows:"
+msgstr ""
+"The order #%1$s from %2$s has been cancelled. The order was as follows:"
+
+#: .././woocommerce/emails/admin-failed-order.php:28
+#: .././woocommerce/emails/plain/admin-failed-order.php:25
+#, php-format
+msgid "Payment for order #%1$s from %2$s has failed. The order was as follows:"
+msgstr ""
+"Payment for order #%1$s from %2$s has failed. The order was as follows:"
+
+#: .././woocommerce/emails/admin-new-order.php:28
+#, php-format
+msgid "You have received an order from %s. The order is as follows:"
+msgstr "You have received an order from %s. The order is as follows:"
+
+#: .././woocommerce/emails/customer-completed-order.php:28
+#: .././woocommerce/emails/plain/customer-completed-order.php:25
+#, php-format
+msgid ""
+"Hi there. Your recent order on %s has been completed. Your order details are "
+"shown below for your reference:"
+msgstr ""
+"Hi there. Your recent order on %s has been completed. Your order details are "
+"shown below for your reference:"
+
+#: .././woocommerce/emails/customer-invoice.php:36
+#, php-format
+msgid "An order has been created for you on %1$s. %2$s"
+msgstr "An order has been created for you on %1$s. %2$s"
+
+#: .././woocommerce/emails/customer-new-account.php:27
+#: .././woocommerce/emails/plain/customer-new-account.php:25
+#, php-format
+msgid "Thanks for creating an account on %1$s. Your username is %2$s"
+msgstr "Thanks for creating an account on %1$s. Your username is %2$s"
+
+#: .././woocommerce/emails/customer-new-account.php:31
+#, php-format
+msgid "Your password has been automatically generated: %s"
+msgstr "Your password has been automatically generated: %s"
+
+#: .././woocommerce/emails/customer-new-account.php:35
+#: .././woocommerce/emails/plain/customer-new-account.php:31
+#, php-format
+msgid ""
+"You can access your account area to view your orders and change your "
+"password here: %s."
+msgstr ""
+"You can access your account area to view your orders and change your "
+"password here: %s."
+
+#: .././woocommerce/emails/customer-note.php:28
+#: .././woocommerce/emails/plain/customer-note.php:25
+msgid "Hello, a note has just been added to your order:"
+msgstr "Hello, a note has just been added to your order:"
+
+#: .././woocommerce/emails/customer-note.php:32
+#: .././woocommerce/emails/plain/customer-note.php:33
+msgid "For your reference, your order details are shown below."
+msgstr "For your reference, your order details are shown below."
+
+#: .././woocommerce/emails/customer-on-hold-order.php:28
+#: .././woocommerce/emails/plain/customer-on-hold-order.php:25
+msgid ""
+"Your order is on-hold until we confirm payment has been received. Your order "
+"details are shown below for your reference:"
+msgstr ""
+"Your order is on-hold until we confirm payment has been received. Your order "
+"details are shown below for your reference:"
+
+#: .././woocommerce/emails/customer-processing-order.php:28
+#: .././woocommerce/emails/plain/customer-processing-order.php:25
+msgid ""
+"Your order has been received and is now being processed. Your order details "
+"are shown below for your reference:"
+msgstr ""
+"Your order has been received and is now being processed. Your order details "
+"are shown below for your reference:"
+
+#: .././woocommerce/emails/customer-refunded-order.php:30
+#, php-format
+msgid "Hi there. Your order on %s has been partially refunded."
+msgstr "Hi there. Your order on %s has been partially refunded."
+
+#: .././woocommerce/emails/customer-refunded-order.php:32
+#, php-format
+msgid "Hi there. Your order on %s has been refunded."
+msgstr "Hi there. Your order on %s has been refunded."
+
+#: .././woocommerce/emails/customer-reset-password.php:27
+#: .././woocommerce/emails/plain/customer-reset-password.php:25
+msgid "Someone requested that the password be reset for the following account:"
+msgstr ""
+"Someone requested that the password be reset for the following account:"
+
+#: .././woocommerce/emails/customer-reset-password.php:28
+#: .././woocommerce/emails/plain/customer-reset-password.php:27
+#, php-format
+msgid "Username: %s"
+msgstr "Username: %s"
+
+#: .././woocommerce/emails/customer-reset-password.php:29
+#: .././woocommerce/emails/plain/customer-reset-password.php:28
+msgid "If this was a mistake, just ignore this email and nothing will happen."
+msgstr "If this was a mistake, just ignore this email and nothing will happen."
+
+#: .././woocommerce/emails/customer-reset-password.php:30
+#: .././woocommerce/emails/plain/customer-reset-password.php:29
+msgid "To reset your password, visit the following address:"
+msgstr "To reset your password, visit the following address:"
+
+#: .././woocommerce/emails/customer-reset-password.php:33
+msgid "Click here to reset your password"
+msgstr "Click here to reset your password"
+
+#: .././woocommerce/emails/email-addresses.php:28
+#: .././woocommerce/emails/plain/email-addresses.php:22
+#: .././woocommerce/myaccount/form-edit-address.php:21
+msgid "Billing address"
+msgstr "Billing address"
+
+#: .././woocommerce/emails/email-addresses.php:31
+#: .././woocommerce/order/order-details-customer.php:71
+#: .././woocommerce/order/order-details-customer.php:83
+#: .././woocommerce/single-product/meta.php:31
+msgid "N/A"
+msgstr "N/A"
+
+#: .././woocommerce/emails/email-addresses.php:42
+#: .././woocommerce/emails/plain/email-addresses.php:37
+#: .././woocommerce/myaccount/form-edit-address.php:21
+msgid "Shipping address"
+msgstr "Shipping address"
+
+#: .././woocommerce/emails/email-customer-details.php:28
+#: .././woocommerce/emails/plain/email-customer-details.php:24
+msgid "Customer details"
+msgstr "Customer details"
+
+#: .././woocommerce/emails/email-order-details.php:36
+#, php-format
+msgid "Order #%s"
+msgstr "Order #%s"
+
+#: .././woocommerce/emails/plain/admin-new-order.php:25
+#, php-format
+msgid "You have received an order from %s."
+msgstr "You have received an order from %s."
+
+#: .././woocommerce/emails/plain/customer-new-account.php:28
+#, php-format
+msgid "Your password is %s."
+msgstr "Your password is %s."
+
+#: .././woocommerce/emails/plain/customer-refunded-order.php:25
+#, php-format
+msgid ""
+"Hi there. Your order on %s has been refunded. Your order details are shown "
+"below for your reference:"
+msgstr ""
+"Hi there. Your order on %s has been refunded. Your order details are shown "
+"below for your reference:"
+
+#: .././woocommerce/emails/plain/email-downloads.php:20
+#: .././woocommerce/myaccount/downloads.php:30
+msgid "Downloads"
+msgstr "Downloads"
+
+#: .././woocommerce/emails/plain/email-order-details.php:25
+#, php-format
+msgid "Order number: %s"
+msgstr "Order number: %s"
+
+#: .././woocommerce/global/quantity-input.php:19
+msgid "Quantity:"
+msgstr "Quantity:"
+
+#: .././woocommerce/loop/no-products-found.php:14
+msgid "No products were found matching your selection."
+msgstr "No products were found matching your selection."
+
+#: .././woocommerce/loop/orderby.php:19
+msgid "Sorting"
+msgstr "Sorting"
+
+#: .././woocommerce/loop/result-count.php:51
+msgid "Showing the single result"
+msgstr "Showing the single result"
+
+#: .././woocommerce/loop/result-count.php:53
+#, php-format
+msgid "Showing all %s results"
+msgstr "Showing all %s results"
+
+#: .././woocommerce/loop/view-mode.php:23
+msgid "View as grid"
+msgstr "View as grid"
+
+#: .././woocommerce/loop/view-mode.php:24
+msgid "View as list"
+msgstr "View as list"
+
+#: .././woocommerce/myaccount/form-add-payment-method.php:29
+msgid "Payment Methods"
+msgstr "Payment Methods"
+
+#: .././woocommerce/myaccount/lost-password-confirmation.php:24
+msgid "Password reset email has been sent."
+msgstr "Password reset email has been sent."
+
+#: .././woocommerce/myaccount/lost-password-confirmation.php:27
+msgid ""
+"A password reset email has been sent to the email address on file for your "
+"account, but may take several minutes to show up in your inbox. Please wait "
+"at least 10 minutes before attempting another reset."
+msgstr ""
+"A password reset email has been sent to the email address on file for your "
+"account, but may take several minutes to show up in your inbox. Please wait "
+"at least 10 minutes before attempting another reset."
+
+#: .././woocommerce/myaccount/my-account.php:41
+#, php-format
+msgid "Hello <strong>%1$s</strong> (not %1$s? <a href=\"%2$s\">Sign out</a>)."
+msgstr "Hello <strong>%1$s</strong> (not %1$s? <a href=\"%2$s\">Sign out</a>)."
+
+#: .././woocommerce/myaccount/my-account.php:46
+#, php-format
+msgid ""
+"From your account dashboard you can view your recent orders, manage your "
+"shipping and billing addresses and <a href=\"%s\">edit your password and "
+"account details</a>."
+msgstr ""
+"From your account dashboard you can view your recent orders, manage your "
+"shipping and billing addresses and <a href=\"%s\">edit your password and "
+"account details</a>."
+
+#: .././woocommerce/myaccount/my-address.php:17
+msgid "My Addresses"
+msgstr "My Addresses"
+
+#: .././woocommerce/myaccount/my-address.php:23
+msgid "My Address"
+msgstr "My Address"
+
+#: .././woocommerce/myaccount/my-address.php:36
+msgid "The following addresses will be used on the checkout page by default."
+msgstr "The following addresses will be used on the checkout page by default."
+
+#: .././woocommerce/myaccount/my-address.php:50
+msgid "Edit"
+msgstr "Edit"
+
+#: .././woocommerce/myaccount/my-address.php:69
+msgid "You have not set up this type of address yet."
+msgstr "You have not set up this type of address yet."
+
+#: .././woocommerce/myaccount/my-downloads.php:18
+msgid "Available downloads"
+msgstr "Available downloads"
+
+#: .././woocommerce/myaccount/my-orders.php:13
+#: .././woocommerce/myaccount/orders.php:36
+msgid "Order"
+msgstr "Order"
+
+#: .././woocommerce/myaccount/my-orders.php:30
+msgid "Recent orders"
+msgstr "Recent orders"
+
+#: .././woocommerce/myaccount/my-orders.php:79
+msgid "View"
+msgstr "View"
+
+#: .././woocommerce/myaccount/my-orders.php:83
+msgid "Cancel"
+msgstr "Cancel"
+
+#: .././woocommerce/myaccount/orders.php:30
+msgid "Recent Orders"
+msgstr "Recent Orders"
+
+#: .././woocommerce/myaccount/orders.php:92
+msgid "Previous"
+msgstr "Previous"
+
+#: .././woocommerce/myaccount/orders.php:96
+msgid "Next"
+msgstr "Next"
+
+#: .././woocommerce/myaccount/orders.php:104
+msgid "Go Shop"
+msgstr "Go Shop"
+
+#: .././woocommerce/myaccount/orders.php:106
+msgid "No order has been made yet."
+msgstr "No order has been made yet."
+
+#: .././woocommerce/myaccount/payment-methods.php:51
+#, php-format
+msgid "%s ending in %s"
+msgstr "%s ending in %s"
+
+#: .././woocommerce/myaccount/view-order.php:32
+#, php-format
+msgid "Order #%1$s was placed on %2$s and is currently %3$s."
+msgstr "Order #%1$s was placed on %2$s and is currently %3$s."
+
+#: .././woocommerce/myaccount/view-order.php:42
+#: .././woocommerce/order/tracking.php:25
+msgid "Order Updates"
+msgstr "Order Updates"
+
+#: .././woocommerce/myaccount/view-order.php:48
+#: .././woocommerce/order/tracking.php:31
+msgid "l jS \\o\\f F Y, h:ia"
+msgstr "l jS \\o\\f F Y, h:ia"
+
+#: .././woocommerce/order/order-details-customer.php:27
+msgid "Customer Details"
+msgstr "Customer Details"
+
+#: .././woocommerce/order/order-details-customer.php:34
+#: .././woocommerce/order/order-details.php:89
+msgid "Note:"
+msgstr "Note:"
+
+#: .././woocommerce/order/order-details-customer.php:41
+msgid "Email:"
+msgstr "Email:"
+
+#: .././woocommerce/order/order-details-customer.php:48
+msgid "Phone:"
+msgstr "Phone:"
+
+#: .././woocommerce/order/order-details.php:42
+msgid "Order Details"
+msgstr "Order Details"
+
+#: .././woocommerce/order/tracking.php:12
+#, php-format
+msgid "Order %s which was made %s has the status &ldquo;%s&rdquo;"
+msgstr "Order %s which was made %s has the status &ldquo;%s&rdquo;"
+
+#: .././woocommerce/order/tracking.php:12
+msgid "ago"
+msgstr "ago"
+
+#: .././woocommerce/order/tracking.php:14
+msgid "and was completed"
+msgstr "and was completed"
+
+#: .././woocommerce/order/tracking.php:14
+msgid " ago"
+msgstr " ago"
+
+#: .././woocommerce/single-product-reviews.php:34
+msgid "Reviews"
+msgstr "Reviews"
+
+#: .././woocommerce/single-product-reviews.php:58
+msgid "There are no reviews yet."
+msgstr "There are no reviews yet."
+
+#: .././woocommerce/single-product-reviews.php:71
+msgid "Add a review"
+msgstr "Add a review"
+
+#: .././woocommerce/single-product-reviews.php:71
+msgid "Be the first to review"
+msgstr "Be the first to review"
+
+#: .././woocommerce/single-product-reviews.php:72
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr "Leave a Reply to %s"
+
+#: .././woocommerce/single-product-reviews.php:82
+msgid "Submit"
+msgstr "Submit"
+
+#: .././woocommerce/single-product-reviews.php:104
+#: .././woocommerce/single-product-reviews.php:119
+msgid "Rate&hellip;"
+msgstr "Rate&hellip;"
+
+#: .././woocommerce/single-product-reviews.php:105
+#: .././woocommerce/single-product-reviews.php:120
+msgid "Perfect"
+msgstr "Perfect"
+
+#: .././woocommerce/single-product-reviews.php:106
+#: .././woocommerce/single-product-reviews.php:121
+msgid "Good"
+msgstr "Good"
+
+#: .././woocommerce/single-product-reviews.php:107
+#: .././woocommerce/single-product-reviews.php:122
+msgid "Average"
+msgstr "Average"
+
+#: .././woocommerce/single-product-reviews.php:108
+#: .././woocommerce/single-product-reviews.php:123
+msgid "Not that bad"
+msgstr "Not that bad"
+
+#: .././woocommerce/single-product-reviews.php:109
+#: .././woocommerce/single-product-reviews.php:124
+msgid "Very Poor"
+msgstr "Very Poor"
+
+#: .././woocommerce/single-product-reviews.php:117
+msgid "Your Rating"
+msgstr "Your Rating"
+
+#: .././woocommerce/single-product-reviews.php:132
+msgid "Your Review"
+msgstr "Your Review"
+
+#: .././woocommerce/single-product-reviews.php:142
+msgid ""
+"Only logged in customers who have purchased this product may leave a review."
+msgstr ""
+"Only logged in customers who have purchased this product may leave a review."
+
+#: .././woocommerce/single-product/add-to-cart/variation.php:31
+msgid ""
+"Sorry, this product is unavailable. Please choose a different combination."
+msgstr ""
+"Sorry, this product is unavailable. Please choose a different combination."
+
+#: .././woocommerce/single-product/meta.php:31
+msgid "SKU:"
+msgstr "SKU:"
+
+#: .././woocommerce/single-product/product-attributes.php:28
+msgid "Weight"
+msgstr "Weight"
+
+#: .././woocommerce/single-product/product-attributes.php:35
+msgid "Dimensions"
+msgstr "Dimensions"
+
+#: .././woocommerce/single-product/rating.php:46
+#: .././woocommerce/single-product/rating.php:91
+msgid "Average Rating:"
+msgstr "Average Rating:"
+
+#: .././woocommerce/single-product/rating.php:64
+#: .././woocommerce/single-product/rating.php:94
+#, php-format
+msgid "Rated %s out of 5"
+msgstr "Rated %s out of 5"
+
+#: .././woocommerce/single-product/rating.php:67
+#: .././woocommerce/single-product/rating.php:96
+#: .././woocommerce/single-product/review.php:79
+msgid "out of 5"
+msgstr "out of 5"
+
+#: .././woocommerce/single-product/rating.php:69
+#: .././woocommerce/single-product/rating.php:98
+#, php-format
+msgid "out of %s5%s"
+msgstr "out of %s5%s"
+
+#: .././woocommerce/single-product/review.php:64
+msgid "Your comment is awaiting approval"
+msgstr "Your comment is awaiting approval"
+
+#: .././woocommerce/single-product/review.php:71
+msgid "verified owner"
+msgstr "verified owner"
+
+#: .././woocommerce/single-product/review.php:78
+#, php-format
+msgid "Rated %d out of 5"
+msgstr "Rated %d out of 5"
+
+#: .././woocommerce/single-product/tabs/description.php:14
+msgid "Product Description"
+msgstr "Product Description"
+
+#: .././woocommerce/wishlist.php:90
+msgid "Product Name"
+msgstr "Product Name"
+
+#: .././woocommerce/wishlist.php:94
+msgid "Unit Price"
+msgstr "Unit Price"
+
+#: .././woocommerce/wishlist.php:124
+msgid "Remove this product"
+msgstr "Remove this product"
+
+#: .././woocommerce/wishlist.php:144
+msgid "Free!"
+msgstr "Free!"
+
+#: .././woocommerce/wishlist.php:157
+msgid "Out of Stock"
+msgstr "Out of Stock"
+
+#: .././woocommerce/wishlist.php:160
+msgid "In Stock"
+msgstr "In Stock"
+
+#: .././woocommerce/wishlist.php:178
+msgid "No products were added to the wishlist"
+msgstr "No products were added to the wishlist"
+
+#~ msgid "Calculate Shipping"
+#~ msgstr "Calculate Shipping"
+
+#~ msgid "Select a country&hellip;"
+#~ msgstr "Select a country&hellip;"
+
+#~ msgid "State / county"
+#~ msgstr "State / county"
+
+#~ msgid "Select a state&hellip;"
+#~ msgstr "Select a state&hellip;"
+
+#~ msgid "City"
+#~ msgstr "City"
+
+#~ msgid "Postcode / Zip"
+#~ msgstr "Postcode / Zip"
+
+#~ msgid "UPDATE TOTALS"
+#~ msgstr "UPDATE TOTALS"
+
+#~ msgid ""
+#~ "I&rsquo;ve read and accept the <a href=\"%s\" class=\"woocommerce-terms-"
+#~ "and-conditions-link\">terms &amp; conditions</a>"
+#~ msgstr ""
+#~ "I&rsquo;ve read and accept the <a href=\"%s\" class=\"woocommerce-terms-"
+#~ "and-conditions-link\">terms &amp; conditions</a>"
+
+#~ msgid "Never"
+#~ msgstr "Never"
+
+#~ msgid "This product is currently out of stock and unavailable."
+#~ msgstr "This product is currently out of stock and unavailable."
+
+#~ msgid ""
+#~ "To connect to %1$s you need to be logged in. Log in to your store below, "
+#~ "or %2$scancel and return to %1$s%3$s"
+#~ msgstr ""
+#~ "To connect to %1$s you need to be logged in. Log in to your store below, "
+#~ "or %2$scancel and return to %1$s%3$s"
+
+#~ msgid "Username or email address"
+#~ msgstr "Username or email address"
+
+#~ msgid "Password"
+#~ msgstr "Password"
+
+#~ msgid "PRODUCT"
+#~ msgstr "PRODUCT"
+
+#~ msgid "PRICE"
+#~ msgstr "PRICE"
+
+#~ msgid "QUANTITY"
+#~ msgstr "QUANTITY"
+
+#~ msgid "TOTAL"
+#~ msgstr "TOTAL"
+
+#~ msgid "Coupon code"
+#~ msgstr "Coupon code"
+
+#~ msgid "APPLY"
+#~ msgstr "APPLY"
+
+#~ msgid "UPDATE CART"
+#~ msgstr "UPDATE CART"
+
+#~ msgid "PROCEED TO CHECKOUT"
+#~ msgstr "PROCEED TO CHECKOUT"
+
+#~ msgid "Redeem your coupon"
+#~ msgstr "Redeem your coupon"
+
+#~ msgid "Apply Coupon"
+#~ msgstr "Apply Coupon"
+
+#~ msgid ""
+#~ "Since your browser does not support JavaScript, or it is disabled, please "
+#~ "ensure you click the <em>Update Totals</em> button before placing your "
+#~ "order. You may be charged more than the amount stated above if you fail "
+#~ "to do so."
+#~ msgstr ""
+#~ "Since your browser does not support JavaScript, or it is disabled, please "
+#~ "ensure you click the <em>Update Totals</em> button before placing your "
+#~ "order. You may be charged more than the amount stated above if you fail "
+#~ "to do so."
+
+#~ msgid "Update totals"
+#~ msgstr "Update totals"
+
+#~ msgid ""
+#~ "The order #%1$d from %2$s has been cancelled. The order was as follows:"
+#~ msgstr ""
+#~ "The order #%1$d from %2$s has been cancelled. The order was as follows:"
+
+#~ msgid ""
+#~ "Payment for order #%1$d from %2$s has failed. The order was as follows:"
+#~ msgstr ""
+#~ "Payment for order #%1$d from %2$s has failed. The order was as follows:"
+
+#~ msgid ""
+#~ "An order has been created for you on %1$s. To pay for this order please "
+#~ "use the following link: %2$s"
+#~ msgstr ""
+#~ "An order has been created for you on %1$s. To pay for this order please "
+#~ "use the following link: %2$s"
+
+#~ msgid "pay"
+#~ msgstr "pay"
+
+#~ msgid "Quantity"
+#~ msgstr "Quantity"
+
+#~ msgid "Price"
+#~ msgstr "Price"
+
+#~ msgid "View order: %s"
+#~ msgstr "View order: %s"
+
+#~ msgid "Username or email"
+#~ msgstr "Username or email"
+
+#~ msgid "Remember me"
+#~ msgstr "Remember me"
+
+#~ msgid "Lost your password?"
+#~ msgstr "Lost your password?"
+
+#~ msgid "Add Payment Method"
+#~ msgstr "Add Payment Method"
+
+#~ msgid "Account Details"
+#~ msgstr "Account Details"
+
+#~ msgid "First name"
+#~ msgstr "First name"
+
+#~ msgid "Last name"
+#~ msgstr "Last name"
+
+#~ msgid "Email address"
+#~ msgstr "Email address"
+
+#~ msgid "Password Change"
+#~ msgstr "Password Change"
+
+#~ msgid "Current Password (leave blank to leave unchanged)"
+#~ msgstr "Current Password (leave blank to leave unchanged)"
+
+#~ msgid "New Password (leave blank to leave unchanged)"
+#~ msgstr "New Password (leave blank to leave unchanged)"
+
+#~ msgid "Confirm New Password"
+#~ msgstr "Confirm New Password"
+
+#~ msgid "Save changes"
+#~ msgstr "Save changes"
+
+#~ msgid "Register"
+#~ msgstr "Register"
+
+#~ msgid "Username"
+#~ msgstr "Username"
+
+#~ msgid "Recover your Password"
+#~ msgstr "Recover your Password"
+
+#~ msgid ""
+#~ "Lost your password? Please enter your username or email address. You will "
+#~ "receive a link to create a new password via email."
+#~ msgstr ""
+#~ "Lost your password? Please enter your username or email address. You will "
+#~ "receive a link to create a new password via email."
+
+#~ msgid "Enter a new password below."
+#~ msgstr "Enter a new password below."
+
+#~ msgid "New password"
+#~ msgstr "New password"
+
+#~ msgid "Re-enter new password"
+#~ msgstr "Re-enter new password"
+
+#~ msgid ""
+#~ "To track your order please enter your Order ID in the box below and press "
+#~ "the \"Track\" button. This was given to you on your receipt and in the "
+#~ "confirmation email you should have received."
+#~ msgstr ""
+#~ "To track your order please enter your Order ID in the box below and press "
+#~ "the \"Track\" button. This was given to you on your receipt and in the "
+#~ "confirmation email you should have received."
+
+#~ msgid "Order ID"
+#~ msgstr "Order ID"
+
+#~ msgid "Billing email"
+#~ msgstr "Billing email"
+
+#~ msgid "&infin;"
+#~ msgstr "&infin;"
+
+#~ msgid "Search for:"
+#~ msgstr "Search for:"
+
+#~ msgid "Cart Empty"
+#~ msgstr "Cart Empty"
+
+#~ msgid "Your cart is currently empty."
+#~ msgstr "Your cart is currently empty."
+
+#~ msgid "Return To Shop"
+#~ msgstr "Return To Shop"
+
+#~ msgid "View Cart"
+#~ msgstr "View Cart"
+
+#~ msgid "Checkout"
+#~ msgstr "Checkout"
+
+#~ msgid "Download"
+#~ msgstr "Download"
+
+#~ msgid "Anti-spam"
+#~ msgstr "Anti-spam"
+
+#~ msgid ""
+#~ "To track your order please enter your Order ID in the box below and press "
+#~ "return. This was given to you on your receipt and in the confirmation "
+#~ "email you should have received."
+#~ msgstr ""
+#~ "To track your order please enter your Order ID in the box below and press "
+#~ "return. This was given to you on your receipt and in the confirmation "
+#~ "email you should have received."
+
+#~ msgid "Found in your order confirmation email."
+#~ msgstr "Found in your order confirmation email."
+
+#~ msgid "Billing Email"
+#~ msgstr "Billing Email"
+
+#~ msgid "Email you used during checkout."
+#~ msgstr "Email you used during checkout."
+
+#~ msgid "Track"
+#~ msgstr "Track"
+
+#~ msgid "The order #%d from %s has been cancelled. The order was as follows:"
+#~ msgstr "The order #%d from %s has been cancelled. The order was as follows:"
+
+#~ msgid "Payment for order #%d from %s has failed. The order was as follows:"
+#~ msgstr "Payment for order #%d from %s has failed. The order was as follows:"
+
+#~ msgid ""
+#~ "An order has been created for you on %s. To pay for this order please use "
+#~ "the following link: %s"
+#~ msgstr ""
+#~ "An order has been created for you on %s. To pay for this order please use "
+#~ "the following link: %s"
+
+#~ msgid ""
+#~ "Thanks for creating an account on %s. Your username is <strong>%s</"
+#~ "strong>."
+#~ msgstr ""
+#~ "Thanks for creating an account on %s. Your username is <strong>%s</"
+#~ "strong>."
+
+#~ msgid "Your password has been automatically generated: <strong>%s</strong>"
+#~ msgstr "Your password has been automatically generated: <strong>%s</strong>"
+
+#~ msgid "Your password is <strong>%s</strong>."
+#~ msgstr "Your password is <strong>%s</strong>."
+
+#~ msgid "jS F Y"
+#~ msgstr "jS F Y"
+
+#~ msgid "Save Address"
+#~ msgstr "Save Address"
+
+#~ msgid "Reset Password"
+#~ msgstr "Reset Password"
+
+#~ msgid "Save"
+#~ msgstr "Save"
+
+#~ msgid "Clear selection"
+#~ msgstr "Clear selection"
+
+#~ msgid "Variation price:"
+#~ msgstr "Variation price:"
+
+#~ msgid "Search products in all site"
+#~ msgstr "Search products in all site"
+
+#~ msgid "Available on backorder"
+#~ msgstr "Available on backorder"
+
+#~ msgid "Please attempt your purchase again or go to your account page."
+#~ msgstr "Please attempt your purchase again or go to your account page."
+
+#~ msgid "Please attempt your purchase again."
+#~ msgstr "Please attempt your purchase again."
+
+#~ msgid "Quantity: %s"
+#~ msgstr "Quantity: %s"
+
+#~ msgid "Cost: %s"
+#~ msgstr "Cost: %s"
+
+#~ msgid "Download %d"
+#~ msgstr "Download %d"
+
+#~ msgid "Telephone:"
+#~ msgstr "Telephone:"
+
+#~ msgid "n/a"
+#~ msgstr "n/a"
+
+#~ msgid "Placeholder"
+#~ msgstr "Placeholder"
+
+#~ msgid "Related Products"
+#~ msgstr "Related Products"
+
+#~ msgid "You may also like&hellip;"
+#~ msgstr "You may also like&hellip;"
+
+#~ msgid ""
+#~ "Consider using your own key, if your blog have a high traffic of users"
+#~ msgstr ""
+#~ "Consider using your own key, if your blog have a high traffic of users"
+
+#~ msgid "Min price"
+#~ msgstr "Min price"
+
+#~ msgid "Max price"
+#~ msgstr "Max price"
+
+#~ msgid ""
+#~ "Sorry, it seems that there are no payment methods which support adding a "
+#~ "new payment method. Please contact us if you require assistance or wish "
+#~ "to make alternate arrangements."
+#~ msgstr ""
+#~ "Sorry, it seems that there are no payment methods which support adding a "
+#~ "new payment method. Please contact us if you require assistance or wish "
+#~ "to make alternate arrangements."
+
+#~ msgid ""
+#~ "Order <mark class=\"order-number\">%s</mark> was placed on <mark class="
+#~ "\"order-date\">%s</mark> and is currently <mark class=\"order-status\">"
+#~ "%s</mark>."
+#~ msgstr ""
+#~ "Order <mark class=\"order-number\">%s</mark> was placed on <mark class="
+#~ "\"order-date\">%s</mark> and is currently <mark class=\"order-status\">"
+#~ "%s</mark>."
+
+#~ msgid "Stock Status"
+#~ msgstr "Stock Status"
+
+#~ msgid "Pay for order"
+#~ msgstr "Pay for order"
+
+#~ msgid "Order: %s"
+#~ msgstr "Order: %s"
+
+#~ msgid "Amount Refunded"
+#~ msgstr "Amount Refunded"
+
+#~ msgid "Product Image"
+#~ msgstr "Product Image"
+
+#~ msgid "Order link: %s"
+#~ msgstr "Order link: %s"
+
+#~ msgid "Order date: %s"
+#~ msgstr "Order date: %s"
+
+#~ msgid "Download file%s"
+#~ msgstr "Download file%s"
+
+#~ msgid "(Includes %s)"
+#~ msgstr "(Includes %s)"
+
+#~ msgid "Refunded:"
+#~ msgstr "Refunded:"
+
+#~ msgid "Telephone"
+#~ msgstr "Telephone"
+
+#~ msgid "Choose an option"
+#~ msgstr "Choose an option"
+
+#~ msgid "Products Compare"
+#~ msgstr "Products Compare"
+
+#, fuzzy
+#~ msgid "General Settings"
+#~ msgstr "Contact Settings"
+
+#~ msgid "Hard Crop?"
+#~ msgstr "Hard Crop?"
+
+#~ msgid "Added"
+#~ msgstr "Added"
+
+#, fuzzy
+#~ msgid "In stock"
+#~ msgstr "In Stock"
+
+#~ msgid "Compare"
+#~ msgstr "Compare"
+
+#, fuzzy
+#~ msgid "No products to compare"
+#~ msgstr "No products in the cart."
+
+#~ msgid "Image"
+#~ msgstr "Image"
+
+#~ msgid "Add to cart"
+#~ msgstr "Add to cart"
+
+#, fuzzy
+#~ msgid "Description"
+#~ msgstr "Product Description"
+
+#~ msgid "Availability"
+#~ msgstr "Availability"
+
+#~ msgid "Link or Button"
+#~ msgstr "Link or Button"
+
+#~ msgid "Choose if you want to use a link or a button for the action button."
+#~ msgstr "Choose if you want to use a link or a button for the action button."
+
+#~ msgid "Link"
+#~ msgstr "Link"
+
+#~ msgid "Button"
+#~ msgstr "Button"
+
+#~ msgid "Link/Button text"
+#~ msgstr "Link/Button text"
+
+#~ msgid "Type the text to use for the button or the link of the compare."
+#~ msgstr "Type the text to use for the button or the link of the compare."
+
+#~ msgid "Show button in single product page"
+#~ msgstr "Show button in single product page"
+
+#~ msgid "Say if you want to show the button in the single product page."
+#~ msgstr "Say if you want to show the button in the single product page."
+
+#~ msgid "Show button in products list"
+#~ msgstr "Show button in products list"
+
+#~ msgid "Say if you want to show the button in the products list."
+#~ msgstr "Say if you want to show the button in the products list."
+
+#~ msgid "Open automatically lightbox"
+#~ msgstr "Open automatically lightbox"
+
+#~ msgid "Open link after click into \"Compare\" button\"."
+#~ msgstr "Open link after click into \"Compare\" button\"."
+
+#, fuzzy
+#~ msgid "Table Settings"
+#~ msgstr "Settings"
+
+#~ msgid "Table title"
+#~ msgstr "Table title"
+
+#, fuzzy
+#~ msgid "Type the text to use for the table title."
+#~ msgstr "Select the general text font style for the theme"
+
+#, fuzzy
+#~ msgid "Compare products"
+#~ msgstr "Shop Total Products"
+
+#~ msgid "Fields to show"
+#~ msgstr "Fields to show"
+
+#~ msgid ""
+#~ "Select the fields to show in the comparison table and order them by "
+#~ "drag&drop (are included also the woocommerce attributes)"
+#~ msgstr ""
+#~ "Select the fields to show in the comparison table and order them by "
+#~ "drag&drop (are included also the woocommerce attributes)"
+
+#~ msgid "Repeat \"Price\" field at the end of the table"
+#~ msgstr "Repeat \"Price\" field at the end of the table"
+
+#~ msgid "Repeat \"Add to cart\" field at the end of the table"
+#~ msgstr "Repeat \"Add to cart\" field at the end of the table"
+
+#~ msgid "Image size"
+#~ msgstr "Image size"
+
+#, fuzzy
+#~ msgid "Set the size for the images"
+#~ msgstr "Select the primary font style for the theme"
+
+#, fuzzy
+#~ msgid "The widget show the list of products added in the compare table."
+#~ msgstr "No products added in the compare table."
+
+#~ msgid "YITH Woocommerce Compare Widget"
+#~ msgstr "YITH Woocommerce Compare Widget"
+
+#~ msgid "Clear all"
+#~ msgstr "Clear all"
+
+#, fuzzy
+#~ msgid "Select a date"
+#~ msgstr "Select a state&hellip;"
+
+#~ msgid "Hours"
+#~ msgstr "Hours"
+
+#~ msgid "Minutes"
+#~ msgstr "Minutes"
+
+#, fuzzy
+#~ msgid "Upload"
+#~ msgstr "Uploads"
+
+#~ msgid "px"
+#~ msgstr "px"
+
+#~ msgid "em"
+#~ msgstr "em"
+
+#~ msgid "pt"
+#~ msgstr "pt"
+
+#~ msgid "rem"
+#~ msgstr "rem"
+
+#~ msgid "Select a font family"
+#~ msgstr "Select a font family"
+
+#~ msgid "Regular"
+#~ msgstr "Regular"
+
+#~ msgid "Bold"
+#~ msgstr "Bold"
+
+#~ msgid "Extra bold"
+#~ msgstr "Extra bold"
+
+#~ msgid "Italic"
+#~ msgstr "Italic"
+
+#~ msgid "Italic bold"
+#~ msgstr "Italic bold"
+
+#, fuzzy
+#~ msgid "Click to preview"
+#~ msgstr "Favicon preview"
+
+#~ msgid ""
+#~ "YITH WooCommerce Wishlist is enabled but not effective. It requires "
+#~ "Woocommerce in order to work."
+#~ msgstr ""
+#~ "YITH WooCommerce Wishlist is enabled but not effective. It requires "
+#~ "Woocommerce in order to work."
+
+#~ msgid ""
+#~ "You can't activate the free version of YITH WooCommerce Wishlist while "
+#~ "you are using the premium one."
+#~ msgstr ""
+#~ "You can't activate the free version of YITH WooCommerce Wishlist while "
+#~ "you are using the premium one."
+
+#, fuzzy
+#~ msgid "Wishlist"
+#~ msgstr "View as list"
+
+#, fuzzy
+#~ msgid "Colors"
+#~ msgstr "Color"
+
+#~ msgid "Premium Version"
+#~ msgstr "Premium Version"
+
+#~ msgid ""
+#~ "WARNING: This plugin requires at least WooCommerce 2.2! Plase, use this "
+#~ "link to update it."
+#~ msgstr ""
+#~ "WARNING: This plugin requires at least WooCommerce 2.2! Plase, use this "
+#~ "link to update it."
+
+#~ msgid "WARNING: This plugin requires at least WooCommerce 2.2!"
+#~ msgstr "WARNING: This plugin requires at least WooCommerce 2.2!"
+
+#, fuzzy
+#~ msgid "Plugin Documentation"
+#~ msgstr "Plugin activation failed."
+
+#~ msgid "Wishlist Page"
+#~ msgstr "Wishlist Page"
+
+#~ msgid "Page contents: [yith_wcwl_wishlist]"
+#~ msgstr "Page contents: [yith_wcwl_wishlist]"
+
+#~ msgid "Upgrade to the PREMIUM VERSION"
+#~ msgstr "Upgrade to the PREMIUM VERSION"
+
+#~ msgid "YITH WooCommerce Wishlist"
+#~ msgstr "YITH WooCommerce Wishlist"
+
+#~ msgid "Discover the Advanced Features"
+#~ msgstr "Discover the Advanced Features"
+
+#~ msgid ""
+#~ "Upgrade to the PREMIUM VERSION\n"
+#~ "of YITH WOOCOMMERCE WISHLIST to benefit from all features!"
+#~ msgstr ""
+#~ "Upgrade to the PREMIUM VERSION\n"
+#~ "of YITH WOOCOMMERCE WISHLIST to benefit from all features!"
+
+#, fuzzy
+#~ msgid "Get Support and Pro Features"
+#~ msgstr "Grid Posts Features"
+
+#~ msgid ""
+#~ "By purchasing the premium version of the plugin, you will take advantage "
+#~ "of the advanced features of the product and you will get one year of free "
+#~ "updates and support through our platform available 24h/24."
+#~ msgstr ""
+#~ "By purchasing the premium version of the plugin, you will take advantage "
+#~ "of the advanced features of the product and you will get one year of free "
+#~ "updates and support through our platform available 24h/24."
+
+#, fuzzy
+#~ msgid "Enable YITH Wishlist"
+#~ msgstr "Enable / Disable %s"
+
+#~ msgid ""
+#~ "Enable all plugin features. <strong>Be sure to select a voice in the "
+#~ "wishlist page menu in %s.</strong> Also, please read the plugin <a href="
+#~ "\"%s\" target=\"_blank\">documentation</a>."
+#~ msgstr ""
+#~ "Enable all plugin features. <strong>Be sure to select a voice in the "
+#~ "wishlist page menu in %s.</strong> Also, please read the plugin <a href="
+#~ "\"%s\" target=\"_blank\">documentation</a>."
+
+#~ msgid "Default wishlist title"
+#~ msgstr "Default wishlist title"
+
+#~ msgid "My wishlist on %s"
+#~ msgstr "My wishlist on %s"
+
+#, fuzzy
+#~ msgid "Position"
+#~ msgstr "Sidebar Position"
+
+#~ msgid ""
+#~ "On variable products you can add it only After \"Add to Cart\" or use the "
+#~ "shortcode [yith_wcwl_add_to_wishlist]."
+#~ msgstr ""
+#~ "On variable products you can add it only After \"Add to Cart\" or use the "
+#~ "shortcode [yith_wcwl_add_to_wishlist]."
+
+#, fuzzy
+#~ msgid "After \"Add to cart\""
+#~ msgstr "Add to cart"
+
+#~ msgid "After thumbnails"
+#~ msgstr "After thumbnails"
+
+#~ msgid "After summary"
+#~ msgstr "After summary"
+
+#~ msgid "Use shortcode"
+#~ msgstr "Use shortcode"
+
+#, fuzzy
+#~ msgid "Redirect to cart"
+#~ msgstr "Add to cart"
+
+#~ msgid ""
+#~ "Redirect to cart page if \"Add to cart\" button is clicked in the "
+#~ "wishlist page."
+#~ msgstr ""
+#~ "Redirect to cart page if \"Add to cart\" button is clicked in the "
+#~ "wishlist page."
+
+#, fuzzy
+#~ msgid "Remove if added to the cart"
+#~ msgstr "Remove from cart"
+
+#~ msgid "Remove the product from the wishlist if is been added to the cart."
+#~ msgstr "Remove the product from the wishlist if is been added to the cart."
+
+#~ msgid "\"Add to Wishlist\" text"
+#~ msgstr "\"Add to Wishlist\" text"
+
+#, fuzzy
+#~ msgid "Add to Wishlist"
+#~ msgstr "Add to cart"
+
+#, fuzzy
+#~ msgid "\"Add to Cart\" text"
+#~ msgstr "Add to cart"
+
+#, fuzzy
+#~ msgid "Add to Cart"
+#~ msgstr "Add to cart"
+
+#, fuzzy
+#~ msgid "Show Unit price"
+#~ msgstr "Unit Price"
+
+#~ msgid "Show unit price for each product in wishlist"
+#~ msgstr "Show unit price for each product in wishlist"
+
+#~ msgid "Show \"Add to Cart\" button"
+#~ msgstr "Show \"Add to Cart\" button"
+
+#~ msgid "Show \"Add to cart\" button for each product in wishlist"
+#~ msgstr "Show \"Add to cart\" button for each product in wishlist"
+
+#, fuzzy
+#~ msgid "Show Stock status"
+#~ msgstr "Stock Status"
+
+#~ msgid ""
+#~ "Show \"In stock\" or \"Out of stock\" label for each product in wishlist"
+#~ msgstr ""
+#~ "Show \"In stock\" or \"Out of stock\" label for each product in wishlist"
+
+#, fuzzy
+#~ msgid "Styles"
+#~ msgstr "Font Styles"
+
+#~ msgid "Use buttons"
+#~ msgstr "Use buttons"
+
+#~ msgid "Use buttons instead of a simple anchors."
+#~ msgstr "Use buttons instead of a simple anchors."
+
+#~ msgid "Use theme style"
+#~ msgstr "Use theme style"
+
+#~ msgid "Use the theme style."
+#~ msgstr "Use the theme style."
+
+#~ msgid "Button rounded corners"
+#~ msgstr "Button rounded corners"
+
+#~ msgid "Make buttons corner rounded"
+#~ msgstr "Make buttons corner rounded"
+
+#~ msgid "\"Add to Wishlist\" icon"
+#~ msgstr "\"Add to Wishlist\" icon"
+
+#~ msgid "Add an icon to the \"Add to Wishlist\" button"
+#~ msgstr "Add an icon to the \"Add to Wishlist\" button"
+
+#, fuzzy
+#~ msgid "\"Add to Cart\" icon"
+#~ msgstr "Add to cart"
+
+#~ msgid "Add an icon to the \"Add to Cart\" button"
+#~ msgstr "Add an icon to the \"Add to Cart\" button"
+
+#~ msgid "Socials &amp; Share"
+#~ msgstr "Socials &amp; Share"
+
+#~ msgid "Share on Facebook"
+#~ msgstr "Share on Facebook"
+
+#~ msgid "Show \"Share on Facebook\" button"
+#~ msgstr "Show \"Share on Facebook\" button"
+
+#~ msgid "Tweet on Twitter"
+#~ msgstr "Tweet on Twitter"
+
+#~ msgid "Show \"Tweet on Twitter\" button"
+#~ msgstr "Show \"Tweet on Twitter\" button"
+
+#~ msgid "Pin on Pinterest"
+#~ msgstr "Pin on Pinterest"
+
+#~ msgid "Show \"Pin on Pinterest\" button"
+#~ msgstr "Show \"Pin on Pinterest\" button"
+
+#~ msgid "Share on Google+"
+#~ msgstr "Share on Google+"
+
+#, fuzzy
+#~ msgid "Share by Email"
+#~ msgstr "Sender Email"
+
+#~ msgid "Show \"Share by Email\" button"
+#~ msgstr "Show \"Share by Email\" button"
+
+#~ msgid "Social title"
+#~ msgstr "Social title"
+
+#~ msgid "Social text"
+#~ msgstr "Social text"
+
+#~ msgid ""
+#~ "Will be used by Facebook, Twitter and Pinterest. Use <strong>%wishlist_url"
+#~ "%</strong> where you want the URL of your wishlist to appear."
+#~ msgstr ""
+#~ "Will be used by Facebook, Twitter and Pinterest. Use <strong>%wishlist_url"
+#~ "%</strong> where you want the URL of your wishlist to appear."
+
+#~ msgid "Social image URL"
+#~ msgstr "Social image URL"
+
+#~ msgid "\"Add to wishlist\" button"
+#~ msgstr "\"Add to wishlist\" button"
+
+#~ msgid "Text"
+#~ msgstr "Text"
+
+#, fuzzy
+#~ msgid "Border"
+#~ msgstr "Order"
+
+#, fuzzy
+#~ msgid "Background (hover)"
+#~ msgstr "Background"
+
+#~ msgid "Text (hover)"
+#~ msgstr "Text (hover)"
+
+#~ msgid "Border (hover)"
+#~ msgstr "Border (hover)"
+
+#, fuzzy
+#~ msgid "\"Add to Cart\" button"
+#~ msgstr "Add to cart"
+
+#~ msgid "\"Style 1\" button"
+#~ msgstr "\"Style 1\" button"
+
+#~ msgid "\"Style 2\" button"
+#~ msgstr "\"Style 2\" button"
+
+#~ msgid "Wishlist table"
+#~ msgstr "Wishlist table"
+
+#~ msgid "Headers"
+#~ msgstr "Headers"
+
+#, fuzzy
+#~ msgid "Background color"
+#~ msgstr "Background"
+
+#, fuzzy
+#~ msgid "Wishlist Activated"
+#~ msgstr "Activate"
+
+#~ msgid ""
+#~ "In the YIT Plugin tab you can find the Wishlist options. With this menu, "
+#~ "you can access to all the settings of our plugins that you have "
+#~ "activated. Wishlist is available in an outstanding PREMIUM version with "
+#~ "many new options, <a href=\"%s\">discover it now</a>."
+#~ msgstr ""
+#~ "In the YIT Plugin tab you can find the Wishlist options. With this menu, "
+#~ "you can access to all the settings of our plugins that you have "
+#~ "activated. Wishlist is available in an outstanding PREMIUM version with "
+#~ "many new options, <a href=\"%s\">discover it now</a>."
+
+#~ msgid "Wishlist Updated"
+#~ msgstr "Wishlist Updated"
+
+#~ msgid ""
+#~ "From now on, you can find all the options of Wishlist under YIT Plugin -> "
+#~ "Wishlist instead of WooCommerce -> Settings -> Wishlist, as in the "
+#~ "previous version. When one of our plugins updates, a new voice will be "
+#~ "added to this menu. Wishlist renovates with new available options, <a "
+#~ "href=\"%s\">discover the PREMIUM version.</a>"
+#~ msgstr ""
+#~ "From now on, you can find all the options of Wishlist under YIT Plugin -> "
+#~ "Wishlist instead of WooCommerce -> Settings -> Wishlist, as in the "
+#~ "previous version. When one of our plugins updates, a new voice will be "
+#~ "added to this menu. Wishlist renovates with new available options, <a "
+#~ "href=\"%s\">discover the PREMIUM version.</a>"
+
+#~ msgid ""
+#~ "We are sorry,but this feature is available only if cookies on your "
+#~ "browser are enabled."
+#~ msgstr ""
+#~ "We are sorry,but this feature is available only if cookies on your "
+#~ "browser are enabled."
+
+#~ msgid "Share on:"
+#~ msgstr "Share on:"
+
+#, fuzzy
+#~ msgid "Product added!"
+#~ msgstr "Product Name"
+
+#~ msgid "Browse Wishlist"
+#~ msgstr "Browse Wishlist"
+
+#, fuzzy
+#~ msgid "The product is already in the wishlist!"
+#~ msgstr "No products were added to the wishlist"
+
+#~ msgid "Select options"
+#~ msgstr "Select options"
+
+#~ msgid "Facebook"
+#~ msgstr "Facebook"
+
+#~ msgid "Twitter"
+#~ msgstr "Twitter"
+
+#, fuzzy
+#~ msgid "email"
+#~ msgstr "Email"
+
+#~ msgid "Error occurred while adding product to wishlist."
+#~ msgstr "Error occurred while adding product to wishlist."
+
+#~ msgid "Remove now does not require any param"
+#~ msgstr "Remove now does not require any param"
+
+#~ msgid "Error occurred while removing product from wishlist"
+#~ msgstr "Error occurred while removing product from wishlist"
+
+#, fuzzy
+#~ msgid "Product already in the wishlist."
+#~ msgstr "No products were added to the wishlist"
+
+#, fuzzy
+#~ msgid "Product successfully removed."
+#~ msgstr "Product sucessfully added to cart."
+
+#, fuzzy
+#~ msgid "Add %s"
+#~ msgstr "Add New"
+
+#, fuzzy
+#~ msgid "Add New %s"
+#~ msgstr "Add New"
+
+#, fuzzy
+#~ msgid "Edit %s"
+#~ msgstr "Edit"
+
+#, fuzzy
+#~ msgid "New %s"
+#~ msgstr "New FAQ"
+
+#, fuzzy
+#~ msgid "All %s"
+#~ msgstr "All FAQs"
+
+#, fuzzy
+#~ msgid "View %s"
+#~ msgstr "View"
+
+#, fuzzy
+#~ msgid "Search %s"
+#~ msgstr "Search FAQs"
+
+#, fuzzy
+#~ msgid "No %s found"
+#~ msgstr "No FAQs found"
+
+#, fuzzy
+#~ msgid "No %s found in Trash"
+#~ msgstr "No FAQs found in Trash"
+
+#, fuzzy
+#~ msgid "Parent Category"
+#~ msgstr "New Category"
+
+#, fuzzy
+#~ msgid "Parent Category:"
+#~ msgstr "New Category"
+
+#, fuzzy
+#~ msgid "Update Category"
+#~ msgstr "Edit Category"
+
+#, fuzzy
+#~ msgid "New Category Name"
+#~ msgstr "New Category"
+
+#, fuzzy
+#~ msgid "Categories"
+#~ msgstr "All Categories"
+
+#, fuzzy
+#~ msgid "%s Settings"
+#~ msgstr "Settings"
+
+#, fuzzy
+#~ msgid "layout settings"
+#~ msgstr "Contact Settings"
+
+#, fuzzy
+#~ msgid "Plugin Settings"
+#~ msgstr "Settings"
+
+#, fuzzy
+#~ msgid "YIT Plugins"
+#~ msgstr "Plugin"
+
+#, fuzzy
+#~ msgid "Save Changes"
+#~ msgstr "Save changes"
+
+#, fuzzy
+#~ msgid "Reset Defaults"
+#~ msgstr "Default"
+
+#, fuzzy
+#~ msgid "Settings saved"
+#~ msgstr "%s settings saved!"
+
+#, fuzzy
+#~ msgid "Settings reset"
+#~ msgstr "Settings"
+
+#, fuzzy
+#~ msgid "The file inserted is not valid."
+#~ msgstr "The email address is invalid."
+
+#, fuzzy
+#~ msgid "Sorry, import is disabled."
+#~ msgstr "Sorry, shipping is unavailable %s."
+
+#, fuzzy
+#~ msgid "Plugins Activated"
+#~ msgstr "Plugin activation failed."
+
+#, fuzzy
+#~ msgid "Update now."
+#~ msgstr "Update totals"
+
+#, fuzzy
+#~ msgid "Yithemes Repository"
+#~ msgstr "Private Repository"
+
+#, fuzzy
+#~ msgid "You can't update plugins for this site."
+#~ msgstr "No comments were published for this post yet"
+
+#, fuzzy
+#~ msgid "Update Plugin"
+#~ msgstr "Plugin"
+
+#~ msgid "%field% field cannot be empty"
+#~ msgstr "%field% field cannot be empty"
+
+#~ msgid "%field_1% and %field_2% fields cannot be empty"
+#~ msgstr "%field_1% and %field_2% fields cannot be empty"
+
+#~ msgid "Unable to contact the remote server, please try again later. Thanks!"
+#~ msgstr ""
+#~ "Unable to contact the remote server, please try again later. Thanks!"
+
+#~ msgid "Invalid Request"
+#~ msgstr "Invalid Request"
+
+#~ msgid "Invalid licence key"
+#~ msgstr "Invalid licence key"
+
+#~ msgid "Software has been deactivate"
+#~ msgstr "Software has been deactivate"
+
+#~ msgid "Exceeded maximum number of activations"
+#~ msgstr "Exceeded maximum number of activations"
+
+#~ msgid "Invalid instance ID"
+#~ msgstr "Invalid instance ID"
+
+#~ msgid "Invalid security key"
+#~ msgstr "Invalid security key"
+
+#~ msgid "Licence key has expired"
+#~ msgstr "Licence key has expired"
+
+#~ msgid "Licence key has been banned"
+#~ msgstr "Licence key has been banned"
+
+#~ msgid "Licence Activation"
+#~ msgstr "Licence Activation"
+
+#~ msgid "%s"
+#~ msgstr "%s"
+
+#~ msgid "Yithemes Licence Activation"
+#~ msgstr "Yithemes Licence Activation"
+
+#~ msgid ""
+#~ "Have you updated your licenses? Have you asked for an extension? Update "
+#~ "information concerning your products."
+#~ msgstr ""
+#~ "Have you updated your licenses? Have you asked for an extension? Update "
+#~ "information concerning your products."
+
+#, fuzzy
+#~ msgid "Update licence information"
+#~ msgstr "Additional Information"
+
+#, fuzzy
+#~ msgid "Products to be activated"
+#~ msgstr "Products Custom Review"
+
+#, fuzzy
+#~ msgid "Activated"
+#~ msgstr "Activate"
+
+#~ msgid "Licence Key"
+#~ msgstr "Licence Key"
+
+#~ msgid "Expires"
+#~ msgstr "Expires"
+
+#~ msgid "Remaining"
+#~ msgstr "Remaining"
+
+#~ msgid "Renew"
+#~ msgstr "Renew"
+
+#, fuzzy
+#~ msgid "%1s out of %2s"
+#~ msgstr "Rated %s out of 5"
+
+#~ msgid "Banned"
+#~ msgstr "Banned"
+
+#~ msgid "Expired"
+#~ msgstr "Expired"
+
+#, fuzzy
+#~ msgid "Search for a product"
+#~ msgstr "Search Contacts"
+
+#, fuzzy
+#~ msgid "No categories."
+#~ msgstr "No Categories found"
+
+#, fuzzy
+#~ msgid "+ Add New Category"
+#~ msgstr "Add New Category"
+
+#~ msgid "Text Input"
+#~ msgstr "Text Input"
+
+#, fuzzy
+#~ msgid "Checkbox"
+#~ msgstr "Checkout"
+
+#, fuzzy
+#~ msgid "Select"
+#~ msgstr "Select options"
+
+#~ msgid "Textarea"
+#~ msgstr "Textarea"
+
+#~ msgid "Radio Input"
+#~ msgstr "Radio Input"
+
+#, fuzzy
+#~ msgid "Password Field"
+#~ msgstr "Password"
+
+#, fuzzy
+#~ msgid "File Upload"
+#~ msgstr "Uploads"
+
+#~ msgid "Theme Icon"
+#~ msgstr "Theme Icon"
+
+#, fuzzy
+#~ msgid "Custom Icon"
+#~ msgstr "Custom CSS"
+
+#~ msgid "None"
+#~ msgstr "None"
+
+#, fuzzy
+#~ msgid "Add field"
+#~ msgstr "Add New"
+
+#, fuzzy
+#~ msgid "Click to toggle"
+#~ msgstr "Click here to login"
+
+#~ msgid "Title Field"
+#~ msgstr "Title Field"
+
+#~ msgid "Insert title for the field."
+#~ msgstr "Insert title for the field."
+
+#, fuzzy
+#~ msgid "Data Name"
+#~ msgstr "Name"
+
+#~ msgid ""
+#~ "REQUIRED: Field identification name to be entered into email body. "
+#~ "<strong>Note:</strong>Use only lowercase characters and underscores."
+#~ msgstr ""
+#~ "REQUIRED: Field identification name to be entered into email body. "
+#~ "<strong>Note:</strong>Use only lowercase characters and underscores."
+
+#~ msgid "Type field"
+#~ msgstr "Type field"
+
+#~ msgid "Select type for this field."
+#~ msgstr "Select type for this field."
+
+#, fuzzy
+#~ msgid "Checked"
+#~ msgstr "Checkout"
+
+#~ msgid "Select this if you want this field already checked."
+#~ msgstr "Select this if you want this field already checked."
+
+#, fuzzy
+#~ msgid "Add options "
+#~ msgstr "View options"
+
+#, fuzzy
+#~ msgid "Add option"
+#~ msgstr "optional"
+
+#~ msgid "Selected"
+#~ msgstr "Selected"
+
+#, fuzzy
+#~ msgid "Delete option"
+#~ msgstr "Select options"
+
+#, fuzzy
+#~ msgid "Message Error"
+#~ msgstr "Message"
+
+#~ msgid "Insert the error message for validation."
+#~ msgstr "Insert the error message for validation."
+
+#~ msgid "Select this if it must be required."
+#~ msgstr "Select this if it must be required."
+
+#~ msgid "Select this if it must be a valid email."
+#~ msgstr "Select this if it must be a valid email."
+
+#, fuzzy
+#~ msgid "Reply To"
+#~ msgstr "Reply"
+
+#~ msgid "Select this if it is the email you can reply to."
+#~ msgstr "Select this if it is the email you can reply to."
+
+#~ msgid "Class"
+#~ msgstr "Class"
+
+#~ msgid ""
+#~ "Insert additional class(es) (separated by commas) for more "
+#~ "personalization."
+#~ msgstr ""
+#~ "Insert additional class(es) (separated by commas) for more "
+#~ "personalization."
+
+#~ msgid "Icon"
+#~ msgstr "Icon"
+
+#, fuzzy
+#~ msgid "Image preview"
+#~ msgstr "Favicon preview"
+
+#~ msgid "Insert an icon for more personalization."
+#~ msgstr "Insert an icon for more personalization."
+
+#~ msgid "Width"
+#~ msgstr "Width"
+
+#~ msgid "Set field length."
+#~ msgstr "Set field length."
+
+#~ msgid "Close all"
+#~ msgstr "Close all"
+
+#~ msgid "Expand all"
+#~ msgstr "Expand all"
+
+#~ msgid "Value"
+#~ msgstr "Value"
+
+#~ msgid "Content of the tab. (HTML is supported)"
+#~ msgstr "Content of the tab. (HTML is supported)"
+
+#~ msgid "Add custom product tab"
+#~ msgstr "Add custom product tab"
+
+#~ msgid "Do you want to remove the custom tab?"
+#~ msgstr "Do you want to remove the custom tab?"
+
+#~ msgid "(Default: %s <img src=\"%s\"/>)"
+#~ msgstr "(Default: %s <img src=\"%s\"/>)"
+
+#~ msgid "(Default: <i %s></i> )"
+#~ msgstr "(Default: <i %s></i> )"
+
+#, fuzzy
+#~ msgid "Delete image"
+#~ msgstr "Delete the Image"
+
+#~ msgid "Add Images to Gallery"
+#~ msgstr "Add Images to Gallery"
+
+#, fuzzy
+#~ msgid "Add to gallery"
+#~ msgstr "Add to cart"
+
+#, fuzzy
+#~ msgid "Add images"
+#~ msgstr "Add a menu"
+
+#~ msgid "Delete"
+#~ msgstr "Delete"
+
+#, fuzzy
+#~ msgid "Upload new images"
+#~ msgstr "Upload an Image"
+
+#~ msgid "Are you sure you want to remove this image?"
+#~ msgstr "Are you sure you want to remove this image?"
+
+#, fuzzy
+#~ msgid "Left sidebar"
+#~ msgstr "Bottom Sidebar"
+
+#, fuzzy
+#~ msgid "No sidebar"
+#~ msgstr "Blog Sidebar"
+
+#~ msgid "No sideabr"
+#~ msgstr "No sideabr"
+
+#, fuzzy
+#~ msgid "Right sidebar"
+#~ msgstr "Mid Sidebar"
+
+#, fuzzy
+#~ msgid "Choose a sidebar"
+#~ msgstr "Shop Sidebar"
+
+#, fuzzy
+#~ msgid "Left Sidebar"
+#~ msgstr "Mid Sidebar"
+
+#, fuzzy
+#~ msgid "Right Sidebar"
+#~ msgstr "Mid Sidebar"
+
+#~ msgid "Web fonts"
+#~ msgstr "Web fonts"
+
+#~ msgid "Google fonts"
+#~ msgstr "Google fonts"
+
+#~ msgid "Pinterest"
+#~ msgstr "Pinterest"
+
+#~ msgid "Google Plus"
+#~ msgstr "Google Plus"
+
+#, fuzzy
+#~ msgid "Edit title"
+#~ msgstr "Edit Contact"
+
+#, fuzzy
+#~ msgid "Ask an estimate of costs"
+#~ msgstr " (taxes estimated for %s)"
+
+#~ msgid ""
+#~ "No shipping methods were found; please recalculate your shipping or "
+#~ "continue to checkout and enter your full address to see if there is "
+#~ "shipping available to your location."
+#~ msgstr ""
+#~ "No shipping methods were found; please recalculate your shipping or "
+#~ "continue to checkout and enter your full address to see if there is "
+#~ "shipping available to your location."
+
+#~ msgid ""
+#~ "If you require assistance or wish to make alternate arrangements please "
+#~ "contact us."
+#~ msgstr ""
+#~ "If you require assistance or wish to make alternate arrangements please "
+#~ "contact us."
+
+#~ msgid "Coupon:"
+#~ msgstr "Coupon:"
+
+#~ msgid "Apply coupon"
+#~ msgstr "Apply coupon"
+
+#~ msgid "Please, wait while we process your request"
+#~ msgstr "Please, wait while we process your request"
+
+#~ msgid "Place order"
+#~ msgstr "Place order"
+
+#~ msgid "I have read and accept the"
+#~ msgstr "I have read and accept the"
+
+#~ msgid "terms &amp; conditions"
+#~ msgstr "terms &amp; conditions"
+
+#~ msgid "Tel:"
+#~ msgstr "Tel:"
+
+#~ msgid "Your details"
+#~ msgstr "Your details"
+
+#~ msgid "Products tagged &ldquo;"
+#~ msgstr "Products tagged &ldquo;"
+
+#~ msgid "Search results for &ldquo;"
+#~ msgstr "Search results for &ldquo;"
+
+#~ msgid "Error 404"
+#~ msgstr "Error 404"
+
+#~ msgid "Posts tagged &ldquo;"
+#~ msgstr "Posts tagged &ldquo;"
+
+#~ msgid "Author:"
+#~ msgstr "Author:"
+
+#~ msgid "Change Password"
+#~ msgstr "Change Password"
+
+#~ msgid ""
+#~ "Please, inform the new password on the first field, and confirm it on the "
+#~ "second field."
+#~ msgstr ""
+#~ "Please, inform the new password on the first field, and confirm it on the "
+#~ "second field."
+
+#~ msgid "Default sorting"
+#~ msgstr "Default sorting"
+
+#~ msgid "Sort by popularity"
+#~ msgstr "Sort by popularity"
+
+#~ msgid "Sort by average rating"
+#~ msgstr "Sort by average rating"
+
+#~ msgid "Sort by newness"
+#~ msgstr "Sort by newness"
+
+#~ msgid "Sort by price: low to high"
+#~ msgstr "Sort by price: low to high"
+
+#~ msgid "Sort by price: high to low"
+#~ msgstr "Sort by price: high to low"
+
+#~ msgid "Grid posts on Index page"
+#~ msgstr "Grid posts on Index page"
+
+#~ msgid "Read More"
+#~ msgstr "Read More"
+
+#~ msgid "Contact Catgs."
+#~ msgstr "Contact Catgs."
+
+#~ msgid "Review Catgs."
+#~ msgstr "Review Catgs."
+
+#~ msgid "Posts"
+#~ msgstr "Posts"
+
+#~ msgid ""
+#~ "On this section you can customize which features should appear on your "
+#~ "posts"
+#~ msgstr ""
+#~ "On this section you can customize which features should appear on your "
+#~ "posts"
+
+#~ msgid "External Link"
+#~ msgstr "External Link"
+
+#~ msgid "Product Toggle"
+#~ msgstr "Product Toggle"
+
+#~ msgid "Toggle"
+#~ msgstr "Toggle"
+
+#~ msgid "Average Rated %d out of 5"
+#~ msgstr "Average Rated %d out of 5"
+
+#~ msgid "<span class=\"meta-nav\">&larr;</span> Previous"
+#~ msgstr "<span class=\"meta-nav\">&larr;</span> Previous"
+
+#~ msgid "Next <span class=\"meta-nav\">&rarr;</span>"
+#~ msgstr "Next <span class=\"meta-nav\">&rarr;</span>"
+
+#~ msgid "ADD COMMENT"
+#~ msgstr "ADD COMMENT"
+
+#~ msgid ""
+#~ "There are no reviews yet, would you like to <a href=\"#review_form\" "
+#~ "class=\"inline show_review_form\">submit yours</a>?"
+#~ msgstr ""
+#~ "There are no reviews yet, would you like to <a href=\"#review_form\" "
+#~ "class=\"inline show_review_form\">submit yours</a>?"
+
+#~ msgid "View Cart &rarr;"
+#~ msgstr "View Cart &rarr;"
+
+#~ msgid "Postcode"
+#~ msgstr "Postcode"
+
+#~ msgid "Free"
+#~ msgstr "Free"
+
+#~ msgid ""
+#~ "Sorry, it seems that there are no available shipping methods for your "
+#~ "state. Please contact us if you require assistance or wish to make "
+#~ "alternate arrangements."
+#~ msgstr ""
+#~ "Sorry, it seems that there are no available shipping methods for your "
+#~ "state. Please contact us if you require assistance or wish to make "
+#~ "alternate arrangements."
+
+#~ msgid "Cart Discount"
+#~ msgstr "Cart Discount"
+
+#~ msgid "Tax"
+#~ msgstr "Tax"
+
+#~ msgid "Order Discount"
+#~ msgstr "Order Discount"
+
+#~ msgid ""
+#~ "Sorry, it seems that there are no available shipping methods for your "
+#~ "location (%s)."
+#~ msgstr ""
+#~ "Sorry, it seems that there are no available shipping methods for your "
+#~ "location (%s)."
+
+#~ msgid "Totals"
+#~ msgstr "Totals"
+
+#~ msgid "ASD"
+#~ msgstr "ASD"
+
+#~ msgid "Re-enter password"
+#~ msgstr "Re-enter password"
+
+#~ msgid "Copyright %s %s"
+#~ msgstr "Copyright %s %s"
+
+#~ msgid "Contact e-mail"
+#~ msgstr "Contact e-mail"
+
+#~ msgid "Sender Name"
+#~ msgstr "Sender Name"
+
+#~ msgid "Contact email"
+#~ msgstr "Contact email"
+
+#~ msgid ""
+#~ "Enable this option if you wish to use the default Revolution Slider (1st "
+#~ "one, you have created).<br/>Else, disable this option and use the Alias "
+#~ "field"
+#~ msgstr ""
+#~ "Enable this option if you wish to use the default Revolution Slider (1st "
+#~ "one, you have created).<br/>Else, disable this option and use the Alias "
+#~ "field"
+
+#~ msgid "Revolution Slider Default"
+#~ msgstr "Revolution Slider Default"
+
+#~ msgid ""
+#~ "First, create a new slider on the Revolution Slider Menu (or use one that "
+#~ "has been already created), and then, copy/paste it's alias here"
+#~ msgstr ""
+#~ "First, create a new slider on the Revolution Slider Menu (or use one that "
+#~ "has been already created), and then, copy/paste it's alias here"
+
+#~ msgid "Revolution Slider Alias"
+#~ msgstr "Revolution Slider Alias"
+
+#~ msgid ""
+#~ "Enable this option if you wish to use the default Layer Slider (1st one, "
+#~ "you have created).<br/>Else, disable this option and use the ID field"
+#~ msgstr ""
+#~ "Enable this option if you wish to use the default Layer Slider (1st one, "
+#~ "you have created).<br/>Else, disable this option and use the ID field"
+
+#~ msgid "Layer Slider Default"
+#~ msgstr "Layer Slider Default"
+
+#~ msgid ""
+#~ "First, create a new slider on the Layer Slider Menu (or use one that has "
+#~ "been already created), and then, copy/paste it's ID here"
+#~ msgstr ""
+#~ "First, create a new slider on the Layer Slider Menu (or use one that has "
+#~ "been already created), and then, copy/paste it's ID here"
+
+#~ msgid "Layer Slider ID"
+#~ msgstr "Layer Slider ID"
+
+#~ msgid "(Enabling this option will disable the %s)"
+#~ msgstr "(Enabling this option will disable the %s)"
+
+#~ msgid ""
+#~ "Section to place widgets in your mid sidebar, like your blog's menu or a "
+#~ "list of links."
+#~ msgstr ""
+#~ "Section to place widgets in your mid sidebar, like your blog's menu or a "
+#~ "list of links."
+
+#~ msgid ""
+#~ "Section to place widgets in your bottom sidebar, like a list of your "
+#~ "blog's popular posts"
+#~ msgstr ""
+#~ "Section to place widgets in your bottom sidebar, like a list of your "
+#~ "blog's popular posts"
+
+#~ msgid "Banner Area"
+#~ msgstr "Banner Area"
+
+#~ msgid "Others"
+#~ msgstr "Others"
+
+#~ msgid "SEO"
+#~ msgstr "SEO"
+
+#~ msgid ""
+#~ "Input your blog's %s code to improve your page rank on search engines"
+#~ msgstr ""
+#~ "Input your blog's %s code to improve your page rank on search engines"
+
+#~ msgid "Contact Page Map"
+#~ msgstr "Contact Page Map"
