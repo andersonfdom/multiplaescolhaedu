@@ -51,7 +51,7 @@ namespace MultiplaEscolhaEdu.Dao
             {
                 using (MultiplaEscolhaEduContext ctx = new MultiplaEscolhaEduContext())
                 {
-                    var dadosParceiro = ctx.Parceiros.Find(id);
+                    var dadosParceiro = ctx.Parceiros.FirstOrDefault( c=> c.Id ==id);
 
                     if (dadosParceiro != null)
                     {
@@ -93,7 +93,7 @@ namespace MultiplaEscolhaEdu.Dao
             {
                 using (MultiplaEscolhaEduContext ctx = new MultiplaEscolhaEduContext())
                 {
-                    var a = ctx.Parceiros.Find(model.Id);
+                    var a = ctx.Parceiros.FirstOrDefault( c=> c.Id ==model.Id);
 
                     if (a == null)
                     {

@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Http
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8" />
@@ -34,11 +35,34 @@
     <script src="~/js/utils.js"></script>
     <script>
         $(function () {
+            if ($('#usuarioId').val() === '0' && $('#parceiroId').val() === '0') {
+                window.location.href = "/Login/Index"
+            }
             $(".moeda").maskMoney({
                 prefix: '',
                 allowNegative: true,
                 thousands: '.',
                 decimal: ','
+            });
+
+            $('#linkSair').click(function () {
+                var data = new FormData();
+
+                data.append("idUsuario", $('#usuarioId').val());
+
+                $.ajax({
+                    url: "/Login/RealizarLogoff",
+                    data: data,
+                    processData: false,
+                    contentType: false,
+                    type: "POST",
+                    success: function (jsonResult) {
+                        window.location.href = "/Login/Index"
+                    },
+                    error: function (request, status, error) {
+                        alert(request.responseText);
+                    }
+                });
             });
         });
     </script>
@@ -96,8 +120,12 @@
         </div>
         <div class="main-content">
             <form id="formDados" class="form-control" enctype="multipart/form-data">
-                <input type="hidden" id="UsuarioId" value="0" />
-                <input type="hidden" id="ParceiroId" value="0" />
+                @{
+                    var usuarioId = Context.Session.GetString("usuarioId") == null ? "0" : Context.Session.GetString("usuarioId").ToString();
+                    var parceiroId = Context.Session.GetString("parceiroId") == null ? "0" : Context.Session.GetString("parceiroId").ToString();
+                }
+                <input type="hidden" id="usuarioId" value="@usuarioId" />
+                <input type="hidden" id="empresaId" value="@parceiroId" />
                 @RenderBody()
             </form>
         </div>

@@ -34,7 +34,7 @@ namespace MultiplaEscolhaEdu.Admin.Controllers
             else
             {
                 HttpContext.Session.SetString("usuarioId", model.Id.ToString());
-                HttpContext.Session.SetString("empresaId", model.Id.ToString());
+                HttpContext.Session.SetString("empresaId", model.IdEmpresa.ToString());
 
                 return Ok(new
                 {

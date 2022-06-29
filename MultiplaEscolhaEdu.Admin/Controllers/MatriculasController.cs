@@ -13,7 +13,8 @@ namespace MultiplaEscolhaEdu.Admin.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            MatriculaDao dao = new MatriculaDao();
+            return View(dao.ListarMatriculas());
         }
 
         public IActionResult Cadastro(int? id)

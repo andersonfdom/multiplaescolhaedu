@@ -44,7 +44,7 @@ namespace MultiplaEscolhaEdu.Dao
             {
                 using (MultiplaEscolhaEduContext ctx = new MultiplaEscolhaEduContext())
                 {
-                    var dados = ctx.Matriculas.Find(id);
+                    var dados = ctx.Matriculas.FirstOrDefault(c => c.Id == id);
 
                     if (dados != null)
                     {
@@ -72,7 +72,7 @@ namespace MultiplaEscolhaEdu.Dao
             {
                 using (MultiplaEscolhaEduContext ctx = new MultiplaEscolhaEduContext())
                 {
-                    var dados = ctx.Matriculas.Find(model.Id);
+                    var dados = ctx.Matriculas.FirstOrDefault(c => c.Id == model.Id);
 
                     if (dados == null)
                     {
@@ -86,10 +86,11 @@ namespace MultiplaEscolhaEdu.Dao
 
                     dados.DataMatricula = model.DataMatricula;
                     dados.IdAluno = model.IdAluno;
-                    dados.IdAlunoNavigation = ctx.Alunos.Find(model.IdAluno);
+                    dados.IdAlunoNavigation = ctx.Alunos.FirstOrDefault(c => c.Id == model.IdAluno);
                     dados.IdCurso = model.IdCurso;
-                    dados.IdCursoNavigation = ctx.Cursos.Find(model.IdCurso);
+                    dados.IdCursoNavigation = ctx.Cursos.FirstOrDefault(c => c.Id == model.IdCurso);
                     dados.IdParceiro = model.IdParceiro;
+                    dados.Status = model.Status;
 
                     if (novoRegistro == true)
                     {

@@ -34,7 +34,7 @@ namespace MultiplaEscolhaEdu.Parceiros.Controllers
             else
             {
                 HttpContext.Session.SetString("usuarioId", model.Id.ToString());
-                HttpContext.Session.SetString("parceiroId", model.Id.ToString());
+                HttpContext.Session.SetString("parceiroId", model.IdParceiro.ToString());
 
                 return Ok(new
                 {

@@ -57,7 +57,7 @@ namespace MultiplaEscolhaEdu.Dao
             {
                 using (MultiplaEscolhaEduContext ctx = new MultiplaEscolhaEduContext())
                 {
-                    var a = ctx.Empresas.Find(model.Id);
+                    var a = ctx.Empresas.FirstOrDefault(c => c.Id == model.Id);
 
                     if (a == null)
                     {
