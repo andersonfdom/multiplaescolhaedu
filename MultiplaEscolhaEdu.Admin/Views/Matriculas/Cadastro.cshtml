@@ -15,7 +15,7 @@
                 dataType: "json",
                 success: function (jsonResult) {
                     $(jsonResult.dados).each(function () {
-                        $('#ddlStatusMatricula').val(this.statusMatricula);
+                        $('#ddlStatusMatricula').val(this.status);
                         $('#txtDataMatricula').val(this.dataMatricula);
                         $('#ddlCurso').val(this.idCurso);
                         $('#ddlAluno').val(this.idAluno);
