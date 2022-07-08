@@ -46,10 +46,7 @@ namespace MultiplaEscolhaEdu.Admin.Controllers
         public IActionResult ExcluirMatriculas(int id)
         {
             MatriculaDao dao = new MatriculaDao();
-            return Ok(new
-            {
-                mensagem = dao.Excluir(id)
-            });
+            return Ok(dao.Excluir(id));
         }
 
         [HttpPost]
@@ -57,10 +54,7 @@ namespace MultiplaEscolhaEdu.Admin.Controllers
         {
             MatriculaDao MatriculaDao = new MatriculaDao();
 
-            return Ok(new
-            {
-                mensagem = MatriculaDao.Gravar(model)
-            });
+            return Ok(MatriculaDao.Gravar(model));
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿@using Microsoft.AspNetCore.Http 
+﻿@using Microsoft.AspNetCore.Http
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -74,7 +74,7 @@
                     contentType: "application/json; charset=UTF-8",
                     success: function (jsonResult) {
                         $(jsonResult).each(function () {
-                            if (this.qtdeCursos === 0 || this.qtdeCursos === '0' ) {
+                            if (this.qtdeCursos === 0 || this.qtdeCursos === '0') {
                                 alert('É necessário estar cadastrado pelo menos 1 Curso.');
                                 return;
                             }
@@ -142,7 +142,7 @@
                         <a href="/Parametros/Index"><i class="ion ion-wrench"></i>Parâmetros</a>
                     </li>
                     <li>
-                        <a id="linkSair" ><i class="ion ion-close-circled"></i>Sair</a>
+                        <a id="linkSair"><i class="ion ion-close-circled"></i>Sair</a>
                     </li>
                 </ul>
             </aside>
@@ -153,11 +153,19 @@
                     var usuarioId = Context.Session.GetString("usuarioId") == null ? "0" : Context.Session.GetString("usuarioId").ToString();
                     var empresaId = Context.Session.GetString("empresaId") == null ? "0" : Context.Session.GetString("empresaId").ToString();
                 }
-                <div id="mensagemSucesso" class="alert alert-success" style="display:none">
+                <div class="modal fade" id="popMensagemSucesso" role="dialog">
+                    <div class="modal-dialog">
+                        <div id="mensagemSucesso" class="alert alert-success">
 
+                        </div>
+                    </div>
                 </div>
-                <div id="mensagemErro" class="alert alert-danger" style="display:none">
+                <div class="modal fade" id="popMensagemErro" role="dialog">
+                    <div class="modal-dialog">
+                        <div id="mensagemErro" class="alert alert-danger">
 
+                        </div>
+                    </div>
                 </div>
                 <input type="hidden" id="usuarioId" value="@usuarioId" />
                 <input type="hidden" id="empresaId" value="@empresaId" />

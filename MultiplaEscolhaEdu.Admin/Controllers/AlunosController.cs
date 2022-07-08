@@ -41,10 +41,7 @@ namespace MultiplaEscolhaEdu.Admin.Controllers
         {
             AlunoDao alunoDao = new AlunoDao();
 
-            return Ok(new
-            {
-                mensagem = alunoDao.Gravar(alunoModel)
-            });
+            return Ok(alunoDao.Gravar(alunoModel));
         }
 
         [HttpPost]
@@ -52,10 +49,7 @@ namespace MultiplaEscolhaEdu.Admin.Controllers
         {
             AlunoDao alunoDao = new AlunoDao();
 
-            return Ok(new
-            {
-                mensagem = alunoDao.Excluir(id)
-            });
+            return Ok(alunoDao.Excluir(id));
         }
     }
 }

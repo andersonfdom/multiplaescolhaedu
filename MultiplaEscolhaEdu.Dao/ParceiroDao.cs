@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace MultiplaEscolhaEdu.Dao
 {
-    public class ParceiroDao : IDao<ParceiroModel>
+    public class ParceiroDao 
     {
         public ParceiroModel CarregarDados(int id)
         {
@@ -79,19 +79,25 @@ namespace MultiplaEscolhaEdu.Dao
                     }
                     else
                     {
-                        return "Dados do Parceiro não encontrado.";
+                        mensagemRetorno.Sucesso = false;
+                        mensagemRetorno.Mensagem = "Dados do Parceiro não encontrado.";
                     }
                 }
             }
             catch (Exception ex)
             {
-                return "Não foi possível realizar a exclusão:" + ex.Message.ToString();
+                mensagemRetorno.Sucesso = false;
+                mensagemRetorno.Mensagem = "Não foi possível realizar a exclusão:" + ex.Message.ToString();
+                return mensagemRetorno;
             }
+
+            return mensagemRetorno;
         }
 
         public MensagemRetorno Gravar(ParceiroModel model)
         {
             bool novoRegistro = false;
+            MensagemRetorno mensagemRetorno = new MensagemRetorno();
 
             try
             {
@@ -131,13 +137,18 @@ namespace MultiplaEscolhaEdu.Dao
                     }
 
                     ctx.SaveChanges();
-                    return "Dados Parceiro gravado com sucesso!";
+                    mensagemRetorno.Sucesso = true;
+                    mensagemRetorno.Mensagem = "Dados Parceiro gravado com sucesso!";
                 }
             }
             catch (Exception ex)
             {
-                return "Não foi possível realizar a gravação de dados:" + ex.Message.ToString();
+                mensagemRetorno.Sucesso = false;
+                mensagemRetorno.Mensagem = "Não foi possível realizar a gravação de dados:" + ex.Message.ToString();
+                return mensagemRetorno;
             }
+
+            return mensagemRetorno;
         }
 
         public List<ParceiroModel> ListarDados()

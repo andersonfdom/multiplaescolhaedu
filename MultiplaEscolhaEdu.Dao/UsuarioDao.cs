@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace MultiplaEscolhaEdu.Dao
 {
-    public class UsuarioDao : Utils, IDao<UsuarioModel>
+    public class UsuarioDao : Utils
     {
         public UsuarioModel CarregarDados(int id)
         {
@@ -46,8 +46,9 @@ namespace MultiplaEscolhaEdu.Dao
             }
         }
 
-        public string Excluir(int id)
+        public MensagemRetorno Excluir(int id)
         {
+            MensagemRetorno mensagemRetorno = new MensagemRetorno();
             try
             {
                 using (MultiplaEscolhaEduContext ctx = new MultiplaEscolhaEduContext())
@@ -58,12 +59,14 @@ namespace MultiplaEscolhaEdu.Dao
                     {
                         if (dadosUsuario.Usuariologado == 1)
                         {
-                            return $"Usuário não pode ser excluído, pois o usuário {dadosUsuario.LoginUsuario} está logado no sistema.";
+                            mensagemRetorno.Sucesso = false;
+                            mensagemRetorno.Mensagem = $"Usuário não pode ser excluído, pois o usuário {dadosUsuario.LoginUsuario} está logado no sistema.";
                         }
 
                         if (dadosUsuario.Id == 1)
                         {
-                            return "Este usuário não pode ser excluído";
+                            mensagemRetorno.Sucesso = false;
+                            mensagemRetorno.Mensagem = "Este usuário não pode ser excluído";
                         }
 
                         var logUsuarios = ctx.Logusuarios.ToList();
@@ -80,25 +83,30 @@ namespace MultiplaEscolhaEdu.Dao
                         ctx.Usuarios.Remove(dadosUsuario);
                         ctx.SaveChanges();
 
-                        return "Usuário excluído com sucesso!";
+                        mensagemRetorno.Sucesso = true;
+                        mensagemRetorno.Mensagem = "Usuário excluído com sucesso!";
                     }
                     else
                     {
-                        return "Dados do Usuário não encontrado.";
+                        mensagemRetorno.Sucesso = false;
+                        mensagemRetorno.Mensagem = "Dados do Usuário não encontrado.";
                     }
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
-                throw;
+                mensagemRetorno.Sucesso = false;
+                mensagemRetorno.Mensagem = "Não foi possível realizar a exclusão:" + ex.Message.ToString();
+                return mensagemRetorno;
             }
+
+            return mensagemRetorno;
         }
 
-        public string Gravar(UsuarioModel model)
+        public MensagemRetorno Gravar(UsuarioModel model)
         {
             bool novoRegistro = false;
-
+            MensagemRetorno mensagemRetorno = new MensagemRetorno();
             try
             {
                 using (MultiplaEscolhaEduContext ctx = new MultiplaEscolhaEduContext())
@@ -125,7 +133,8 @@ namespace MultiplaEscolhaEdu.Dao
 
                     if (existeUsuarioAdmin == true)
                     {
-                        return $"O usuário {model.LoginUsuario} já está cadastrado.";
+                        mensagemRetorno.Sucesso = false;
+                        mensagemRetorno.Mensagem = $"O usuário {model.LoginUsuario} já está cadastrado.";
                     }
 
                     var existeUsuarioParceiro = ctx.Usuarios.FirstOrDefault(c => c.LoginUsuario == model.LoginUsuario &&
@@ -134,7 +143,8 @@ namespace MultiplaEscolhaEdu.Dao
 
                     if (existeUsuarioParceiro == true)
                     {
-                        return $"O usuário {model.LoginUsuario} já está cadastrado.";
+                        mensagemRetorno.Sucesso = false;
+                        mensagemRetorno.Mensagem = $"O usuário {model.LoginUsuario} já está cadastrado.";
                     }
 
                     dadosUsuario.Ativo = 1;
@@ -156,13 +166,18 @@ namespace MultiplaEscolhaEdu.Dao
                     }
 
                     ctx.SaveChanges();
-                    return "Usuário gravado com sucesso!";
+                    mensagemRetorno.Sucesso = true;
+                    mensagemRetorno.Mensagem = "Usuário gravado com sucesso!";
                 }
             }
             catch (Exception ex)
             {
-                return "Não foi possível realizar a gravação de dados:" + ex.Message.ToString();
+                mensagemRetorno.Sucesso = false;
+                mensagemRetorno.Mensagem = "Não foi possível realizar a gravação de dados:" + ex.Message.ToString();
+                return mensagemRetorno;
             }
+
+            return mensagemRetorno;
         }
 
         public List<UsuarioModel> ListarDados()

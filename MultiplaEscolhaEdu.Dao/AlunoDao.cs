@@ -153,7 +153,7 @@ namespace MultiplaEscolhaEdu.Dao
                         }
 
                         ctx.SaveChanges();
-                        mensagem.Sucesso = false;
+                        mensagem.Sucesso = true;
                         mensagem.Mensagem = "Dados Aluno gravado com sucesso!";
                     }
                 }

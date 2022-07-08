@@ -66,16 +66,19 @@
                     contentType: false,
                     type: "POST",
                     success: function (jsonResult) {
-                        //if (jsonResult.includes("sucesso") === true) {
-                        //    $('#mensagemSucesso').show();
-                        //    $('#mensagemSucesso').html(jsonResult);
-                        //    window.setTimeout(function () {
-                        //        window.location.href = "/Cursos/Index"
-                        //    },3000);
-                        //} else {
-                        //    $('#mensagemErro').show();
-                        //    $('#mensagemErro').html(jsonResult);
-                        //}
+                        if (jsonResult.sucesso === true) {
+                            $('#popMensagemSucesso').modal('show');
+                            $('#mensagemSucesso').html(jsonResult.mensagem);
+                            window.setTimeout(function () {
+                                window.location.href = "/Cursos/Index"
+                            }, 3000);
+                        } else {
+                            $('#popMensagemErro').modal('show');
+                            $('#mensagemErro').html(jsonResult.mensagem);
+                            window.setTimeout(function () {
+                                $('#popMensagemErro').modal('hide');
+                            }, 5000);
+                        }
                     }
                 });
             } else {

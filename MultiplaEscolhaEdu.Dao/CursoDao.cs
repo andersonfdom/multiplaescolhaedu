@@ -30,7 +30,7 @@ namespace MultiplaEscolhaEdu.Dao
                             Id = dados.Id,
                             IdCategoriaCurso = dados.IdCategoriaCurso,
                             Slug = dados.Slug,
-                            Valor = dados.Valor
+                            Valor = String.Format("{0:0,0.00}", dados.Valor) 
                         };
                     }
                 }
@@ -113,7 +113,7 @@ namespace MultiplaEscolhaEdu.Dao
                     dados.IdCategoriaCurso = model.IdCategoriaCurso;
                     dados.Slug = model.Slug;
                     dados.UltimaAtualizacao = DateTime.Now;
-                    dados.Valor = model.Valor;
+                    dados.Valor = Convert.ToDecimal(model.Valor);
 
                     if (novoRegistro == true)
                     {
@@ -167,7 +167,7 @@ namespace MultiplaEscolhaEdu.Dao
                                 CategoriaCurso = item.CategoriaCurso,
                                 Descricao = item.Descricao,
                                 Id = item.Id,
-                                Valor = item.Valor
+                                Valor = String.Format("{0:0,0.00}", item.Valor)  
                             });
                         }
                     }

@@ -48,10 +48,7 @@ namespace MultiplaEscolhaEdu.Admin.Controllers
         public IActionResult GravarCurso(CursoModel model)
         {
             CursoDao dao = new CursoDao();
-            return Ok(new
-            {
-                mensagem = dao.Gravar(model)
-            });
+            return Ok(dao.Gravar(model));
         }
 
         [HttpPost]

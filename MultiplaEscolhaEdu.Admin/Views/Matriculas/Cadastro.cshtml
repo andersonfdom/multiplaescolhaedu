@@ -41,11 +41,20 @@
                 processData: false,
                 contentType: false,
                 type: "POST",
-                success: function (data) {
-                    /*alert(data.mensagem);*/
-                },
-                error: function (request, status, error) {
-                    /*alert(request.responseText);*/
+                success: function (jsonResult) {
+                    if (jsonResult.sucesso === true) {
+                        $('#popMensagemSucesso').modal('show');
+                        $('#mensagemSucesso').html(jsonResult.mensagem);
+                        window.setTimeout(function () {
+                            window.location.href = "/Matriculas/Index"
+                        }, 3000);
+                    } else {
+                        $('#popMensagemErro').modal('show');
+                        $('#mensagemErro').html(jsonResult.mensagem);
+                        window.setTimeout(function () {
+                            $('#popMensagemErro').modal('hide');
+                        }, 5000);
+                    }
                 }
             });
         });

@@ -113,7 +113,7 @@ namespace MultiplaEscolhaEdu.Dao
 
                     ctx.SaveChanges();
                     mensagemRetorno.Sucesso = true;
-                    mensagemRetorno.Mensagem = "Matrícula excluída com sucesso!";
+                    mensagemRetorno.Mensagem = "Matrícula gravada com sucesso!";
                 }
             }
             catch (Exception ex)
