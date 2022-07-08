@@ -49,10 +49,10 @@ namespace MultiplaEscolhaEdu.Dao
             return Empresa;
         }
 
-        public string GravarDados(EmpresaModel model)
+        public MensagemRetorno GravarDados(EmpresaModel model)
         {
             bool novoRegistro = false;
-
+            MensagemRetorno mensagemRetorno = new MensagemRetorno();
             try
             {
                 using (MultiplaEscolhaEduContext ctx = new MultiplaEscolhaEduContext())
@@ -97,13 +97,18 @@ namespace MultiplaEscolhaEdu.Dao
                     }
 
                     ctx.SaveChanges();
-                    return "Ok";
+                    mensagemRetorno.Sucesso = true;
+                    mensagemRetorno.Mensagem = "Dados Empresa gravado com sucesso!";
                 }
             }
             catch (Exception ex)
             {
-                return "Não foi possível realizar a gravação de dados:" + ex.Message.ToString();
+                mensagemRetorno.Sucesso = false;
+                mensagemRetorno.Mensagem = "Não foi possível realizar a gravação de dados:" + ex.Message.ToString();
+                return mensagemRetorno;
             }
+
+            return mensagemRetorno;
         }
     }
 }

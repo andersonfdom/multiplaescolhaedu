@@ -60,14 +60,7 @@
                     contentType: false,
                     type: "POST",
                     success: function (data) {
-                        if (data.mensagem === "Ok") {
-                            window.location.href = "/Alunos/Index";
-                        } else {
-                            alert(data.mensagem);
-                        }
-                    },
-                    error: function (request, status, error) {
-                        alert(request.responseText);
+                        /*alert(data.mensagem);*/
                     }
                 });
             }

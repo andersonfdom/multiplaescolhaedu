@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace MultiplaEscolhaEdu.Dao
 {
-    public class AlunoDao : IDao<AlunoModel>
+    public class AlunoDao 
     {
         public AlunoModel CarregarDados(int id)
         {
@@ -50,8 +50,10 @@ namespace MultiplaEscolhaEdu.Dao
             return aluno;
         }
 
-        public string Excluir(int id)
+        public MensagemRetorno Excluir(int id)
         {
+            MensagemRetorno mensagem = new MensagemRetorno();
+
             try
             {
                 using (MultiplaEscolhaEduContext ctx = new MultiplaEscolhaEduContext())
@@ -66,28 +68,36 @@ namespace MultiplaEscolhaEdu.Dao
                         {
                             ctx.Alunos.Remove(dadosAluno);
                             ctx.SaveChanges();
-                            return "Ok";
+                            mensagem.Sucesso = true;
+                            mensagem.Mensagem = "Aluno excluído com sucesso!";
                         }
                         else
                         {
-                            return "Não foi possível realizar a exclusão: Existe(m) matrícula(s) realizadas neste aluno! Impossível excluir.";
+                            mensagem.Sucesso = false;
+                            mensagem.Mensagem ="Não foi possível realizar a exclusão: Existe(m) matrícula(s) realizadas neste aluno! Impossível excluir.";
                         }
                     }
                     else
                     {
-                        return "Dados do aluno não encontrado.";
+                        mensagem.Sucesso = false;
+                        mensagem.Mensagem = "Dados do aluno não encontrado.";
                     }
                 }
             }
             catch (Exception ex)
             {
-                return "Não foi possível realizar a exclusão:" + ex.Message.ToString();
+                mensagem.Sucesso = false;
+                mensagem.Mensagem = "Não foi possível realizar a exclusão:" + ex.Message.ToString();
+                return mensagem;
             }
+
+            return mensagem;
         }
 
-        public string Gravar(AlunoModel model)
+        public MensagemRetorno Gravar(AlunoModel model)
         {
             bool novoRegistro = false;
+            MensagemRetorno mensagem = new MensagemRetorno();
 
             try
             {
@@ -110,7 +120,8 @@ namespace MultiplaEscolhaEdu.Dao
 
                     if (existeCpf == true && novoRegistro == true)
                     {
-                        return "Cpf já cadastrado";
+                        mensagem.Sucesso = false;
+                        mensagem.Mensagem = "Cpf já cadastrado";
                     }
                     else
                     {
@@ -142,14 +153,19 @@ namespace MultiplaEscolhaEdu.Dao
                         }
 
                         ctx.SaveChanges();
-                        return "Ok";
+                        mensagem.Sucesso = false;
+                        mensagem.Mensagem = "Dados Aluno gravado com sucesso!";
                     }
                 }
             }
             catch (Exception ex)
             {
-                return "Não foi possível realizar a gravação de dados:" + ex.Message.ToString();
+                mensagem.Sucesso = false;
+                mensagem.Mensagem = "Não foi possível realizar a gravação de dados:" + ex.Message.ToString();
+                return mensagem;
             }
+
+            return mensagem;
         }
 
         public List<AlunoModel> ListarDados()

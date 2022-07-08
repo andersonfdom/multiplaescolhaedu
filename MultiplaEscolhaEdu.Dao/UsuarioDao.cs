@@ -80,7 +80,7 @@ namespace MultiplaEscolhaEdu.Dao
                         ctx.Usuarios.Remove(dadosUsuario);
                         ctx.SaveChanges();
 
-                        return "Ok";
+                        return "Usuário excluído com sucesso!";
                     }
                     else
                     {
@@ -156,7 +156,7 @@ namespace MultiplaEscolhaEdu.Dao
                     }
 
                     ctx.SaveChanges();
-                    return "Ok";
+                    return "Usuário gravado com sucesso!";
                 }
             }
             catch (Exception ex)

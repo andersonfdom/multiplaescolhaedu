@@ -71,5 +71,12 @@ namespace MultiplaEscolhaEdu.Dao
                 throw new Exception(ae.Message, ae.InnerException);
             }
         }
+
+    }
+
+    public class MensagemRetorno
+    {
+        public bool Sucesso { get; set; }
+        public string Mensagem { get; set; }
     }
 }

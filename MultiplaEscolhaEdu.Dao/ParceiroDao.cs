@@ -45,8 +45,9 @@ namespace MultiplaEscolhaEdu.Dao
             return Parceiro;
         }
 
-        public string Excluir(int id)
+        public MensagemRetorno Excluir(int id)
         {
+            MensagemRetorno mensagemRetorno = new MensagemRetorno();
             try
             {
                 using (MultiplaEscolhaEduContext ctx = new MultiplaEscolhaEduContext())
@@ -59,19 +60,22 @@ namespace MultiplaEscolhaEdu.Dao
 
                         if (matriculaParceiro != 0)
                         {
-                            return "Não foi possível realizar a exclusão: Existe(m) matrícula(s) realizadas por este Parceiro! Impossível excluir.";
+                            mensagemRetorno.Sucesso = false;
+                            mensagemRetorno.Mensagem = "Não foi possível realizar a exclusão: Existe(m) matrícula(s) realizadas por este Parceiro! Impossível excluir.";
                         }
 
                         bool parceiroPrincipal = ctx.Parceiros.FirstOrDefault(c => c.Id == ctx.Empresas.FirstOrDefault().Id) != null ? true : false;
                         
                         if(parceiroPrincipal == true)
                         {
-                            return "Este parceiro não pode ser excluído.";
+                            mensagemRetorno.Sucesso = false;
+                            mensagemRetorno.Mensagem = "Este parceiro não pode ser excluído.";
                         }
 
                         ctx.Parceiros.Remove(dadosParceiro);
                         ctx.SaveChanges();
-                        return "Ok";
+                        mensagemRetorno.Sucesso = true;
+                        mensagemRetorno.Mensagem = "Parceiro excluído com sucesso!";
                     }
                     else
                     {
@@ -85,7 +89,7 @@ namespace MultiplaEscolhaEdu.Dao
             }
         }
 
-        public string Gravar(ParceiroModel model)
+        public MensagemRetorno Gravar(ParceiroModel model)
         {
             bool novoRegistro = false;
 
@@ -127,7 +131,7 @@ namespace MultiplaEscolhaEdu.Dao
                     }
 
                     ctx.SaveChanges();
-                    return "Ok";
+                    return "Dados Parceiro gravado com sucesso!";
                 }
             }
             catch (Exception ex)

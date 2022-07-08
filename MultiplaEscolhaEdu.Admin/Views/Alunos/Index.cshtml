@@ -68,11 +68,7 @@
                 dataType: "JSON",
                 contentType: "application/json; charset=UTF-8",
                 success: function (jsonResult) {
-                    if (jsonResult.mensagem === 'Ok') {
-                        window.location.reload(true);
-                    } else {
-                        alert(jsonResult.mensagem);
-                    }
+                    /*alert(jsonResult.mensagem);*/
                 }
             });
         } else {

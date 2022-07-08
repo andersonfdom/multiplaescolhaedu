@@ -43,8 +43,10 @@ namespace MultiplaEscolhaEdu.Dao
             return model;
         }
 
-        public string Excluir(int id)
+        public MensagemRetorno Excluir(int id)
         {
+            MensagemRetorno mensagemRetorno = new MensagemRetorno();
+
             try
             {
                 using (MultiplaEscolhaEduContext ctx = new MultiplaEscolhaEduContext())
@@ -59,28 +61,36 @@ namespace MultiplaEscolhaEdu.Dao
                         {
                             ctx.Cursos.Remove(dados);
                             ctx.SaveChanges();
-                            return "Ok";
+                            mensagemRetorno.Sucesso = true;
+                            mensagemRetorno.Mensagem = "Curso excluído com sucesso!";
                         }
                         else
                         {
-                            return "Não foi possível realizar a exclusão: Existe(m) matrícula(s) realizadas neste curso! Impossível excluir.";
+                            mensagemRetorno.Sucesso = false;
+                            mensagemRetorno.Mensagem = "Não foi possível realizar a exclusão: Existe(m) matrícula(s) realizadas neste curso! Impossível excluir.";
                         }
                     }
                     else
                     {
-                        return "Dados do curso não encontrado.";
+                        mensagemRetorno.Sucesso = false;
+                        mensagemRetorno.Mensagem = "Dados do curso não encontrado.";
                     }
                 }
             }
             catch (Exception ex)
             {
-                return "Não foi possível realizar a exclusão:" + ex.Message.ToString();
+                mensagemRetorno.Sucesso = false;
+                mensagemRetorno.Mensagem = "Não foi possível realizar a exclusão:" + ex.Message.ToString();
+                return mensagemRetorno;
             }
+
+            return mensagemRetorno;
         }
 
-        public string Gravar(CursoModel model)
+        public MensagemRetorno Gravar(CursoModel model)
         {
             bool novoRegistro = false;
+            MensagemRetorno mensagemRetorno = new MensagemRetorno();
 
             try
             {
@@ -116,13 +126,17 @@ namespace MultiplaEscolhaEdu.Dao
                     }
 
                     ctx.SaveChanges();
-                    return "Ok";
+                    mensagemRetorno.Sucesso = true;
+                    mensagemRetorno.Mensagem ="Dados Curso gravado com sucesso!";
                 }
             }
             catch (Exception ex)
             {
-                return "Não foi possível realizar a gravação de dados:" + ex.Message.ToString();
+                mensagemRetorno.Sucesso = false;
+                mensagemRetorno.Mensagem = "Não foi possível realizar a gravação de dados:" + ex.Message.ToString();
             }
+
+            return mensagemRetorno;
         }
 
         public List<CursoConsulta> ListarDados()

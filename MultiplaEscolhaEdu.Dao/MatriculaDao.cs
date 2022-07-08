@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace MultiplaEscolhaEdu.Dao
 {
-    public class MatriculaDao : IDao<MatriculaModel>
+    public class MatriculaDao
     {
         public MatriculaModel CarregarDados(int id)
         {
@@ -38,8 +38,10 @@ namespace MultiplaEscolhaEdu.Dao
             }
         }
 
-        public string Excluir(int id)
+        public MensagemRetorno Excluir(int id)
         {
+            MensagemRetorno mensagemRetorno = new MensagemRetorno();
+
             try
             {
                 using (MultiplaEscolhaEduContext ctx = new MultiplaEscolhaEduContext())
@@ -50,23 +52,30 @@ namespace MultiplaEscolhaEdu.Dao
                     {
                         ctx.Matriculas.Remove(dados);
                         ctx.SaveChanges();
-                        return "Ok";
+                        mensagemRetorno.Sucesso = true;
+                        mensagemRetorno.Mensagem = "Dados Matrícula excluído com sucesso!";
                     }
                     else
                     {
-                        return "Dados da Matrícula não encontrado.";
+                        mensagemRetorno.Sucesso = false;
+                        mensagemRetorno.Mensagem = "Dados da Matrícula não encontrado.";
                     }
                 }
             }
             catch (Exception ex)
             {
-                return "Não foi possível realizar a exclusão:" + ex.Message.ToString();
+                mensagemRetorno.Sucesso = false;
+                mensagemRetorno.Mensagem = "Não foi possível realizar a exclusão:" + ex.Message.ToString();
+                return mensagemRetorno;
             }
+
+            return mensagemRetorno;
         }
 
-        public string Gravar(MatriculaModel model)
+        public MensagemRetorno Gravar(MatriculaModel model)
         {
             bool novoRegistro = false;
+            MensagemRetorno mensagemRetorno = new MensagemRetorno();
 
             try
             {
@@ -103,13 +112,18 @@ namespace MultiplaEscolhaEdu.Dao
                     }
 
                     ctx.SaveChanges();
-                    return "Ok";
+                    mensagemRetorno.Sucesso = true;
+                    mensagemRetorno.Mensagem = "Matrícula excluída com sucesso!";
                 }
             }
             catch (Exception ex)
             {
-                return "Não foi possível realizar a gravação de dados:" + ex.Message.ToString();
+                mensagemRetorno.Sucesso = false;
+                mensagemRetorno.Mensagem = "Não foi possível realizar a gravação de dados:" + ex.Message.ToString();
+                return mensagemRetorno;
             }
+
+            return mensagemRetorno;
         }
 
         public List<MatriculaModel> ListarDados()

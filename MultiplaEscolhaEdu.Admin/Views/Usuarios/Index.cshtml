@@ -67,11 +67,7 @@
                 contentType: false,
                 type: "POST",
                 success: function (jsonResult) {
-                    if (jsonResult.mensagem === 'Ok') {
-                        window.location.reload(true);
-                    } else {
-                        alert(jsonResult.mensagem);
-                    }
+                    /*alert(jsonResult.mensagem);*/
                 }
             });
         } else {

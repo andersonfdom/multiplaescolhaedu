@@ -58,20 +58,24 @@
             window.location.href = "/Cursos/Cadastro?id=" + Id;
         }
 
-        function ExcluirDadosCurso(Id) {
+    function ExcluirDadosCurso(Id) {
             if (confirm("Deseja excluir este registro?") == true) {
                 $.ajax({
+                    url: "/Cursos/ExcluirCursos?id=" + Id,
+                    processData: false,
+                    contentType: false,
                     type: "POST",
-                    url: "/Cursos/ExcluirCursos?id="+Id,
-                    async: false,
-                    dataType: "JSON",
-                    contentType: "application/json; charset=UTF-8",
                     success: function (jsonResult) {
-                        if (jsonResult.mensagem === 'Ok') {
-                            window.location.reload(true);
-                        } else {
-                            alert(jsonResult.d);
-                        }
+                        //if (jsonResult.includes("sucesso") === true) {
+                        //    $('#mensagemSucesso').show();
+                        //    $('#mensagemSucesso').html(jsonResult);
+                        //    window.setTimeout(function () {
+                        //        window.location.href = "/Cursos/Index"
+                        //    },3000);
+                        //} else {
+                        //    $('#mensagemErro').show();
+                        //    $('#mensagemErro').html(jsonResult);
+                        //}
                     }
                 });
             } else {

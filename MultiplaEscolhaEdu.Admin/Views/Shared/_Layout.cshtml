@@ -149,10 +149,16 @@
         </div>
         <div class="main-content">
             <form id="formDados" class="form-control" enctype="multipart/form-data">
-                @{ 
+                @{
                     var usuarioId = Context.Session.GetString("usuarioId") == null ? "0" : Context.Session.GetString("usuarioId").ToString();
                     var empresaId = Context.Session.GetString("empresaId") == null ? "0" : Context.Session.GetString("empresaId").ToString();
                 }
+                <div id="mensagemSucesso" class="alert alert-success" style="display:none">
+
+                </div>
+                <div id="mensagemErro" class="alert alert-danger" style="display:none">
+
+                </div>
                 <input type="hidden" id="usuarioId" value="@usuarioId" />
                 <input type="hidden" id="empresaId" value="@empresaId" />
                 @RenderBody()

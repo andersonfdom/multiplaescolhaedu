@@ -58,10 +58,7 @@ namespace MultiplaEscolhaEdu.Admin.Controllers
         public IActionResult ExcluirCursos(int id)
         {
             CursoDao dao = new CursoDao();
-            return Ok(new
-            {
-                mensagem = dao.Excluir(id)
-            }); 
+            return Ok(dao.Excluir(id)); 
         }
     }
 }

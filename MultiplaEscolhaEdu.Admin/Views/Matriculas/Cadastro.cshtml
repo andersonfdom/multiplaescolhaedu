@@ -42,14 +42,10 @@
                 contentType: false,
                 type: "POST",
                 success: function (data) {
-                    if (data.mensagem === "Ok") {
-                        window.location.href = "/Matriculas/Index";
-                    } else {
-                        alert(data.mensagem);
-                    }
+                    /*alert(data.mensagem);*/
                 },
                 error: function (request, status, error) {
-                    alert(request.responseText);
+                    /*alert(request.responseText);*/
                 }
             });
         });

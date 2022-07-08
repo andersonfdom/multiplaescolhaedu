@@ -89,15 +89,22 @@
                 processData: false,
                 contentType: false,
                 type: "POST",
-                success: function (data) {
-                    if (data.mensagem === "Ok") {
-                        window.location.href = "/Cursos/Index";
+                success: function (jsonResult) {
+                    console.log(jsonResult);
+                    /*if (jsonResult.includes("sucesso") === true) {
+                        $('#mensagemSucesso').show();
+                        $('#mensagemSucesso').html(jsonResult);
+                        window.setTimeout(function () {
+                            window.location.href = "/Cursos/Index"
+                        }, 3000);
                     } else {
-                        alert(data.mensagem);
+                        $('#mensagemErro').show();
+                        $('#mensagemErro').html(jsonResult);
                     }
+                    */
                 },
                 error: function (request, status, error) {
-                    alert(request.responseText);
+                    /*alert(request.responseText);*/
                 }
             });
         });
