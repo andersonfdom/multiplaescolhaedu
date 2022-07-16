@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
+using System.Net.Mail;
 using System.Security.Cryptography;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace MultiplaEscolhaEdu.Dao
 {
@@ -69,6 +67,35 @@ namespace MultiplaEscolhaEdu.Dao
             catch (Exception ae)
             {
                 throw new Exception(ae.Message, ae.InnerException);
+            }
+        }
+
+        protected string EnvioEmail(string to, string subject, string body, string tituloErro)
+        {
+            try
+            {
+                MailMessage mail = new MailMessage();
+                SmtpClient SmtpServer = new SmtpClient("smtp.titan.email",587);
+
+
+                mail.From = new MailAddress("crm@multiplaescolhaedu.com.br");
+                mail.To.Add(new MailAddress(to));
+                mail.Subject = subject;
+                mail.Body = body;
+                mail.IsBodyHtml = true;
+
+                SmtpServer.Port = 587;
+                SmtpServer.EnableSsl = false;
+                SmtpServer.UseDefaultCredentials = false;
+                SmtpServer.Credentials = new System.Net.NetworkCredential("crm@multiplaescolhaedu.com.br", "Xp8v0oQnst");
+
+                SmtpServer.Send(mail);
+
+                return "E-mail enviado com sucesso";
+            }
+            catch (Exception ex)
+            {
+                return $"Erro ao enviar mensagem {tituloErro} : {ex.Message.ToString()}";
             }
         }
 

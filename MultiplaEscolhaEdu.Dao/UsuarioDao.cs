@@ -13,6 +13,8 @@ namespace MultiplaEscolhaEdu.Dao
 {
     public class UsuarioDao : Utils
     {
+        private const string HeaderEmail = "https://admin.multiplaescolhaedu.andersondomingos.eti.br/img/logo.png";
+
         public UsuarioModel CarregarDados(int id)
         {
             try
@@ -53,7 +55,7 @@ namespace MultiplaEscolhaEdu.Dao
             {
                 using (MultiplaEscolhaEduContext ctx = new MultiplaEscolhaEduContext())
                 {
-                    var dadosUsuario = ctx.Usuarios.FirstOrDefault( c=> c.Id ==id);
+                    var dadosUsuario = ctx.Usuarios.FirstOrDefault(c => c.Id == id);
 
                     if (dadosUsuario != null)
                     {
@@ -63,28 +65,31 @@ namespace MultiplaEscolhaEdu.Dao
                             mensagemRetorno.Mensagem = $"Usuário não pode ser excluído, pois o usuário {dadosUsuario.LoginUsuario} está logado no sistema.";
                         }
 
-                        if (dadosUsuario.Id == 1)
+                        else if (dadosUsuario.Id == 1)
                         {
                             mensagemRetorno.Sucesso = false;
                             mensagemRetorno.Mensagem = "Este usuário não pode ser excluído";
                         }
-
-                        var logUsuarios = ctx.Logusuarios.ToList();
-
-                        if (logUsuarios != null)
+                        else
                         {
-                            foreach (var item in logUsuarios)
+                            var logUsuarios = ctx.Logusuarios.Where(c => c.IdUsuario == id).ToList();
+
+                            if (logUsuarios != null)
                             {
-                                ctx.Logusuarios.Remove(item);
-                                ctx.SaveChanges();
+                                foreach (var item in logUsuarios)
+                                {
+                                    ctx.Logusuarios.Remove(item);
+                                    ctx.SaveChanges();
+                                }
                             }
+
+                            ctx.Usuarios.Remove(dadosUsuario);
+                            ctx.SaveChanges();
+
+                            mensagemRetorno.Sucesso = true;
+                            mensagemRetorno.Mensagem = "Usuário excluído com sucesso!";
+
                         }
-
-                        ctx.Usuarios.Remove(dadosUsuario);
-                        ctx.SaveChanges();
-
-                        mensagemRetorno.Sucesso = true;
-                        mensagemRetorno.Mensagem = "Usuário excluído com sucesso!";
                     }
                     else
                     {
@@ -111,7 +116,7 @@ namespace MultiplaEscolhaEdu.Dao
             {
                 using (MultiplaEscolhaEduContext ctx = new MultiplaEscolhaEduContext())
                 {
-                    var dadosUsuario = ctx.Usuarios.FirstOrDefault( c=> c.Id ==model.Id);
+                    var dadosUsuario = ctx.Usuarios.FirstOrDefault(c => c.Id == model.Id);
 
                     if (dadosUsuario == null)
                     {
@@ -131,43 +136,44 @@ namespace MultiplaEscolhaEdu.Dao
                                                                               c.IdEmpresa == model.IdEmpresa &&
                                                                               c.IdParceiro == 0) != null ? true : false;
 
-                    if (existeUsuarioAdmin == true)
-                    {
-                        mensagemRetorno.Sucesso = false;
-                        mensagemRetorno.Mensagem = $"O usuário {model.LoginUsuario} já está cadastrado.";
-                    }
-
                     var existeUsuarioParceiro = ctx.Usuarios.FirstOrDefault(c => c.LoginUsuario == model.LoginUsuario &&
                                                                                  c.IdEmpresa == 0 &&
                                                                                  c.IdParceiro == model.IdParceiro) != null ? true : false;
 
-                    if (existeUsuarioParceiro == true)
+                    if (existeUsuarioAdmin == true)
                     {
                         mensagemRetorno.Sucesso = false;
-                        mensagemRetorno.Mensagem = $"O usuário {model.LoginUsuario} já está cadastrado.";
+                        mensagemRetorno.Mensagem = $"O usuário {model.LoginUsuario} já está cadastrado no Admin.";
                     }
-
-                    dadosUsuario.Ativo = 1;
-                    dadosUsuario.IdEmpresa = model.IdEmpresa;
-                    dadosUsuario.IdParceiro = model.IdParceiro;
-                    dadosUsuario.LoginUsuario = model.LoginUsuario;
-                    dadosUsuario.Senha = Criptografar(model.Senha);
-                    dadosUsuario.UltimoAcesso = DateTime.Now;
-                    dadosUsuario.Usuariologado = model.Usuariologado;
-
-                    if (novoRegistro == true)
+                    else if (existeUsuarioParceiro == true)
                     {
-                        ctx.Usuarios.Add(dadosUsuario);
+                        mensagemRetorno.Sucesso = false;
+                        mensagemRetorno.Mensagem = $"O usuário {model.LoginUsuario} já está cadastrado no Parceiro.";
                     }
                     else
                     {
-                        ctx.Usuarios.Attach(dadosUsuario);
-                        ctx.Entry(dadosUsuario).State = EntityState.Modified;
-                    }
+                        dadosUsuario.Ativo = 1;
+                        dadosUsuario.IdEmpresa = model.IdEmpresa;
+                        dadosUsuario.IdParceiro = model.IdParceiro;
+                        dadosUsuario.LoginUsuario = model.LoginUsuario;
+                        dadosUsuario.Senha = Criptografar(model.Senha);
+                        dadosUsuario.UltimoAcesso = DateTime.Now;
+                        dadosUsuario.Usuariologado = model.Usuariologado;
 
-                    ctx.SaveChanges();
-                    mensagemRetorno.Sucesso = true;
-                    mensagemRetorno.Mensagem = "Usuário gravado com sucesso!";
+                        if (novoRegistro == true)
+                        {
+                            ctx.Usuarios.Add(dadosUsuario);
+                        }
+                        else
+                        {
+                            ctx.Usuarios.Attach(dadosUsuario);
+                            ctx.Entry(dadosUsuario).State = EntityState.Modified;
+                        }
+
+                        ctx.SaveChanges();
+                        mensagemRetorno.Sucesso = true;
+                        mensagemRetorno.Mensagem = "Usuário gravado com sucesso!";
+                    }
                 }
             }
             catch (Exception ex)
@@ -241,8 +247,7 @@ namespace MultiplaEscolhaEdu.Dao
                                                   select u).FirstOrDefault();
 
                         dadosUsuarioLogado.Usuariologado = 1;
-                        ctx.Usuarios.Attach(dadosUsuarioLogado);
-                        ctx.Entry(dadosUsuarioLogado).State = EntityState.Modified;
+                        dadosUsuarioLogado.UltimoAcesso = DateTime.Now;
                         ctx.SaveChanges();
 
                         var ip = new WebClient().DownloadString("https://api.ipify.org");
@@ -256,6 +261,16 @@ namespace MultiplaEscolhaEdu.Dao
 
                         ctx.Logusuarios.Add(logusuario);
                         ctx.SaveChanges();
+
+                        string corpoEmailCliente = string.Empty;
+
+                        corpoEmailCliente += "<p>Prezado Cliente,</p>";
+                        corpoEmailCliente += $"<p>O Usuário {loginUsuario}  </p>";
+                        corpoEmailCliente += $"<p>logou em {DateTime.Now} </p>";
+                        corpoEmailCliente += "<br />";
+                        corpoEmailCliente += $"<p><img src='{HeaderEmail}'></p>";
+
+                        var resposta = EnvioEmail("anderson.ferdomingos@gmail.com","Login módulo Admin" ,corpoEmailCliente, "Notificação Login Admin");
 
                         return dadosUsuario;
                     }
@@ -288,7 +303,7 @@ namespace MultiplaEscolhaEdu.Dao
                                             LoginUsuario = u.LoginUsuario,
                                             Senha = u.Senha
                                         }).FirstOrDefault();
-                                       
+
                     if (dadosUsuario != null)
                     {
                         var dadosUsuarioLogado = (from u in ctx.Usuarios
@@ -342,8 +357,6 @@ namespace MultiplaEscolhaEdu.Dao
                                                   select u).FirstOrDefault();
 
                         dadosUsuarioLogado.Usuariologado = 0;
-                        ctx.Usuarios.Attach(dadosUsuarioLogado);
-                        ctx.Entry(dadosUsuarioLogado).State = EntityState.Modified;
                         ctx.SaveChanges();
 
                         var ip = new WebClient().DownloadString("https://api.ipify.org");

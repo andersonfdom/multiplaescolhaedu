@@ -57,25 +57,25 @@ namespace MultiplaEscolhaEdu.Dao
                     if (dadosParceiro != null)
                     {
                         int matriculaParceiro = ctx.Matriculas.Count(c => c.IdParceiro == dadosParceiro.Id);
+                        bool parceiroPrincipal = ctx.Parceiros.FirstOrDefault(c => c.Id == ctx.Empresas.FirstOrDefault().Id) != null ? true : false;
 
-                        if (matriculaParceiro != 0)
+                        if (matriculaParceiro > 0)
                         {
                             mensagemRetorno.Sucesso = false;
                             mensagemRetorno.Mensagem = "Não foi possível realizar a exclusão: Existe(m) matrícula(s) realizadas por este Parceiro! Impossível excluir.";
                         }
-
-                        bool parceiroPrincipal = ctx.Parceiros.FirstOrDefault(c => c.Id == ctx.Empresas.FirstOrDefault().Id) != null ? true : false;
-                        
-                        if(parceiroPrincipal == true)
+                        else if(parceiroPrincipal == true)
                         {
                             mensagemRetorno.Sucesso = false;
                             mensagemRetorno.Mensagem = "Este parceiro não pode ser excluído.";
                         }
-
-                        ctx.Parceiros.Remove(dadosParceiro);
-                        ctx.SaveChanges();
-                        mensagemRetorno.Sucesso = true;
-                        mensagemRetorno.Mensagem = "Parceiro excluído com sucesso!";
+                        else
+                        {
+                            ctx.Parceiros.Remove(dadosParceiro);
+                            ctx.SaveChanges();
+                            mensagemRetorno.Sucesso = true;
+                            mensagemRetorno.Mensagem = "Parceiro excluído com sucesso!";
+                        }
                     }
                     else
                     {
