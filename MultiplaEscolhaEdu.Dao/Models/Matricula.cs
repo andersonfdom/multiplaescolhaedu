@@ -11,8 +11,8 @@ namespace MultiplaEscolhaEdu.Dao.Models
         public int IdAluno { get; set; }
         public int? IdCurso { get; set; }
         public int? IdParceiro { get; set; }
-        public sbyte? Status { get; set; }
         public DateTime? DataMatricula { get; set; }
+        public sbyte? MatriculaValida { get; set; }
 
         public virtual Aluno IdAlunoNavigation { get; set; }
         public virtual Curso IdCursoNavigation { get; set; }

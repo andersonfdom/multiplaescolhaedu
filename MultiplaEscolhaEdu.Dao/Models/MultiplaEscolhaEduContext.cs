@@ -371,9 +371,9 @@ namespace MultiplaEscolhaEdu.Dao.Models
                     .HasColumnName("id_parceiro")
                     .HasDefaultValueSql("'0'");
 
-                entity.Property(e => e.Status)
+                entity.Property(e => e.MatriculaValida)
                     .HasColumnType("tinyint(4)")
-                    .HasColumnName("status");
+                    .HasColumnName("matricula_valida");
 
                 entity.HasOne(d => d.IdAlunoNavigation)
                     .WithMany(p => p.Matriculas)

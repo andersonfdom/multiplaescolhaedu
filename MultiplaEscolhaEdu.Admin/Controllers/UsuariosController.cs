@@ -40,10 +40,7 @@ namespace MultiplaEscolhaEdu.Admin.Controllers
         {
             UsuarioDao dao = new UsuarioDao();
 
-            return Ok(new
-            {
-                mensagem = dao.Excluir(wId)
-            });
+            return Ok(dao.Excluir(wId));
         }
 
         [HttpPost]
@@ -51,10 +48,7 @@ namespace MultiplaEscolhaEdu.Admin.Controllers
         {
             UsuarioDao dao = new UsuarioDao();
 
-            return Ok(new
-            {
-                mensagem = dao.Gravar(model)
-            });
+            return Ok(dao.Gravar(model));
         }
     }
 }

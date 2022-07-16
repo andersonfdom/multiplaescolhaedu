@@ -68,7 +68,19 @@
                 dataType: "JSON",
                 contentType: "application/json; charset=UTF-8",
                 success: function (jsonResult) {
-                   /* alert(jsonResult.mensagem);*/
+                    if (jsonResult.sucesso === true) {
+                        $('#popMensagemSucesso').modal('show');
+                        $('#mensagemSucesso').html(jsonResult.mensagem);
+                        window.setTimeout(function () {
+                            window.location.href = "/Parceiros/Index"
+                        }, 3000);
+                    } else {
+                        $('#popMensagemErro').modal('show');
+                        $('#mensagemErro').html(jsonResult.mensagem);
+                        window.setTimeout(function () {
+                            $('#popMensagemErro').modal('hide');
+                        }, 5000);
+                    }
                 }
             });
         } else {

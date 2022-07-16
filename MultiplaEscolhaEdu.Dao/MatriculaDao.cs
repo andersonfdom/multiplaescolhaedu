@@ -23,12 +23,11 @@ namespace MultiplaEscolhaEdu.Dao
                             where m.Id == id
                             select new MatriculaModel
                             {
-                                DataMatricula = m.DataMatricula,
+                                DataMatricula = Convert.ToDateTime(m.DataMatricula).ToString("yyyy-MM-dd"),
                                 Id = m.Id,
                                 IdAluno = m.IdAluno,
                                 IdCurso = m.IdCurso,
-                                IdParceiro = m.IdParceiro,
-                                Status = m.Status
+                                IdParceiro = m.IdParceiro
                             }).FirstOrDefault();
                 }
             }
@@ -93,22 +92,17 @@ namespace MultiplaEscolhaEdu.Dao
                         novoRegistro = false;
                     }
 
-                    dados.DataMatricula = model.DataMatricula;
+                    dados.DataMatricula = Convert.ToDateTime(model.DataMatricula);
                     dados.IdAluno = model.IdAluno;
                     dados.IdAlunoNavigation = ctx.Alunos.FirstOrDefault(c => c.Id == model.IdAluno);
                     dados.IdCurso = model.IdCurso;
                     dados.IdCursoNavigation = ctx.Cursos.FirstOrDefault(c => c.Id == model.IdCurso);
                     dados.IdParceiro = model.IdParceiro;
-                    dados.Status = model.Status;
+                    dados.MatriculaValida = 1;
 
                     if (novoRegistro == true)
                     {
                         ctx.Matriculas.Add(dados);
-                    }
-                    else
-                    {
-                        ctx.Matriculas.Attach(dados);
-                        ctx.Entry(dados).State = EntityState.Modified;
                     }
 
                     ctx.SaveChanges();
@@ -149,7 +143,6 @@ namespace MultiplaEscolhaEdu.Dao
                                      NomeAluno = a.Nome,
                                      NomeCurso = c.Descricao,
                                      NomeParceiro = p.NomeCompleto,
-                                     StatusMatricula = m.Status,
                                      DataMatricula = m.DataMatricula
                                  }).ToList();
 
@@ -161,12 +154,11 @@ namespace MultiplaEscolhaEdu.Dao
                         {
                             lista.Add(new MatriculaConsulta
                             {
-                                DataMatricula = item.DataMatricula,
+                                DataMatricula = Convert.ToDateTime(item.DataMatricula).ToShortDateString(),
                                 Id = item.Id,
                                 NomeAluno = item.NomeAluno,
                                 NomeCurso = item.NomeCurso,
-                                NomeParceiro = item.NomeParceiro,
-                                StatusMatricula = item.StatusMatricula == 0 ? "Pendente" : item.StatusMatricula == 1 ? "Efetivada" : "Cancelada"
+                                NomeParceiro = item.NomeParceiro
                             });
                         }
                     }

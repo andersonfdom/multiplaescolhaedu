@@ -12,8 +12,7 @@ namespace MultiplaEscolhaEdu.Model
         public int IdAluno { get; set; }
         public int? IdCurso { get; set; }
         public int? IdParceiro { get; set; }
-        public sbyte? Status { get; set; }
-        public DateTime? DataMatricula { get; set; }
+        public string DataMatricula { get; set; }
     }
 
     public class MatriculaConsulta
@@ -23,6 +22,6 @@ namespace MultiplaEscolhaEdu.Model
         public string NomeCurso { get; set; }
         public string NomeParceiro { get; set; }
         public string StatusMatricula { get; set; }
-        public DateTime? DataMatricula { get; set; }
+        public string DataMatricula { get; set; }
     }
 }

@@ -39,10 +39,7 @@ namespace MultiplaEscolhaEdu.Admin.Controllers
         {
             ParceiroDao ParceiroDao = new ParceiroDao();
 
-            return Ok(new
-            {
-                mensagem = ParceiroDao.Gravar(ParceiroModel)
-            });
+            return Ok(ParceiroDao.Gravar(ParceiroModel));
         }
 
         [HttpPost]
@@ -50,10 +47,7 @@ namespace MultiplaEscolhaEdu.Admin.Controllers
         {
             ParceiroDao ParceiroDao = new ParceiroDao();
 
-            return Ok(new
-            {
-                mensagem = ParceiroDao.Excluir(id)
-            });
+            return Ok(ParceiroDao.Excluir(id));
         }
     }
 }

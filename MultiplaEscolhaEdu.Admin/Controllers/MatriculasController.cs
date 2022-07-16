@@ -19,15 +19,6 @@ namespace MultiplaEscolhaEdu.Admin.Controllers
 
         public IActionResult Cadastro(int? id)
         {
-            CursoDao cursoDao = new CursoDao();
-            ViewBag.Cursos = cursoDao.ListarDados();
-
-            AlunoDao alunoDao = new AlunoDao();
-            ViewBag.Alunos = alunoDao.ListarDados();
-
-            ParceiroDao parceiroDao = new ParceiroDao();
-            ViewBag.Parceiros = parceiroDao.ListarDados();
-
             return View();
         }
 
@@ -36,10 +27,7 @@ namespace MultiplaEscolhaEdu.Admin.Controllers
         {
             MatriculaDao dao = new MatriculaDao();
             
-            return Ok(new
-            {
-                mensagem = dao.CarregarDados(id)
-            });
+            return Ok(dao.CarregarDados(id));
         }
 
         [HttpPost]
@@ -55,6 +43,27 @@ namespace MultiplaEscolhaEdu.Admin.Controllers
             MatriculaDao MatriculaDao = new MatriculaDao();
 
             return Ok(MatriculaDao.Gravar(model));
+        }
+
+        [HttpGet]
+        public IActionResult ListarCursos()
+        {
+            CursoDao cursoDao = new CursoDao();
+            return Ok(cursoDao.ListarDados());
+        }
+
+        [HttpGet]
+        public IActionResult ListarAlunos()
+        {
+            AlunoDao alunoDao = new AlunoDao();
+            return Ok(alunoDao.ListarDados());
+        }
+
+        [HttpGet]
+        public IActionResult ListarParceiros()
+        {
+            ParceiroDao parceiroDao = new ParceiroDao();
+            return Ok(parceiroDao.ListarDados());
         }
     }
 }

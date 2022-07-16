@@ -5,6 +5,10 @@
     $(function () {
         var id = getParameterByName("id") == null ? "0" : getParameterByName("id");
 
+        ListarCursos();
+        ListarAlunos();
+        ListarParceiros();
+
         if (id !== "0") {
             $('#hdnIdMatricula').val(id);
 
@@ -14,7 +18,8 @@
                 contentType: "application/JSON; charset=UTF-8",
                 dataType: "json",
                 success: function (jsonResult) {
-                    $(jsonResult.dados).each(function () {
+                    $(jsonResult).each(function () {
+                        console.log(jsonResult);
                         $('#ddlStatusMatricula').val(this.status);
                         $('#txtDataMatricula').val(this.dataMatricula);
                         $('#ddlCurso').val(this.idCurso);
@@ -29,7 +34,6 @@
             var data = new FormData();
 
             data.append("Id", $('#hdnIdMatricula').val());
-            data.append("Status", $('#ddlStatusMatricula').val());
             data.append("DataMatricula", $('#txtDataMatricula').val());
             data.append("IdCurso", $('#ddlCurso').val());
             data.append("IdAluno", $('#ddlAluno').val());
@@ -58,6 +62,64 @@
                 }
             });
         });
+
+        function ListarCursos() {
+            var cursos = "";
+
+            $('#ddlCurso').empty();
+            $.ajax({
+                type: "GET",
+                url: "/Matriculas/ListarCursos",
+                contentType: "application/JSON; charset=UTF-8",
+                dataType: "json",
+                success: function (jsonResult) {
+                    jsonResult.forEach(c => {
+                        cursos += "<option value=" + c.id + ">" + c.descricao + "</option>";
+                    });
+
+                    $('#ddlCurso').html(cursos);
+                }
+            });
+
+        }
+
+        function ListarAlunos() {
+            var alunos = "";
+
+            $('#ddlAluno').empty();
+            $.ajax({
+                type: "GET",
+                url: "/Matriculas/ListarAlunos",
+                contentType: "application/JSON; charset=UTF-8",
+                dataType: "json",
+                success: function (jsonResult) {
+                    jsonResult.forEach(c => {
+                        alunos += "<option value=" + c.id + ">" + c.nome + "</option>";
+                    });
+
+                    $('#ddlAluno').html(alunos);
+                }
+            });
+        }
+
+        function ListarParceiros() {
+            var parceiros = "";
+
+            $('#ddlParceiro').empty();
+            $.ajax({
+                type: "GET",
+                url: "/Matriculas/ListarParceiros",
+                contentType: "application/JSON; charset=UTF-8",
+                dataType: "json",
+                success: function (jsonResult) {
+                    jsonResult.forEach(c => {
+                        parceiros += "<option value=" + c.id + ">" + c.nomeCompleto + "</option>";
+                    });
+
+                    $('#ddlParceiro').html(parceiros);
+                }
+            });
+        }
     });
 
     function getParameterByName(name, url = window.location.href) {
@@ -78,19 +140,11 @@
             <div class="table-responsive" style="overflow-x: auto">
                 <table class="table" style="width: 100%">
                     <tr>
-                        <th>Status Matrícula</th>
                         <th>Data Matrícula</th>
                     </tr>
                     <tr>
                         <td>
                             <input type="hidden" id="hdnIdMatricula" value="0" />
-                            <select id="ddlStatusMatricula" class="form-control">
-                                <option value="0">Pendente</option>
-                                <option value="1">Efetivada</option>
-                                <option value="2">Cancelada</option>
-                            </select>
-                        </td>
-                        <td>
                             <input type="date" id="txtDataMatricula" class="form-control" />
                         </td>
                     </tr>
@@ -104,26 +158,14 @@
                     <tr>
                         <td>
                             <select id="ddlCurso" class="form-control">
-                                @foreach (var item in ViewBag.Cursos)
-                                {
-                                    <option value="@item.Id">@item.Descricao</option>
-                                }
                             </select>
                         </td>
                         <td>
                             <select id="ddlAluno" class="form-control">
-                                @foreach (var item in ViewBag.Alunos)
-                                {
-                                    <option value="@item.Id">@item.Nome</option>
-                                }
                             </select>
                         </td>
                         <td>
                             <select id="ddlParceiro" class="form-control">
-                                @foreach (var item in ViewBag.Parceiros)
-                                {
-                                    <option value="@item.Id">@item.NomeCompleto</option>
-                                }
                             </select>
                         </td>
                     </tr>
