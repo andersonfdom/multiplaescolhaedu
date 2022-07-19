@@ -8,11 +8,9 @@ namespace MultiplaEscolhaEdu.Dao
         static void Main(string[] args)
         {
             UsuarioDao dao = new UsuarioDao();
-            UsuarioModel model = dao.CarregarDados(1);
+            var senha = dao.GerarNovaSenha();
 
-            dao.Gravar(model);
-
-            Console.WriteLine(model.Senha);
+            Console.WriteLine(senha);
             Console.ReadKey();
         }
     }

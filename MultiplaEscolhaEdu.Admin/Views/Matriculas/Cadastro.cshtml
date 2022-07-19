@@ -19,8 +19,6 @@
                 dataType: "json",
                 success: function (jsonResult) {
                     $(jsonResult).each(function () {
-                        console.log(jsonResult);
-                        $('#ddlStatusMatricula').val(this.status);
                         $('#txtDataMatricula').val(this.dataMatricula);
                         $('#ddlCurso').val(this.idCurso);
                         $('#ddlAluno').val(this.idAluno);
@@ -34,10 +32,10 @@
             var data = new FormData();
 
             data.append("Id", $('#hdnIdMatricula').val());
-            data.append("DataMatricula", $('#txtDataMatricula').val());
-            data.append("IdCurso", $('#ddlCurso').val());
             data.append("IdAluno", $('#ddlAluno').val());
+            data.append("IdCurso", $('#ddlCurso').val());
             data.append("IdParceiro", $('#ddlParceiro').val());
+            data.append("DataMatricula", $('#txtDataMatricula').val());
 
             $.ajax({
                 url: "/Matriculas/GravarMatricula",
@@ -141,21 +139,15 @@
                 <table class="table" style="width: 100%">
                     <tr>
                         <th>Data Matrícula</th>
+                        <th>Curso</th>
+                        <th>Aluno</th>
+                        <th>Parceiro</th>
                     </tr>
                     <tr>
                         <td>
                             <input type="hidden" id="hdnIdMatricula" value="0" />
                             <input type="date" id="txtDataMatricula" class="form-control" />
                         </td>
-                    </tr>
-                </table>
-                <table class="table" style="width: 100%">
-                    <tr>
-                        <th>Curso</th>
-                        <th>Aluno</th>
-                        <th>Parceiro</th>
-                    </tr>
-                    <tr>
                         <td>
                             <select id="ddlCurso" class="form-control">
                             </select>

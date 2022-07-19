@@ -428,5 +428,10 @@ namespace MultiplaEscolhaEdu.Dao
                 return false;
             }
         }
+
+        public string GerarNovaSenha()
+        {
+            return Guid.NewGuid().ToString("n").Substring(0, 12);
+        }
     }
 }

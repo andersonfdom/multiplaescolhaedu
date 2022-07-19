@@ -8,10 +8,10 @@
     $(function () {
         var id = getParameterByName("id") == null ? "0" : getParameterByName("id");
 
-        if (id !=="0") {
+        if (id !== "0") {
             $.ajax({
                 type: "POST",
-                url: "/Parceiros/CarregarDados?id="+id,
+                url: "/Parceiros/CarregarDados?id=" + id,
                 async: false,
                 dataType: "JSON",
                 contentType: "application/json; charset=UTF-8",
@@ -69,6 +69,10 @@
                     }
                 });
             }
+        });
+
+        $('#btnGerarSenha').click(function () {
+
         });
     });
 
@@ -150,7 +154,7 @@
     }
 
     function buscarCep(cep) {
-        cep = cep.replace('.','');
+        cep = cep.replace('.', '');
         cep = cep.replace('/', '');
 
         $.getJSON("https://viacep.com.br/ws/" + cep + "/json/?callback=?", function (dados) {
@@ -282,7 +286,11 @@
                         <th></th>
                     </tr>
                     <tr>
-                        <td><input type="button" class="btn btn-primary" id="btnSalvar" value="Salvar" />&nbsp;<input type="button" class="btn btn-danger" id="btnCancelar" value="Cancelar" onclick="window.location.href = '/Parceiros/Index'" /></td>
+                        <td>
+                            <input type="button" class="btn btn-primary" id="btnSalvar" value="Salvar" />&nbsp;
+                            <input type="button" class="btn btn-info" id="btnGerarSenha" value="Gerar Nova Senha de Acesso" />
+                            <input type="button" class="btn btn-danger" id="btnCancelar" value="Cancelar" onclick="window.location.href = '/Parceiros/Index'" />
+                        </td>
                     </tr>
                 </table>
             </div>
