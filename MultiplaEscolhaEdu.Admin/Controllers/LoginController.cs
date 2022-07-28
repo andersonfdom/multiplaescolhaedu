@@ -17,6 +17,16 @@ namespace MultiplaEscolhaEdu.Admin.Controllers
             return View();
         }
 
+        public IActionResult EsqueceuASenha()
+        {
+            return View();
+        }
+
+        public IActionResult RecuperarSenha(string code)
+        {
+            return View();
+        }
+
         [HttpPost]
         public IActionResult RealizarLogin(Dictionary<string,string>wDados)
         {
@@ -51,7 +61,14 @@ namespace MultiplaEscolhaEdu.Admin.Controllers
             return Ok(new
             {
                 mensagem = dao.RealizarLogoffAdmin(idUsuario)
-            }); ;
+            });
+        }
+
+        [HttpPost]
+        public IActionResult EnviarEmailSenha(string email,string url)
+        {
+            UsuarioDao dao = new UsuarioDao();
+            return Ok(dao.RetornarDadosRecuperacaoSenhaAdmin(email,url));
         }
     }
 }

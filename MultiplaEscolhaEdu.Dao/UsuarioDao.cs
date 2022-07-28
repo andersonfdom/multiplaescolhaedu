@@ -8,6 +8,7 @@ using MultiplaEscolhaEdu.Dao.Models;
 using System.Collections;
 using System.Net;
 using Microsoft.EntityFrameworkCore;
+using System.Web;
 
 namespace MultiplaEscolhaEdu.Dao
 {
@@ -429,9 +430,59 @@ namespace MultiplaEscolhaEdu.Dao
             }
         }
 
-        public string GerarNovaSenha()
+        public string GerarGuidRecuperacaoSenha()
         {
             return Guid.NewGuid().ToString("n").Substring(0, 12);
+        }
+
+        public MensagemRetorno RetornarDadosRecuperacaoSenhaAdmin(string email,string url)
+        {
+            MensagemRetorno model = new MensagemRetorno();
+
+            try
+            {
+                using (MultiplaEscolhaEduContext ctx = new MultiplaEscolhaEduContext())
+                {
+                    var dados = (from c in ctx.Usuarios
+                                 where c.LoginUsuario.Equals(email)
+                                 select c).FirstOrDefault();
+
+                    if (dados != null)
+                    {
+                        dados.SecretKey = GerarGuidRecuperacaoSenha();
+                        ctx.SaveChanges();
+
+                        model.Sucesso = true;
+                        model.Mensagem = $"Foi enviado um e-mail para {dados.LoginUsuario}, solicitando a recuperação de senha. Favor acesse sua caixa de entrada," +
+                            $"ou verifique se o mesmo está como spam, e siga as instruções no seu e-mail para a recuperação de senha.";
+
+
+                        string corpoEmailCliente = string.Empty;
+                        string urlEnvio = HttpUtility.HtmlEncode(url + "/RecuperarSenha?code=" + dados.SecretKey);
+
+                        corpoEmailCliente += "   <p>Prezado Usuário,</p>";
+                        corpoEmailCliente += $"   <p>Foi solicitado recuperação de senha para o login: {dados.LoginUsuario}.</p>";
+                        corpoEmailCliente += "   <p><a href=\"" + urlEnvio + "\">Clique aqui para solicitar a recuperação de senha</a></p>";
+                        corpoEmailCliente += "   <br />";
+                        corpoEmailCliente += $"  <p><img src='{HeaderEmail}'></p>";
+
+                        var resposta = EnvioEmail("anderson.ferdomingos@gmail.com", "Recuperação Senha módulo Admin", corpoEmailCliente, "Recuperação Senha módulo Admin");
+                    }
+                    else
+                    {
+                        model.Sucesso = true;
+                        model.Mensagem = "E-mail não cadastrado. Favor entrar em contato com o Administrador.";
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                model.Sucesso = false;
+                model.Mensagem = "Não foi possível realizar a recuperação de senha: " + e.InnerException.Message.ToString();
+                return model;
+            }
+
+            return model;
         }
     }
 }

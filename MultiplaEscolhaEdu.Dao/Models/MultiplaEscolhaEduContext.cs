@@ -488,6 +488,8 @@ namespace MultiplaEscolhaEdu.Dao.Models
                     .HasMaxLength(100)
                     .HasColumnName("login_usuario");
 
+                entity.Property(e => e.SecretKey).HasColumnName("secret_key");
+
                 entity.Property(e => e.Senha)
                     .IsRequired()
                     .HasColumnName("senha");

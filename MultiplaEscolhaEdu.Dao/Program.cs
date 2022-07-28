@@ -7,11 +7,7 @@ namespace MultiplaEscolhaEdu.Dao
     {
         static void Main(string[] args)
         {
-            UsuarioDao dao = new UsuarioDao();
-            var senha = dao.GerarNovaSenha();
 
-            Console.WriteLine(senha);
-            Console.ReadKey();
         }
     }
 }

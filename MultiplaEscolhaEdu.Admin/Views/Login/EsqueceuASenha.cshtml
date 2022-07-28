@@ -3,6 +3,7 @@
     Layout = null;
 }
 
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -32,17 +33,12 @@
             $('#mensagemSucesso').html('');
             $('#mensagemErro').html('');
 
-            $('#btnLogin').click(function () {
+            $('#btnEnviarEmail').click(function () {
                 $('#mensagemSucesso').html('');
                 $('#mensagemErro').html('');
-                var data = new FormData();
-
-                data.append("login", $('#email').val());
-                data.append("senha", $('#senha').val());
 
                 $.ajax({
-                    url: "/Login/RealizarLogin",
-                    data: data,
+                    url: "/Login/EnviarEmailSenha?email=" + $('#email').val() + "&url="+ window.location.protocol + window.location.host,
                     processData: false,
                     contentType: false,
                     type: "POST",
@@ -51,8 +47,8 @@
                             $('#mensagemSucesso').show();
                             $('#mensagemSucesso').html(jsonResult.mensagem);
                             window.setTimeout(function () {
-                                window.location.href = "/Home/Index"
-                            });
+                                window.location.href = "/Login/Index"
+                            },6000);
                         } else {
                             $('#mensagemErro').show();
                             $('#mensagemErro').html(jsonResult.mensagem);
@@ -78,7 +74,7 @@
                         </div>
 
                         <div class="card card-primary">
-                            <div class="card-header"><h4>Acesso Restrito - Admin</h4></div>
+                            <div class="card-header"><h4>Recuperação de Acesso  - Admin</h4></div>
 
                             <div class="card-body">
                                 <form class="needs-validation" novalidate="">
@@ -86,34 +82,11 @@
                                         <label for="email">E-mail</label>
                                         <input id="email" type="email" class="form-control" name="email" tabindex="1" required autofocus>
                                         <div class="invalid-feedback">
-                                            Informe seu e-mail
+                                            Informe seu e-mail para recuperação de senha
                                         </div>
                                     </div>
-
                                     <div class="form-group">
-                                        <label for="password" class="d-block">
-                                            Senha
-                                            <div class="float-right">
-                                                <a href="@Url.Action("EsqueceuASenha","Login")">
-                                                    Esqueceu a senha?
-                                                </a>
-                                            </div>
-                                        </label>
-                                        <input id="senha" type="password" class="form-control" name="senha" tabindex="2" required>
-                                        <div class="invalid-feedback">
-                                            Informe a sua senha
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" name="remember" class="custom-control-input" tabindex="3" id="remember-me">
-                                            @*<label class="custom-control-label" for="remember-me">Lembrar-me</label>*@
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <input id="btnLogin" type="button" class="btn btn-primary btn-block" tabindex="4" value="Login" />
+                                        <input id="btnEnviarEmail" type="button" class="btn btn-primary btn-block" tabindex="4" value="Enviar" />
                                     </div>
                                     <div id="mensagemSucesso" class="alert alert-success" style="display:none">
 

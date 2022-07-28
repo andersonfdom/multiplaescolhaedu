@@ -80,9 +80,9 @@ namespace MultiplaEscolhaEdu.Dao
 
                 mail.From = new MailAddress("crm@multiplaescolhaedu.com.br");
                 mail.To.Add(new MailAddress(to));
-                mail.Subject = subject;
-                mail.Body = body;
                 mail.IsBodyHtml = true;
+                mail.Body = body;
+                mail.Subject = subject;
 
                 SmtpServer.Port = 587;
                 SmtpServer.EnableSsl = false;

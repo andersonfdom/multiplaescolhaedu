@@ -21,6 +21,7 @@ namespace MultiplaEscolhaEdu.Dao.Models
         public int? IdParceiro { get; set; }
         public int? IdEmpresa { get; set; }
         public sbyte Usuariologado { get; set; }
+        public string SecretKey { get; set; }
 
         public virtual ICollection<Logusuario> Logusuarios { get; set; }
     }
