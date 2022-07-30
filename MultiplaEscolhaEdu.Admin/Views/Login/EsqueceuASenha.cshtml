@@ -38,7 +38,7 @@
                 $('#mensagemErro').html('');
 
                 $.ajax({
-                    url: "/Login/EnviarEmailSenha?email=" + $('#email').val() + "&url="+ window.location.protocol + window.location.host,
+                    url: "/Login/EnviarEmailSenha?email=" + $('#email').val() + "&url=https://"+ window.location.host,
                     processData: false,
                     contentType: false,
                     type: "POST",
@@ -79,6 +79,7 @@
                             <div class="card-body">
                                 <form class="needs-validation" novalidate="">
                                     <div class="form-group">
+                                        <input type="hidden" id="hdnCode" value="" />
                                         <label for="email">E-mail</label>
                                         <input id="email" type="email" class="form-control" name="email" tabindex="1" required autofocus>
                                         <div class="invalid-feedback">

@@ -139,4 +139,7 @@ D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Admin\obj\Release\net5.0\Multi
 D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Admin\obj\Release\net5.0\ref\MultiplaEscolhaEdu.Admin.dll
 D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Admin\obj\Release\net5.0\MultiplaEscolhaEdu.Admin.pdb
 D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Admin\obj\Release\net5.0\MultiplaEscolhaEdu.Admin.genruntimeconfig.cache
-D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Admin\obj\Release\net5.0\refint\MultiplaEscolhaEdu.Admin.dll
+D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Admin\bin\Release\net5.0\ref\MultiplaEscolhaEdu.Admin.dll
+D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Admin\obj\Release\net5.0\staticwebassets\MultiplaEscolhaEdu.Admin.StaticWebAssets.xml
+D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Admin\obj\Release\net5.0\Razor\Views\Login\EsqueceuASenha.cshtml.g.cs
+D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Admin\obj\Release\net5.0\Razor\Views\Login\RecuperarSenha.cshtml.g.cs

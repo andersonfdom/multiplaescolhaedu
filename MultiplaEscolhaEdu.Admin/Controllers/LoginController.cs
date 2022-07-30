@@ -70,5 +70,19 @@ namespace MultiplaEscolhaEdu.Admin.Controllers
             UsuarioDao dao = new UsuarioDao();
             return Ok(dao.RetornarDadosRecuperacaoSenhaAdmin(email,url));
         }
+
+        [HttpGet]
+        public IActionResult ValidarToken(string code)
+        {
+            UsuarioDao dao = new UsuarioDao();
+            return Ok(dao.TokenValido(code));
+        }
+
+        [HttpPost]
+        public IActionResult AlterarSenha(Dictionary<string, string> wDados)
+        {
+            UsuarioDao dao = new UsuarioDao();
+            return Ok(dao.AlterarSenha(wDados));
+        }
     }
 }

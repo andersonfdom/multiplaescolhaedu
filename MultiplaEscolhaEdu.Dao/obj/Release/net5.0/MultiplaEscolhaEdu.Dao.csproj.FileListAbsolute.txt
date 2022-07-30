@@ -33,4 +33,4 @@ D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Dao\obj\Release\net5.0\Multipl
 D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Dao\obj\Release\net5.0\ref\MultiplaEscolhaEdu.Dao.dll
 D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Dao\obj\Release\net5.0\MultiplaEscolhaEdu.Dao.pdb
 D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Dao\obj\Release\net5.0\MultiplaEscolhaEdu.Dao.genruntimeconfig.cache
-D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Dao\obj\Release\net5.0\refint\MultiplaEscolhaEdu.Dao.dll
+D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Dao\bin\Release\net5.0\ref\MultiplaEscolhaEdu.Dao.dll

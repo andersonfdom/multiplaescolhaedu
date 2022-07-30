@@ -458,7 +458,7 @@ namespace MultiplaEscolhaEdu.Dao
 
 
                         string corpoEmailCliente = string.Empty;
-                        string urlEnvio = HttpUtility.HtmlEncode(url + "/RecuperarSenha?code=" + dados.SecretKey);
+                        string urlEnvio = HttpUtility.HtmlEncode(url + "/Login/RecuperarSenha?code=" + dados.SecretKey);
 
                         corpoEmailCliente += "   <p>Prezado Usuário,</p>";
                         corpoEmailCliente += $"   <p>Foi solicitado recuperação de senha para o login: {dados.LoginUsuario}.</p>";
@@ -466,7 +466,7 @@ namespace MultiplaEscolhaEdu.Dao
                         corpoEmailCliente += "   <br />";
                         corpoEmailCliente += $"  <p><img src='{HeaderEmail}'></p>";
 
-                        var resposta = EnvioEmail("anderson.ferdomingos@gmail.com", "Recuperação Senha módulo Admin", corpoEmailCliente, "Recuperação Senha módulo Admin");
+                        var resposta = EnvioEmail(dados.LoginUsuario, "Recuperação Senha módulo Admin", corpoEmailCliente, "Recuperação Senha módulo Admin");
                     }
                     else
                     {
@@ -483,6 +483,80 @@ namespace MultiplaEscolhaEdu.Dao
             }
 
             return model;
+        }
+
+        public MensagemRetorno TokenValido(string code)
+        {
+            MensagemRetorno model = new MensagemRetorno();
+
+            try
+            {
+                using (MultiplaEscolhaEduContext ctx = new MultiplaEscolhaEduContext())
+                {
+                    var dados = ctx.Usuarios.FirstOrDefault(c => c.SecretKey == code);
+
+                    if (dados != null)
+                    {
+                        model.Sucesso = true;
+                        model.Mensagem = dados.LoginUsuario;
+                    }
+                    else
+                    {
+                        model.Sucesso = false;
+                        model.Mensagem = "Link expirado. Favor realizar nova solicitação Recuperação de Acesso.";
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                model.Sucesso = false;
+                model.Mensagem = "Não foi possível realizar avalidação do token: " + e.InnerException.Message.ToString();
+                return model;
+            }
+
+            return model;
+        }
+
+        public MensagemRetorno AlterarSenha(Dictionary<string,string>wDados)
+        {
+            MensagemRetorno retorno = new MensagemRetorno();
+
+            try
+            {
+                using (MultiplaEscolhaEduContext ctx = new MultiplaEscolhaEduContext())
+                {
+                    var dados = ctx.Usuarios.FirstOrDefault(c => c.LoginUsuario.Equals(wDados["loginUsuario"].ToString()));
+
+                    if (dados != null)
+                    {
+                        var senha = wDados["senha"].ToString();
+                        var confirmarSenha = wDados["confirmarSenha"].ToString();
+
+                        if (senha != confirmarSenha)
+                        {
+                            retorno.Sucesso = false;
+                            retorno.Mensagem = "As senhas não conferem.";
+                        }
+                        else
+                        {
+                            dados.Senha = Criptografar(senha);
+                            dados.SecretKey = "";
+                            ctx.SaveChanges();
+
+                            retorno.Sucesso = true;
+                            retorno.Mensagem = "Senha alterada com sucesso!";
+                        }
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                retorno.Sucesso = false;
+                retorno.Mensagem = "Não foi possível realizar a alteração da senha: " + e.InnerException.Message.ToString();
+                return retorno;
+            }
+
+            return retorno;
         }
     }
 }

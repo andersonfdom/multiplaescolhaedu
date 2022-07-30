@@ -3,6 +3,7 @@ D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Dao\bin\Debug\net5.0\MultiplaE
 D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Dao\bin\Debug\net5.0\MultiplaEscolhaEdu.Dao.runtimeconfig.json
 D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Dao\bin\Debug\net5.0\MultiplaEscolhaEdu.Dao.runtimeconfig.dev.json
 D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Dao\bin\Debug\net5.0\MultiplaEscolhaEdu.Dao.dll
+D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Dao\bin\Debug\net5.0\ref\MultiplaEscolhaEdu.Dao.dll
 D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Dao\bin\Debug\net5.0\MultiplaEscolhaEdu.Dao.pdb
 D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Dao\bin\Debug\net5.0\Humanizer.dll
 D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Dao\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
@@ -33,4 +34,3 @@ D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Dao\obj\Debug\net5.0\MultiplaE
 D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Dao\obj\Debug\net5.0\ref\MultiplaEscolhaEdu.Dao.dll
 D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Dao\obj\Debug\net5.0\MultiplaEscolhaEdu.Dao.pdb
 D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Dao\obj\Debug\net5.0\MultiplaEscolhaEdu.Dao.genruntimeconfig.cache
-D:\Projetos\multiplaescolhaedu\MultiplaEscolhaEdu.Dao\bin\Debug\net5.0\ref\MultiplaEscolhaEdu.Dao.dll
